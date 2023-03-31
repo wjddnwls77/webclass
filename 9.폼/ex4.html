@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표를 사용한 예약자 정보 페이지</title>
+</head>
+<body>
+    <form action="#">
+        <div>
+              <h3>예약자정보를 입력해주세요</h3>
+               <table border="1" cellspacing="0">
+                  <tr>
+                      <th><label for="reser_name">예약자 성명</label></th>
+                     <td><input type="text" id="reser_name" placeholder="이름" required></td>
+                  </tr>
+                  <tr>
+                    <th><label for="reser_birth">생년원일</label></th>
+                    <td> <input type="number" id="reser_birth" placeholder="8자리 숫자만 입력해주세요" required></td>
+                  </tr>
+                  <tr>
+                    <th><label for="reser_number">예약자 연락처</label></th>
+                    <td><input type="text" id="reser_number" placeholder="예시)010-1111-1111" required>
+                    </td>
+                  </tr>
+                  <tr>
+                     <th><label>내원기록</label></th>
+                     <td>
+                        <label for="first visit">초진</label>
+                         <input type="radio" id="first visit" name="recode" required>
+                         <label for="re_visit">재진</label>
+                         <input type="radio" id="re_visit" name="recode" required>
+                    </td>
+                  </tr>
+                  <tr>
+                     <th><label for="re_text">예약내용</label></th>
+                     <td><textarea id="re_text">아프신 부위 및 증상을 남겨주세요.예약내용을 남겨주시면 연락처로 상담전화를 드립니다.</textarea></td>
+                  </tr>
+                  <tr>
+                     <th colspan="2"><input type="checkbox" id="user_agree" required>
+                     <label for="user_agree">개인정보수집동의</label></th>
+                  </tr>
+              </table>
+                  <br>
+                     <input type="submit" value="온라인예약 신청하기">
+                     <input type="reset" value="취소">
+        </div>
+    </form>
+   
+</body>
+</html>
