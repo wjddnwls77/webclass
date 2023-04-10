@@ -1,0 +1,24 @@
+@font-face {
+    font-family:myfont ;
+    src: url(../font/koryung.ttf)
+}
+.myfont1{ font-family:myfont ;}
+
+@font-face {
+    font-family:myfont2 ;
+    src: url(../font/yangj.ttf)
+}
+.myfont2{ font-family: myfont2;}
+/* 띄어쓰기 포함이면 '' 써줘야함. 한글은 "" */
+@font-face {
+    font-family:"교보";
+    src: url(../font/Kyobo.ttf)
+}
+.myfont3{font-family:"교보";}
+@font-face {
+    font-family: 'KyoboHandwriting2021sjy';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KyoboHandwriting2021sjy.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+.myfont4{font-family:KyoboHandwriting2021sjy;}

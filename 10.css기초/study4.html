@@ -6,11 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>관계선택자</title>
     <style>
-       div.box p{color:orange;}
+       div.box p{color:red;}
        div>h2{color:blue;}
        .a~li{color:green;}
        .b+li{text-decoration:underline;}
-       div>ul .c{color:aqua;}
+       div .c{color:blueviolet;}
+       form>[for]{color:purple;}
+       [checked]+label{font-weight:bold;color:red;}
+       [class]{border:1px solid lawngreen;}
+       [class="box"]{border:1px solid orange}
+       input[type="text"]{background:red;color:white;}
+       ol>li:nth-of-type(9){color:lime;background:black;}
+       ol>li:last-of-type{color:red}
+       ol>li:nth-last-of-type(2n){border:2px solid gold;}
+       /* 2n-짝수 2n+1-홀수 3n-3배수 ... 다가능함(3n+1) 3으로 나눴을때 나머지가 1번째인 녀석들 */
 
        /* p 태그도 class=b 같이 적용할 수 없는가.할 수있음 => */
     </style>
@@ -53,6 +62,38 @@
         </ul>
         <p class="b">선택자부분에서 +를 사용하면 앞에 선택된 태그의 다음형제 하나만 선택한다.</p>
         <p>선택자부분에서 ~를 사용하면 앞에 선택된 태그의 다음형제 여러개를 선택한다.</p>
+    </div>
+
+    <div class="box">
+        <h2>속성선택자</h2>
+        <p>태그가 갖고 있는 속성을 사용하여 선택자를 구성할 수 있다.</p>
+        <form action="#">
+            <label for="userName">이름</label>
+            <input type="text" id="userName">
+            <label for="userPW">비밀번호</label>
+            <input type="password" id="userPW">
+            <input type="checkbox" checked id="autoLogin">
+            <label for="autoLogin">자동로그인</label>
+        </form>
+    </div>
+
+    <div class="box">
+        <h2>순번선택자</h2>
+        <p>태그가 갖고 있는 순서를 이용하여 선택할 수 있다.</p>
+        <p>nth-of-type()괄호 안에는 수식/절대값을 입력하여 선택할 수 있다.</p>
+        <p>태그명:last-of-type()/태그명:first-of-type을 통해 마지막과 첫번째를 선택할 수 있다.</p>
+        <ol>
+            <li>list1</li>
+            <li>list2</li>
+            <li>list3</li>
+            <li>list4</li>
+            <li>list5</li>
+            <li>list6</li>
+            <li>list7</li>
+            <li>list8</li>
+            <li>list9</li>
+            <li>list10</li>
+        </ol>
     </div>
 </body>
 </html>
