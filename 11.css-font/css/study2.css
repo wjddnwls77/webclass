@@ -9,7 +9,7 @@
     src: url(../font/yangj.ttf)
 }
 .myfont2{ font-family: myfont2;}
-/* 띄어쓰기 포함이면 '' 써줘야함. 한글은 "" */
+/* 띄어쓰기 포함이면"" 써줘야함. 한글은 "" */
 @font-face {
     font-family:"교보";
     src: url(../font/Kyobo.ttf)

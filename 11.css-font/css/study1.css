@@ -4,15 +4,20 @@ h1{font-size:5rem;}
 .a{font-size:1.15em;}
 /* 브라우저들 마다 조금씩 차이가 있지만 기본적으로 16픽셀의 크기로 설정되어 있다. 
 1rem - html태그에 적용된 글씨 크기
+ex.(5rem =html에 적용된 글씨 크기(16px) X 5rem= = 80px)
 1em - 부모태그에 적용된 글씨 크기
+ex.(2rem X16px=32px / 부모:32px a자식 : 32X1.15em)
 */
 .b{font-weight:600;}
 /*
-키워드 방식- nomal(기본값)/ lighter(얇게)bold(두껍게) 
+.b{font-weight:bold}
+
+키워드 방식- nomal(기본값)/ lighter(얇게)/bold(두껍게) 
 수치입력 방식- 100~900까지 100단위로 
 100,200,300....,900
 수치가 높을 수록 굵어진다.
 */
+
 .c{font-style:italic;}
 /* 
 기본값(normal)
@@ -23,9 +28,10 @@ h1{font-size:5rem;}
 }
 /* 
 line-height 글씨를 감싸는 보이지 않는 라인의 높이를 의미하며, 기본적으로 글씨의 크기에 비례하여 120% 비율로 설정되어 있다.%단위는 단위 없이 정수로 소수점과 함께 사용하여 표현 할 수 있다.232%->2.32 */
+
 .e{font-family:dotum;"돋움",sans-serif;}
 /* 
-font-Family의 속성값은 콤마를 사용하여 브라우저에 설치가 되어 있지 않은 폰트들에 대하여 다음 대안이 될 폰트를 설정할 수 있다. 
+font-Family의 속성값은 콤마를 사용하여 브라우저에 설치가 되어 있지 않은 폰트들에 대하여 다음 대안이 될 폰트를 설정할 수 있다. sans=not
 
 시스템폰트는 모든 브라우저에 설치되어 있다. 
 serif -> 획이 있는 명조체 계열의 시스템 폰트
@@ -40,11 +46,14 @@ none(기본값-꾸밈이 없음)/ underline(밑줄)/linethrough(취소선)
 .h{letter-spacing:1rem;}
 .i{word-spacing:20px;}
 .j{word-break:keep-all;}
+/*줄이 바뀔때 keep-all 단어를 쪼개지않음 brak-all 단어를 쪼갬 */
 .k{white-space:nowrap;}
 /* normal(기본값)/nowrap(줄바꿈허용X) */
 .l{text-align:justify;}
 /* 
-left(기본값)/right/center/justify(양쪽정렬-왼쪽과 오른쪽 가장자리 라인에 텍스트를 맞추는것을 우선적으로 처리함)
+left(기본값)/right/center/justify(양쪽정렬-왼쪽과 오른쪽 가장자리 라인에 텍스트를 맞추는것을 우선적으로 처리함.
+양쪽정렬로 했을때 단어와 단어 사이의 간격을 맞출 수 있을까?
+=> X )
  */
  .m{text-transform:capitalize;}
  /* uppercase(대문자로변형)/lowercase(소문자로변형)/capitalize(앞글지만 대문자) */
