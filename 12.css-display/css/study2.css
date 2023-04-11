@@ -1,0 +1,18 @@
+html{
+    width:auto
+}
+/* 쓰지않아도 자동으로 지정되어있음. 사용자의 쓰임에 따라서 자동으로 줄어들고 늘어남. 상속이 됨 body 태그도 auto이다. */
+.boxa{
+    border:10px solid red;
+    width:500px;
+    box-sizing:content-box;
+    /* 기본값: width/height를 지정하였을 때 안쪽의 컨텐츠가 입력되는 컨텐트 박스의 크기를 변형한다. */
+}
+/* width 은 테두리를 포함한 너비가 아니다.  */
+h2{border:1px solid blue;}
+
+.boxb{
+    border:10px solid green;
+    width:500px;
+    box-sizing:border-box;
+}
