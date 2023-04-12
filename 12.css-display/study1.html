@@ -31,11 +31,13 @@
         <p>포함되는 컨텐츠의 양만큼 공간을 차지하는 형태</p>
         <p>포함하는 컨텐츠의 양만큼 공간을 차지하기 때문에 줄바꿈 되지 않고 나란히 배치 될 수 있다.</p>
         <p>라인형태이기 때문에 가로와 세로사이즈를 지정해도 변화가 없다.</p>
+        <!-- 인라인 레벨 태그에는 content-box 적용할 수 없다. -->
         <p>
             span,i,em,strong,b,sub,sup,a,input,lable,...
         </p>
         <span>span태그</span>
         <span class="line">span태그 Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium culpa reiciendis voluptatibus a optio ullam sit. Consectetur excepturi odio dolor neque quia exercitationem quas eius asperiores libero? Illo, unde eveniet?</span>
+        
         <h2>inline-block - 인라인블록레벨태그</h2>
         <p>display:inline-block; 으로 설정되어 있음.</p>
         <p>블록레벨과 인라인레벨 특징을 반반 섞은 형태</p>
@@ -46,9 +48,15 @@
         </p>
         <input type="text">
         <select name="" id="">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
+            <option>section1</option>
+            <option>section2</option>
+            <option>section3</option>
         </select>
+        <ul class="listbox">
+            <li>list1</li>
+            <li>list2</li>
+            <li>list3</li>
+        </ul>
+
 </body>
 </html>

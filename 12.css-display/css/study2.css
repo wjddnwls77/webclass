@@ -15,4 +15,11 @@ h2{border:1px solid blue;}
     border:10px solid green;
     width:500px;
     box-sizing:border-box;
+    /* 박스의 너비 기분이 테두리까지 합쳐짐. */
+}
+.box3{
+    width:300px;
+}
+.box3>h3{
+    border:1px solid red;
 }

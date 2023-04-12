@@ -18,3 +18,7 @@ h3{
 blockquote{
     text-align:center;
 }
+.container{
+    width:1000px;
+    margin:0 auto
+}
