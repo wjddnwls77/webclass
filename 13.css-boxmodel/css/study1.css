@@ -24,10 +24,10 @@
      border:10px solid red; 
     /* 방향을 설정하지않으면 사방에 그려지게됨. */
 
-    padding-left:30px;
+    /* padding-left:30px;
     padding-right:30px;
     padding-top:30px;
-    padding-bottom:30px;
+    padding-bottom:30px; */
     padding:30px;
 
     margin-left:50px;
