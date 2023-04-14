@@ -1,0 +1,39 @@
+*{
+    margin:0;padding:0;
+}
+.box{
+    margin:0 auto;
+    width:800px;
+    height:600px;
+    padding:40px;
+    border:1px solid red;
+    /* background-color:pink;
+    background-image:url("../img/otter-gb5e41dcb1_640.jpg");
+    background-repeat:no-repeat;
+    background-position:100px 100px; */
+    /* 띄어쓰기로 x,y 좌표를 입력 */
+    /* 축약형표현 */
+    background:pink url("../img/otter-gb5e41dcb1_640.jpg") no-repeat 100px 100px;
+}
+.box2{
+    width:1000px;
+    height:800px;
+    border:1px solid blue;
+    margin:0 auto;
+    /* background:url("../img/otter-gb5e41dcb1_640.jpg") no-repeat right bottom; */
+    background:url("../img/otter-gb5e41dcb1_640.jpg") no-repeat calc(100% - 100px) calc(100% - 50px);
+}
+.box2>h2{
+    border:1px solid orange;
+    width:clac(50% + 50px);
+   
+}
+.box3{
+    width:800px;
+    height:800px;
+    border:1px solid purple;
+    margin:0 auto;
+    background:url("../img/otter-gb5e41dcb1_640.jpg") no-repeat 0 0;
+    background-size:100% auto;
+
+}
