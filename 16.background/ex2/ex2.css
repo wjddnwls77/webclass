@@ -1,0 +1,40 @@
+
+*{margin:0; padding:0;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:normal;}
+address,em,i{font-style:normal;}
+strong,b{font-style:normal;}
+a{text-decoration:none;color:inherit;}
+
+body{
+    font-family:'Noto Sans kr';
+    font-size:20px;
+}
+.container{
+    margin:0 auto;
+    border:1px solid red;
+    width:980px;
+    
+}
+.container>p{
+    margin-bottom:35px;
+}
+
+.container>.a{
+    font-size: 22px;
+    font-weight:bold;
+    padding-top: 40px;
+}
+.container>.b{
+    font-weight:bold;
+    margin-top: 100px;
+}
+@font-face {
+    font-family:Pulmuone ;
+    src: url(./PulmuoneLOHASBold.woff)
+}
+.container>.c{
+    font-size: 30px;
+    font-family:Pulmuone ;
+    margin-top:70px;
+}
+    
