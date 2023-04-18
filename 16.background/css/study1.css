@@ -53,8 +53,8 @@
     width:50vw;
     height:50vw;
     margin:0 auto;
-    background-image:linear-gradient(45deg,magenta,yellow);
-    /* radial-gradiant*/
+    background-image:linear-gradient(45deg,magenta,yellow,blue);
+    /* radial-gradiant-원형그라디언트 linear-gradient-선형그라디언트*/
     /* background-repeat과 position, size는 정상적으로 적용되지않음. */
 }
 .box6{

@@ -1,0 +1,52 @@
+*{margin:0; padding:0;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:normal;}
+address,em,i{font-style:normal;}
+strong,b{font-style:normal;}
+a{text-decoration:none;color:inherit;}
+
+@font-face {
+    font-family:"풀무원폰트";
+    src: url(./예제2/PulmuoneLOHASBold.woff);
+}
+
+img{
+    width:1920px;
+    height:250px;
+}
+.container{
+    width:1200px;
+    margin:0 auto;
+    text-align:center;
+}
+.container>.title{
+    margin-top:50px;
+    margin-bottom:50px;
+}
+.container h4{
+    font-size:30px;
+    text-align:left;
+    background: url(./예제2/sub_tit_line.gif)repeat-x center;
+}
+
+.container h1{
+    font-size:52px;
+    font-family:"풀무원폰트";
+    margin-top:100px;
+    padding:0 70px;
+}
+.container>.main{
+    background:#f4f4f4;
+    font-size: 20px;
+    padding:90px 40px ;
+    box-sizing:809px;
+    margin:0 auto;
+}
+
+.container h3{
+    font-size:35px;
+    font-family:"풀무원폰트";
+}
+.container p{
+    margin-top:25px;
+    margin-bottom:30px ;
+}

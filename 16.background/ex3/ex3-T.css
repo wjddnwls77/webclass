@@ -1,0 +1,63 @@
+/* common style */
+html{
+    font-size:20px;
+    font-family: 'Noto Sans KR', sans-serif;}
+
+/* layout */
+.banner{
+    height: 250px;
+    margin-bottom: 50px;
+    overflow: hidden;
+    /* block label 태그이기때문에 너비지정X */
+}
+.container{
+    /* border:1px solid red; */
+    /* 테두리그리기-배치확인 */
+    width: 1200px;
+    margin:0 auto
+}
+.container>h2{
+    /* border: 1px solid blue; */
+    font-size: 30px;
+    font-weight: bold;
+    background:url(./예제2/sub_tit_line.gif) repeat-x 0 50%;
+    margin-bottom:100px;
+}
+.container>h2>span{
+    /* border:1px solid red; */
+    background:white;
+    padding-right:18px;
+}
+.container>h3{
+    font-size: 52px;
+    /* border:1px solid red; */
+    font-family:"풀무원폰트";
+    text-align:center;
+    padding:0 70px;
+    margin-bottom:50px;
+}
+.container>h3>span{
+   color:#7eae4b;
+}
+
+.container section{
+    /* border:1px solid red ; */
+    width: 810px;
+    padding:40px 90px 50px; 
+    background:#f4f4f4;
+    margin:0 auto;
+    box-sizing: border-box;
+    text-align: center;
+}
+.container h4{
+    font-family:"풀무원폰트";
+    font-size: 35px;
+    margin:25px;
+}
+.container>section>h4+p{
+    margin-bottom:30px;
+} 
+@font-face {
+    font-family:"풀무원폰트";
+    src: url(./예제2/PulmuoneLOHASBold.woff);
+}

@@ -9,10 +9,10 @@ html{
     font-size: 20px;
     font-family: 'Noto Sans KR', sans-serif;
 }
+/* html사용이유 -글씨 수정에 용이.  */
 
 /* layout 크기,배치 */
 .container{
-    border:1px solid red;
     width:980px;
     margin:0 auto;
 
@@ -39,5 +39,5 @@ html{
 
 @font-face {
     font-family:'pulmuone';
-    src: url(../ex2/PulmuoneLOHASBold.woff);
+    src: url(./PulmuoneLOHASBold.woff);
 }
