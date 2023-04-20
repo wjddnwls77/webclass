@@ -1,0 +1,113 @@
+/* reset */
+*{margin:0;padding:0;}
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: normal;}
+b,strong{font-weight: normal;}
+i,em,address{font-style: normal;}
+a{color:inherit;text-decoration: none;}
+ul,ol {list-style: none;}
+
+/* common style */
+html{
+    font-size: 12px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* layout (대략적인 레이아웃-크기와 배치)*/
+/* 큰영역 -> 작은영역 */
+.container{border: 1px solid red;
+    width: 820px;
+    margin:0 auto;
+}
+/* 부 : container */
+header{border-bottom:3px solid blue;margin:16px;}
+main{border:1px solid orange;margin-bottom:50px;}
+footer{ }
+
+/* detail */
+
+/*************************** header***************************/
+header{
+    padding-top:12px;
+    padding-bottom: 5px;
+}
+header h1{
+    margin-bottom: 5px;
+}
+header p{
+    font-style: italic;
+    color:gray
+}
+/*************************** main***************************/
+main h3{
+    font-size:2rem;
+    font-weight: bold;
+}
+main form{
+    border:1px solid #ddd;
+    background: #eeeeee;
+    /* 가산혼합-밝아짐 rgb #efefefef #eeeeee=#eee*/
+    /* 16진수 색상 표현법에서 똑같은 문자가 6개가 반복된다면 3자리로 줄여서 표현할 수 있다.  */
+    padding: 6px;
+    margin-bottom: 10px;
+}
+main form *{vertical-align: middle;}
+/* 메인태그안 자손태그 폼 안에 *모든태그 선택하겠다. */
+
+.nation{
+    border:1px solid green;
+}
+.nation>section{
+    /* border: 1px solid red;
+    box-sizing: border-box; */
+    width: calc((100% - 40px)/3);
+    float:left;
+    /* float를 사용하여 공중에 띄우게 되면 암묵적으로 (자동으로) diplay: line-block 으로 변한다. */
+    margin-right:20px;
+}
+.nation>section:last-of-type{margin-right: 0px;}
+.nation:after{content: "";display: block;clear:both;}
+
+.nation>section>h4{
+    border-bottom:1px solid #ccc;
+    padding-bottom:4px;
+    margin-bottom:6px;
+}
+
+.nation>section>ul{}
+.nation>section>ul>li{
+    border: 1px solid red;
+    margin-bottom: 20px;  
+}
+.nation>section>ul>li:last-of-type{margin-bottom:0px;}
+.nation>section>ul>li>img{
+    float:left;
+    margin-right: 10px;}
+
+.nation>section>ul>li:after{content: "";display: block;clear:both;}
+
+/* .txtFrame{
+    float: left;
+}
+.imgFrame{
+    float: left ;
+} */
+
+/*************************** footer***************************/
+footer{
+    border:1px solid #ddd;
+    background: #eee;
+    padding:6px;
+}
+.fLeft{float:left;}
+.fRight{float:right;}
+footer:after{content: "";display: block;clear:both;}
+
+footer dl>*{float: left;margin-right: 10px;}
+footer dl>dt{font-weight: bold;}
+footer dl>dd{color: navy;}
+footer dl>dd:nth-of-type(3),
+footer dl>dd:nth-of-type(4){border-left:1px solid #ccc;padding-left: 10px;}
+footer dl:after{content: "";display: block;clear:both;}
+.copy{margin-top:10px;color:gray;}
+.bcf{color:navy;}
+.fRight>*{vertical-align:middle;}

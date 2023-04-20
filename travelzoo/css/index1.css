@@ -1,0 +1,62 @@
+*{margin:0; padding:0;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:normal;}
+address,em,i{font-style:normal;}
+strong,b{font-style:normal;}
+a{text-decoration:none;color:inherit;}
+ul{list-style: none;}
+
+html{
+    font-size: 12px;
+    font-family: 'Noto Sans KR', sans-serif;
+    
+}
+.all{
+    width: 820px;
+    margin:0 auto; 
+}
+
+.all>.mainlogo{
+    border-bottom: 3px solid blue;
+    font-style: italic;
+}
+.all h2{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.all h3{
+    font-weight: bold;
+    border-bottom: 1px solid gray;
+}
+
+.nation{
+    background: gainsboro;
+    width: 820px;
+}
+.nation>section{
+    float: left;
+
+}
+
+
+.nation .box1{float:left; width: calc(100%/3);}
+.nation .box2{float:left; width: calc(100%/3)}
+.nation .box3{float:left; width: calc(100%/3)}
+.nation:after{content:"";display: block;clear: both;}
+/* width: calc((100%-10px)/3); */
+
+footer{
+    background: pink;
+    width: 820px;
+}
+footer>.left{
+    float: left;
+}
+footer>.right{
+
+    float:right;
+}
+footer:after{content:"";display: block;clear: both;}
+
+
+

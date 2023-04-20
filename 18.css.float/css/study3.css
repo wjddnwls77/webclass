@@ -47,7 +47,7 @@
     font-size: 5rem;
     float:right
     /* width:calc(33.333% - (40px/3)); */
-    /* width:calc((100%-40px)/3 */
+    /* width:calc((100%-40px)/3) */
     /* width:calc(100%/3-40px/3) */
 
 }
@@ -94,3 +94,4 @@ margin-top:20px;clear:both;float:none;}
 .box5 .s3{background:green;margin-right: 20px;}
 .box5 .s4{background:orange;height:200px;}
 .box5:after{content:"";display:block;clear:both;}
+
