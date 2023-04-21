@@ -1,0 +1,70 @@
+*{margin:0;padding:0;}
+
+.box{
+    width: 600px;
+    height: 700px;
+    margin:0 auto;
+    background: pink;
+    font-size: 5rem;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* flex-wrap:wrap;
+    align-content:center; */
+    /* flex-wrap: wrap; */
+}
+
+/* .box>div{
+    flex-basis:100px; 
+    width: 100px;*/
+
+.box>div{
+    /* flex-basis:100px;
+    flex-grow:1;
+    flex-shrink: 1; */
+    flex:1;
+    /* 축약형: flex-basis:0%
+    flew-grow:1;
+    flew-shrink:1;*/
+}
+
+
+
+/* justify => 메인축 , align => 수직축  */
+
+/* 부모태그한테 display : flex; 부모와자식의 관계안에서 형성이된다.*/
+
+/* .box>div{
+    width: 200px;
+    height: 200px;
+}
+.box>div:last-of-type{margin-right:0px;} */
+
+/* .box>div{
+    float: left;
+}
+.box::after{content: "";display: block;clear: both;} */
+
+.box .a{
+    background:red;
+    /* flex-grow: 2; 80px 을가져감  */
+    /* flex-shrink: 2; */
+    /* order:0;
+    align-self:flex-end; */
+    
+}
+.b{
+    background:green;
+    /* order:1; */
+
+}
+.c{
+    background:blue;
+    /* order:3; */
+}
+.d{
+    background:orange;
+    /* order:2; */
+}

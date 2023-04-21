@@ -1,0 +1,84 @@
+*{margin:0;padding:0;}
+/* ----------------기본---------------- */
+/* .box{
+    width: 900px;
+    height: 900px;
+    background:pink;
+    margin:0 auto;
+}
+    
+    
+
+.box>section{
+    border:1px solid black;
+   font-size: 4rem;
+} */
+
+/* ----------------예제1---------------- */
+/* .box{
+    width: 900px;
+    height: 900px;
+    background:pink;
+    margin:0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.box>section{
+    border:1px solid black;
+    font-size: 4rem;
+     flex-basis:100px;  
+    flex: 1;
+}*/
+
+
+/* ----------------예제2---------------- */
+/* .box{
+    width: 900px;
+    height: 900px;
+    background:pink;
+    margin:0 auto;
+    display: flex;
+    flex-wrap:wrap;
+}
+    
+    
+
+.box>section{
+    border:1px solid black;
+    font-size: 4rem;
+    box-sizing: border-box;
+    width: 450px;
+     flex-basis:50% 
+    flex-grow: 1;
+}*/
+
+/* ----------------예제3---------------- */
+
+.box{
+    width: 900px;
+    height: 900px;
+    background:pink;
+    margin:0 auto;
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    justify-content: space-between;
+   /* align-content: space-between; */
+
+
+}
+.box>section{
+    border:1px solid black;
+   font-size: 4rem;
+   box-sizing: border-box;
+   width:calc((100% - 60px)/3);
+   /* height:calc((100% - 60px)/3); 보통은 높이를 정하지 않음 auto 상태유지 . */
+   margin-bottom:30px;
+}
+
+.box>section:nth-of-type(7),
+.box>section:nth-of-type(8),
+.box>section:nth-of-type(9){
+    margin-bottom: 0;
+}
