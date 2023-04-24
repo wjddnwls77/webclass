@@ -5,23 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>나야나비지니스</title>
-  <link rel="stylesheet" href="./css/index1.css">
+    <link rel="stylesheet" href="./css/index-T.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-    <!-- header(머릿말)와 footer(꼬릿말)는 <div class=""></div>태그와 같다. -->
-    <!-- <div class="nav">두 개 이상의 영역이 들어갈 때 사용하는태그. nav태그사용</div> -->
-    <!-- <div class="banner"> figure 태그 사용 ->이미지 또는 비디오 전용태그</div> -->
-    <!-- <div></div>
-        <div></div>
-        <div></div> --> 
-        <!-- div 태그가 중첩되는경우 자식태그로<section>사용해 가독성을 좋게함. -->
-    <!-- <div class="main"></div> -->
-
-    <div id="all">
+    <div class="all">
         <header>
             <div class="logo">
                 <h1>
@@ -29,11 +21,11 @@
                 </h1>
             </div>
             <nav>
-                <ul class="topmenu">
-                    <li><a href="#"><img src="./img (5)/t_m_home.gif" alt="homeLogo"></a></li>
-                    <li><a href="#"><img src="./img (5)/t_m_login.gif" alt="loginLogo"></a></li>
-                    <li><a href="#"><img src="./img (5)/t_m_join.gif" alt="joinLogo"></a></li>
-                    <li><a href="#"><img src="./img (5)/t_m_sitemap.gif" alt="sitemapLogo"></a></li>
+                <ul class="lnb">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">LOGIN</a></li>
+                    <li><a href="#">JOIN</a></li>
+                    <li><a href="#">SITEMAP</a></li>
                 </ul>
                 <ul class="gnb">
                     <li><a href="#">회사소개</a></li>
@@ -56,22 +48,25 @@
                 <section class="notice">
                     <h2>
                         <img src="./img (5)/m_tit_notice.gif" alt="뉴스 공지사항">
-                        <a href="#"><img src="./img (5)/more.gif" alt="더보기"></a>
+                        <a href="#" class="btnMore"><img src="./img (5)/more.gif" alt="더보기"></a>
                     </h2>
                    
-                    <ul> 
+                    <ul class="noticeList"> 
                         <li><a href="#">notice 1 <span>2011-02-21</span></a></li>
                         <li><a href="#">notice 2 <span>2011-02-20</span></a></li>
-                        <li><a href="#">notice 3 <span>2011-02-19</span></a></li>
+                        <li>
+                            <a href="#">notice 3 <span>2011-02-19</span>
+                            </a>
+                        </li>
                         <li><a href="#">notice 4 <span>2011-02-18</span></a></li>
                     </ul>
                   
                 </section>
-                <section class="quickMenu">
+                <section>
                     <h2>
                        <img src="./img (5)/m_tit_quick.gif" alt="빠른메뉴">
                     </h2>
-                        <ul>
+                        <ul class="quickList">
                           <li><a href="#"><img src="./img (5)/q_m1.gif" alt="상담문의게시판"></a></li>
                           <li><a href="#"><img src="./img (5)/q_m2.gif" alt="채용정보"></a></li>
                           <li><a href="#"><img src="./img (5)/q_m3.gif" alt="찾아오시는길"></a></li>
@@ -81,21 +76,23 @@
         </main>
     </div>
         <footer>
-            
-            <div class="flogo"><img src="./img (5)/logo_foot.gif" alt="나야나 로고"></div>
-           
-                <div class="corinfo">
-                    <ul class="din">
-                       <li><a href="#"><img src="./img (5)/f_priv.gif" alt="개인정보취급방침"></a></li>
-                       <li><a href="#"><img src="./img (5)/f_guide.gif" alt="이용약관"></a></li>
-                       <li><a href="#"><img src="./img (5)/f_sitemap.gif" alt="사이트맵"></a></li>
-                       <li><a href="#"><img src="./img (5)/f_email.gif" alt="이메일주소무단수집거부"></a></li>
-                    </ul>
-                
-                    <!-- address 태그와 p 태그 이용-->
-                    <address>(주)인터넷이나 주소 :서울특별시 금천구 가산동 60-11 스타밸리타워 11층/ 대표전화 : <a herf="0215777774">02-1577-7774</a>/ 팩스 : 02-852-4744 </address>
-                    <p>COPYRIGHT (C) NAYAZOEN CO.,LTD. ALL RIGHTS RESERVED.</p>
-                </div>
+            <div class="innerFooter">
+
+                <div class="f_left"><img src="./img (5)/logo_foot.gif" alt="나야나 로고"></div>
+
+                <div class="f_right">
+                        <ul class="footMenu">
+                           <li><a href="#"><img src="./img (5)/f_priv.gif" alt="개인정보취급방침"></a></li>
+                           <li><a href="#"><img src="./img (5)/f_guide.gif" alt="이용약관"></a></li>
+                           <li><a href="#"><img src="./img (5)/f_sitemap.gif" alt="사이트맵"></a></li>
+                           <li><a href="#"><img src="./img (5)/f_email.gif" alt="이메일주소무단수집거부"></a></li>
+                        </ul>
+                    
+                        <!-- address 태그와 p 태그 이용-->
+                        <address>(주)인터넷이나 주소 :서울특별시 금천구 가산동 60-11 스타밸리타워 11층/ 대표전화 : <a herf="0215777774">02-1577-7774</a>/ 팩스 : 02-852-4744 </address>
+                        <p>COPYRIGHT (C) NAYAZOEN CO.,LTD. ALL RIGHTS RESERVED.</p>
+                    </div>
+            </div>
          
             </section>
             </div>

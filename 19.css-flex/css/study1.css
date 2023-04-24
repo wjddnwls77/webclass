@@ -20,6 +20,10 @@
     flex-basis:100px; 
     width: 100px;*/
 
+    /* .box>div{
+        flex-basis:200px;
+        flex-shrink:1;
+    } */
 .box>div{
     /* flex-basis:100px;
     flex-grow:1;
