@@ -98,3 +98,9 @@ font-size: 0.9rem;}
 .footMenu{display: flex;margin-bottom: 8px;}
 .footMenu>li{margin-right: 20px;}
 .footMenu>li:last-of-type{margin-right: 0px;}
+
+/* F12 눌러서 css 창으로가면 컬러를 복사해서 원하는 위치(ctrl+G)에 넣을 수 있다. */
+
+/* display:flex;
+justify-content:center
+align-items:center */
