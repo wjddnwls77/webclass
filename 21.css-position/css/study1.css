@@ -1,0 +1,43 @@
+*{margin:0;padding:0;}
+
+.nextP{
+    background: blue;color:#fff;
+}
+.boxA{
+    border: 10px solid black;
+    position: relative;
+    /* 본인 태그가기준 */
+    /* 고의적으로 기준영역을 잡아줄 때 사용함. 떠있는 상태가 아님. */
+   /* bottom:100px; */
+}
+
+.boxB{
+    border:10px solid red;
+    position: absolute;
+    right:100px;
+    top:100px;
+    /* 현재 공중에 떠있는 상태 */
+    /* 다른 태그의 영역이 기준 */
+}
+
+.parent{
+    border:10px solid orange;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 100px;
+    bottom: 0;
+}
+
+/* body{
+    border: 1px solid red;
+    height: 1000vh;
+    position: relative;
+} */
+
+.boxC{
+    border: 10px solid green;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+}

@@ -4,9 +4,9 @@
     width: 300px;
     height: 300px;
     /* transition-property: width;
-    transition-duration: 2s;
+    transition-duration(얼마동안 그리겠다): 2s;
     transition-timing-function: linear;
-    transition-delay: 0s; */
+    transition-delay(얼마 뒤에 그리겠다): 0s; */
     transition:
      width 1s cubic-bezier(0.92, 0.13, 0, 0.98) 0s,
      height 1s linear 1s,
