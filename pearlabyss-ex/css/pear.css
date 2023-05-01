@@ -1,0 +1,138 @@
+/* reset */
+*{margin:0;padding:0;}
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: normal;}
+b,strong{font-weight: normal;}
+i,em,address{font-style: normal;}
+a{color:inherit;text-decoration: none;}
+ul,ol {list-style: none;}
+
+/* common */
+html{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.contents_wrap{
+    border: 5px solid red;
+    margin:0 auto;
+    width: 1440px;
+}
+
+
+/* **********header************************** */
+video{
+    position: relative;
+    left: 0;top:0;
+   height: 779px;
+   object-fit: cover;
+   width: 100%;
+   
+}
+
+.logoArea>h1>a>img{
+    width: 150px;
+    height: 50px;
+    object-fit: contain;
+}
+header{
+    position: relative;
+    z-index: 10;
+    bottom:779px;
+    border: 1px solid lime;
+    margin:0 auto;
+    height:50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow: hidden;
+    transition: all 0.5s ease 0s;
+    color: white;
+}
+header:hover{
+    height: 300px;
+    background:white;
+    color:black
+}
+
+.gnb>ul{
+    display: flex;
+    height: 50px;
+}
+
+.gnb>ul>li{
+    border:1px solid green;
+    text-align: center;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    font-weight: bold;
+}
+
+.gnb>ul>li>ul{
+    border:1px solid red;
+    position: absolute;
+    left: 0;top:50px;
+    width: 100%;
+}
+
+.langList>ul{
+    border:1px solid orange;
+    display: flex;
+    justify-content: space-between;
+}
+.langList>ul>li{
+    margin-right: 20px;
+    font-weight: bold;
+}
+.langList>ul>li:last-of-type{margin-right:0 ;
+}
+
+.mainBanner>h2{
+    border: 1px solid blue;
+    position: absolute;
+    left:50%;
+    top:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 120px;
+    margin-left:-120px;
+    margin-top:-60px; 
+}
+.mainBanner>a{
+    color:white;
+    border:1px solid red;
+    padding:10px 60px;
+    background-color:gray ;
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-left:-120px;
+    margin-top:80px; 
+    font-size: 10px;
+}
+
+/* **********news********************* */
+
+.news>section>ul{
+    border: 1px solid blue;
+    display: flex;
+}
+.news>section>ul>li{
+    border:1px solid green;
+    margin-right: 30px;
+}
+.news>section>ul>li:last-of-type{
+    margin-right: 0;
+}
+.news>section>h3{
+    font-weight: bold;
+}
+
+h4{
+    border:1px solid red;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
