@@ -22,12 +22,21 @@
     perspective: 600px;
     perspective-origin: 0% 0%;
 }
+/* persepctive = 입체적인 공간이 만들어진다.
+기본값이 50% 50% */
 /* .e{transform-origin:0% 50%;} */
 /* 애매하게 이동한다면 전속성에 transform-origin 을 넣어 주는 것이 좋다. */
 .e:hover{transform:scaleX(2);transform-origin:0% 50%;}
+
+/* transform-origin= 변형 기준좌표 */
 .f:hover{transform:scaleY(2);}
 .g:hover{transform:scale(1.5) ;}
+/* scale- 확대 , 축소 */
+
 /* .h{transform-origin:10% 10% ;} */
 .h:hover{transform: rotate(360deg);transform-origin:10% 10% ;}
 .i:hover{transform:rotateX(180deg);}
 .j:hover{transform: rotateY(180deg);}
+
+.k:hover{transform: skewX(30deg);}
+.l:hover{transform: skewX(30deg);}
