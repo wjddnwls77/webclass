@@ -109,7 +109,8 @@ header:hover .logoArea a{
     color:#777;
 }
 .gnb>ul>li>ul>li{
-    border:1px solid orange;margin-bottom: 10px;
+    /* border:1px solid orange; */
+    margin-bottom: 10px;
 }
 .gnb>ul>li>ul>li:hover{
     color:#000;
