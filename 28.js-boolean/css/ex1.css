@@ -1,0 +1,23 @@
+table{
+    border-collapse: collapse;
+}
+/* 셀태그 사이의 간격이 합쳐지면서 테두리가 붙게됨. 간격이 사라짐. */
+.gradeStyle{
+    /* border:1px solid red;  */
+    width: 500px;
+    margin: 0 auto;
+
+}
+.gradeStyle caption{font-size: 2rem;font-weight: bold;}
+.gradeStyle th{border:1px solid black;padding:5px 0; border-left: none;}
+.gradeStyle td{border:1px solid black;padding:5px 0;text-align: center;border-right: none;}
+
+.gradeStyle tr:last-of-type>th{
+    background: black;
+    color: white;
+}
+/* tr태그를 만들면 자동으로 tbody 태그를 만들기때문에 >자식태그를 사용하면 적용이 안됨. 브라우저 안에서는 손자가 됨. */
+.gradeStyle tr:last-of-type>td{
+    background: black;
+    color: white;
+}

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>성적표예제</title>
+    <link rel="stylesheet" href="./css/ex1.css">
 </head>
 <body>
     <h1>퀴즈</h1>
@@ -17,14 +18,48 @@
                    이라는 정보를 body 태그에 필기하는 소스코드를 만들어 보시오.
         답안예시) [정우진]님의 평균점수는 90점이며 A등급 입니다.
     </p>
+    
     <script>
         let name=prompt("이름을 입력하시오")
         let ko =Number(prompt("국어 점수를 입력하시오"))
         let eg =Number(prompt("영어 점수를 입력하시오"))
         let ma =Number(prompt("수학 점수를 입력하시오"))
         let scoreAver = (ko+eg+ma)/3
-        let level = scoreAver>=90?"A":scoreAver>=80?"B":scoreAver>=70?"C":"D"
-        document.write("["+name+"]님의 평균점수는"+scoreAver+"이며 "+level+" 입니다.")
+        let level = scoreAver>=90?"A":
+                    scoreAver>=80?"B":
+                    scoreAver>=70?"C":"D"
+        document.write(`<table class="gradeStyle">
+        <caption>${name}님의 성적표</caption>
+        <tr>
+            <th>국어</th>
+            <td>${ko}점</td>
+        </tr>
+        <tr>
+            <th>영어</th>
+            <td>${eg}점</td>
+        </tr>
+        <tr>
+            <th>수학</th>
+            <td>${ma}점</td>
+        </tr>
+        <tr>
+            <th>총합</th>
+            <td>${ ko+eg+ma}점</td>
+        </tr>
+        <tr>
+            <th>평균</th>
+            <td>${scoreAver}점</td>
+        </tr>
+        <tr>
+            <th>등급</th>
+            <td>${level}</td>
+        </tr>
+        
+    </table>`)
+       
+    // document.write("["+name+"]님의 평균점수는"+scoreAver+"이며 "+level+" 입니다.")
+
     </script>
+   
 </body>
 </html>
