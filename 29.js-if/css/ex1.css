@@ -1,0 +1,22 @@
+table{
+    border-collapse: collapse;
+}
+
+.gradeStyle{
+    /* border:1px solid red;  */
+    width: 500px;
+    margin: 0 auto;
+
+}
+.gradeStyle caption{font-size: 2rem;font-weight: bold;}
+.gradeStyle th{border:1px solid black;padding:5px 0; border-left: none;}
+.gradeStyle td{border:1px solid black;padding:5px 0;text-align: center;border-right: none;}
+
+.gradeStyle tr:last-of-type>th{
+    background: black;
+    color: white;
+}
+.gradeStyle tr:last-of-type>td{
+    background: black;
+    color: white;
+}
