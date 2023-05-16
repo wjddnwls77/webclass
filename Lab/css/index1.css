@@ -9,14 +9,14 @@ ul,ol {list-style: none;}
 /* common */
 html{
     font-size:14px ;
-    font-family: 'Noto Sans KR', sans-serif;
+    /* font-family: 'Noto Sans KR', sans-serif; */
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
 }
 
 @font-face {
-    font-family: 'Orelega One', cursive;
-    src: url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+    font-family: "stencil";
+    src: url("../font/stencilla.ttf");
 }
-
 
 /* header */
 
@@ -25,6 +25,8 @@ header{
     display: flex;
     justify-content:space-between;
     align-items: center;
+    font-family: "stencil";
+    
 }
 header::before{content: "";}
 
@@ -59,8 +61,8 @@ nav>i{
  /* ***********about*********** */
 
  .about{
-    border:1px solid blue;
-    margin-bottom: 200px;  
+    border:1px solid red;
+    width: 100%;  
     position: relative;
     top: 50%;
  }
@@ -71,7 +73,7 @@ nav>i{
  .about>.men{
     border:1px solid blue;
     position: absolute;
-    left: 47%;
+    left: 46%;
     top:46%;
     transform: translateY(-50%);
     z-index: 1;
@@ -80,8 +82,9 @@ nav>i{
 
 .about>h2{
     border:1px solid aqua;
+    font-family: "stencil";
     text-transform: uppercase;
-    font-size: 5.5rem;
+    font-size: 5rem;
     color: #133647;
     position: absolute;
     top: 70px;
@@ -180,10 +183,15 @@ nav>i{
 .skinSolution{
     border:1px solid aqua;
     color: #133647;
+    background: url(../img/skin.png) no-repeat
+    center center;
+    background-size: cover;
     position: relative;
     width: 100%;
+    height: 970px;
     margin-bottom: 350px;
 }
+
 .skinSolution>h2{
     border:1px solid red;
     font-size: 3.8rem;
@@ -234,22 +242,29 @@ nav>i{
     font-size: 2rem;
 }
 .skinSolution>h3{
-    border:1px solid orange;
-    padding:60px 0;
+    /* border:1px solid orange; */
+    padding-top:60px;
+    padding-bottom: 20px;
     font-size: 2rem;
     font-weight: 300;
     text-align: center;
     letter-spacing:10px;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%); 
 }
 .skinSolution>h3::before{
     content: "";
     background: #52838e;
-    height:290px ;
+    height:270px ;
     width: 1px;
     position: absolute;
     left: 50%;
     top: 100%;
+    transform: translateX(-50%); 
 }
+
 
 /* skinMenu */
 .skinMenu{
@@ -262,110 +277,59 @@ nav>i{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: relative;
     margin-bottom:280px ;
     width: 100%;
     height: 970px;
 }
-
-/* .skinOne::after{
-    content: "";
-    background: #234249;
-    width: 340px;
-    height: 340px;
-    border-radius: 340px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 200px;
+.skinProduct{
+    position:relative;
+}
+.skinProduct:after{
+    content:"";
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    width:380px;
+    height:380px;
+    background:#2c4b5d;
+    border-radius: 50%;
     z-index: -1;
 }
-.skinOne>.skinProduct::after{
-    content: "";
-    background:  #234249;
-    width: 815px;
-    height: 0.5px;
-    position: absolute;
+.skinProduct::before{
+    content:"";
+    position:absolute;
+    left:180%;
     top:50%;
-    left:540px;
+    transform:translate(-50%,-50%);
+    width:840px;
+    height:1px;
+    background:#2c4b5d;
 }
-
-.skinOne img{
-    border:1px solid red;
-    width: 460px;
-    height: 710px;
-}
-
-.skinTwo::after{
-    content: "";
-    background: #6a8492;
-    width: 340px;
-    height: 340px;
-    border-radius: 340px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 200px;
-    z-index: -1;
-}
-.skinTwo>.skinProduct::after{
-    content: "";
-    background: #6a8492;
-    width: 815px;
-    height: 0.5px;
-    position: absolute;
+/* .skinProduct>img:after{
+    content:"";
+    position:absolute;
+    left:180%;
     top:50%;
-    right:540px;
+    transform:translate(-50%,-50%);
+    width: 12px;
+    height:12px;
+    border-radius: 50%;
+    background:#2c4b5d;
+} */
+
+.skinContents{
+    border: 1px solid red;
+    margin-right: 60px;
+    
 }
-
-.skinThree img{
-    border:1px solid red;
-    width: 307px;
-    height: 460px;
-}
-
-.skinThree::after{
-    content: "";
-    background: #9fadb8;
-    width: 340px;
-    height: 340px;
-    border-radius: 340px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 200px;
-    z-index: -1;
-}
-.skinTwo>.skinProduct::after{
-    content: "";
-    background: #6a8492;
-    width: 815px;
-    height: 0.5px;
-    position: absolute;
-    top:50%;
-    right:540px;
-}
-
-
-
-
-.skinContents>h3{
-    border:1px solid green;
-    font-size: 2.5rem;
-    font-weight: 500;
+.skinContents>h3{ 
+    font-size: 2rem;
+    font-weight: bold;
 }
 .skinContents>p{
-    border:1px solid green;
-    font-size: 1.9rem;
-    font-weight: 300;
+    /* border:1px solid red; */
+    font-size: 1.8rem;
 }
-.skinContents>a{
-    border:1px solid green;
-    font-size: 1.9rem
-}
-
- */
-
-
 
 footer{border:1px solid green;}
