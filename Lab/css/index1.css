@@ -296,9 +296,15 @@ nav>i{
     border-radius: 50%;
     z-index: -1;
 }
-.skinProduct.a:after{
+/* .skinProduct.Two:after{
+    background:#52838e;
+
+} */
+.skinProduct.Three:after{
     background:#9fadb8;
+
 }
+
 .skinProduct::before{
     content:"";
     position:absolute;
@@ -309,12 +315,12 @@ nav>i{
     height:1px;
     background:#2c4b5d;
 }
-/* .skinProduct>img:after{
-    content:"";
+/* .skinProduct>.deco:after{
+    /* content:"";
     position:absolute;
-    left:180%;
+    left:1400px;
     top:50%;
-    transform:translate(-50%,-50%);
+    transform:translateX(-50%,-50%);
     width: 12px;
     height:12px;
     border-radius: 50%;
