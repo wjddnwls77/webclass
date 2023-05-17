@@ -12,7 +12,7 @@ a{text-decoration: none;color: inherit;}
     position: relative;
 }
 .train{
-    width:calc(400%/2.5);
+    width:calc(400%/3);
     /* 슬라이드 갯수를 늘리고 싶을 경우 :기차의 너비를 보이길 원하는 
     슬라이드의 갯수로 나누면 된다.*/
     height: 100%;

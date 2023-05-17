@@ -65,6 +65,7 @@ nav>i{
     width: 100%;  
     position: relative;
     top: 50%;
+    margin-bottom: 280px;
  }
 .about>img{
     /* border:1px solid blue; */
@@ -73,7 +74,7 @@ nav>i{
  .about>.men{
     border:1px solid blue;
     position: absolute;
-    left: 46%;
+    left: 54%;
     top:46%;
     transform: translateY(-50%);
     z-index: 1;
@@ -103,20 +104,21 @@ nav>i{
 }
 /* ***********best*********** */
 .best{
-    border:1px solid blue;
+    border:3px solid blue;
     width: 1440px;
-    height: 900px;
+    height: 970px;
     margin: 0 auto;
     position: relative;
     margin-bottom: 200px;
+    overflow: hidden;
 }
 .best>h2{
-    border:1px solid  blue;
     font-size: 3.8rem;
     text-transform: uppercase;
     color: #133647;
     text-align: center;
-    height: 70px;
+    padding-bottom :40px;
+    border:1px solid lime;
 }
 .best>h2::after{
     content: "";
@@ -124,17 +126,28 @@ nav>i{
     height: 3px;
     background: #133647;
     position: absolute;
-    top: 90px;
+    top: 10%;
     left: 50%;
     transform: translateX(-50%);
-
 }
-.best>ul{
-    border:1px solid red;
+
+.bestTrain{
+    border:3px solid red;
+    width:calc(600%/3); 
     display: flex;
-    justify-content: space-between;
+}
+.bestTrain>li{
+    border:1px solid blue;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    padding:60px 60px 0 60px;
+    flex: 1;
+}
+.bestTrain>li>a>img{
+    border:1px solid lime;
+    width: 360px;
+    height: 450px;
+    object-fit: cover;
 }
 .best>ul::after{
     content: "";
@@ -145,16 +158,8 @@ nav>i{
     bottom:60px ;
     left: 60px;
 }
-.best>ul>li{
-    border:1px solid aqua;
 
-}
-.best>ul>li img{
-    border:1px solid orange;
-    width: 390px;
-    height: 600px;
-    object-fit: contain; 
-}
+
 .best>ul>li .productName{
     border: 1px solid red;
     text-align: center;
@@ -296,10 +301,10 @@ nav>i{
     border-radius: 50%;
     z-index: -1;
 }
-/* .skinProduct.Two:after{
-    background:#52838e;
+.skinProduct.Two:after{
+    background:#6a8492;
 
-} */
+}
 .skinProduct.Three:after{
     background:#9fadb8;
 
