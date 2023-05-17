@@ -117,8 +117,8 @@ nav>i{
     text-transform: uppercase;
     color: #133647;
     text-align: center;
-    padding-bottom :40px;
-    border:1px solid lime;
+    margin-bottom :120px;
+    /* border:1px solid red; */
 }
 .best>h2::after{
     content: "";
@@ -131,25 +131,29 @@ nav>i{
     transform: translateX(-50%);
 }
 
-.bestTrain{
-    border:3px solid red;
+.bestTrain>ul{
+    /* border:3px solid red; */
     width:calc(600%/3); 
     display: flex;
 }
-.bestTrain>li{
-    border:1px solid blue;
+.bestTrain>ul>li{
+    /* border:1px solid blue; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex: 1;
+    
 }
-.bestTrain>li>a>img{
-    border:1px solid lime;
+.bestTrain>ul>li>a>img{
+    /* border:1px solid lime; */
     width: 360px;
     height: 450px;
     object-fit: cover;
+    margin-bottom: 50px;
+    
 }
-.best>ul::after{
+/* 슬라이드  라인 div 안에 div 넣기 */
+.bestTrain>ul::after{
     content: "";
     width: calc(100% - 120px);
     height: 1px;
@@ -160,14 +164,14 @@ nav>i{
 }
 
 
-.best>ul>li .productName{
+.bestTrain>ul>li .productName{
     border: 1px solid red;
     text-align: center;
     padding: 10px 0;
     color: #133647;
     font-size: 2rem;
 }
-.best>.point{
+.point{
     border:1px solid orange;
     display: flex;
     justify-content:space-between ;
@@ -176,7 +180,7 @@ nav>i{
     transform: translateY(-50%);
     width: 100%;
 }
-.best>.point>img{
+.point>img{
     border:1px solid green;
     width: 60px;
     height: 60px;
