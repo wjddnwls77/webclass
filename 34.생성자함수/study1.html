@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>생성자함수</title>
+</head>
+<body>
+    <h1>생성자함수</h1>
+    <p>생성자함수란 객체를 생성하는 함수이다.</p>
+    <p>생성자함의 정의부 실행코드안에서 this 라는 표현을 통해 생성자함수로 인해 만들어지게 될 객체를 표현할 수 있다.</p>
+    <p>생성자 함수의 실행부 앞에 new 라는 키워드를 통해서 생성자함수로 인해 만들어지게 될 객체를 표현할 수 있다.</p>
+    <script>
+        let person1={
+            name:"정현진",
+            age:38,
+            sayHello:function(){
+                document.write("안녕하세요")
+            }
+        }
+        person1.sayHello()
+        document.write("<p>"+person1.name+"님은"+pseron1.age+"살 입니다.<p>")
+
+        let person2={
+            name:"이혁진",
+            age:25,
+            sayHello:function(){
+                document.write("안녕하세요")
+            }
+        }
+        person2.sayHello()
+        document.write("<p>"+person2.name+"님은"+pseron2.age+"살 입니다.<p>")
+
+        let person3={
+            name:"안지연",
+            age:26,
+            sayHello:function(){
+                document.write("안녕하세요")
+            }
+        }
+    </script>
+</body>
+</html>

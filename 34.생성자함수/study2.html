@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>생성자함수</title>
+    <script src="./js/person.js"></script>
+    <script src="./js/dog.js"></script>
+</head>
+<body>
+    <script>
+       let person1 = new Person("정현진",38)
+       person1.sayHello()
+       person1.inro()
+       let person2 = new Person("이혁진",25)
+       person2.sayHello()
+       person2.inro()
+       let person3 = new Person("안지연",26)
+       person3.sayHello()
+       person3.inro()
+    </script>
+    <h2>우리집강아지</h2>
+    <script>
+        let dog1 = new Dog("뽀삐",2)
+        let dog2 = new Dog("흰둥이",4)
+        let dog3 = new Dog("쓰나미",1)
+        let dog4 = new Dog("땡구",7)
+        dog1.say()
+        dog2.say()
+        dog3.say()
+        dog4.say()
+    </script>
+</body>
+</html>
