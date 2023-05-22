@@ -9,7 +9,6 @@ ul,ol {list-style: none;}
 /* common */
 html{
     font-size:14px ;
-    /* font-family: 'Noto Sans KR', sans-serif; */
     font-family: 'Spoqa Han Sans Neo', 'sans-serif';
 }
 
@@ -24,24 +23,32 @@ html{
 
 /* header */
 
+
 header{
-    border: 1px solid red;
     display: flex;
     justify-content:space-between;
     align-items: center;
     font-family: "stencil";
-    
+    width: 100%;
+    height: 50px;
+     padding: 10px 0px;
+    position: fixed;
+    background: #fff;
+    z-index: 1000;
+    border-bottom: 1px solid #9fadb8;  
 }
+
 header::before{content: "";}
 
 .mainLogo{
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     text-transform: uppercase;
     color: #133647;
+   
 }
 
 header>nav{
-    border:1px solid red;
+    /* border:1px solid red; */
     color: #133647;
     font-size: 1.5rem;
     margin-right: 20px;
@@ -52,12 +59,9 @@ nav>i{
 
 /* main */
 
-/* main{border:1px solid blue;} */
-
 .videoBanner video{
-    border:1px solid aqua;
+    /* border:1px solid aqua; */
     width: 100%;
-    height: 100%;
     object-fit: cover;
     margin-bottom: 200px;
 
@@ -65,50 +69,38 @@ nav>i{
  /* ***********about*********** */
 
  .about{
-    border:1px solid red;
+    /* border:1px solid red; */
     width: 100%;  
     position: relative;
-    top: 50%;
     margin-bottom: 280px;
  }
 .about>img{
-    /* border:1px solid blue; */
     padding-top:120px;
 }
  .about>.men{
-    border:1px solid blue;
+    /* border:1px solid blue; */
     position: absolute;
     left: 48%;
     top:46%;
     transform: translateY(-50%);
     z-index: 1;
     color:#fff;
+   
 }
 
-/* .about>h2{
-    border:1px solid aqua;
-    font-family: "stencil";
-    text-transform: uppercase;
-    font-size: 5rem;
-    color: #133647;
-    position: absolute;
-    top: 70px;
-    left:134px;
-    z-index: 1;
-} */
 .about h5{  
     font-size: 3rem;
-    font-weight: bold;
+    font-weight:400;
     margin-bottom:25px ;
 }
 .about p{
      font-size: 1.7rem;
-     font-weight: lighter;
+     font-weight: 300;
      padding:10px 0;
 }
 /* ***********best*********** */
 .best{
-    border:3px solid blue;
+    /* border:3px solid blue; */
     width: 1440px;
     height: 970px;
     margin: 0 auto;
@@ -122,7 +114,6 @@ nav>i{
     color: #133647;
     text-align: center;
     margin-bottom :120px;
-    /* border:1px solid red; */
 }
 
 .best>h2::after{
@@ -147,6 +138,7 @@ nav>i{
     justify-content: center;
     align-items: center;
     flex: 1;
+
 }
 .bestTrain>ul>li>a>img{
     /* border:1px solid lime; */
@@ -175,7 +167,7 @@ nav>i{
 }
 
 .bestTrain>ul>li .productName{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     text-align: center;
     padding: 10px 0;
     color: #133647;
@@ -200,7 +192,7 @@ nav>i{
 /* skinSolution */
 
 .skinSolution{
-    border:1px solid aqua;
+    /* border:1px solid aqua; */
     color: #133647;
     background: url(../img/skin.png) no-repeat
     center center;
@@ -212,7 +204,7 @@ nav>i{
 }
 
 .skinSolution>h2{
-    border:1px solid red;
+    /* border:1px solid red; */
     font-size: 3.8rem;
     text-transform: uppercase;
     text-align: center;
@@ -287,19 +279,22 @@ nav>i{
 
 /* skinMenu */
 .skinMenu{
-    border:1px solid red;
+    /* border:1px solid red; */
     width: 1440px;
     margin: 0 auto;
     margin-bottom: 280px;
 }
+.skinMenu>.skinList{
+     list-style-type: decimal;
+    
+}
 .skinMenu>ol>li{
-    border:1px solid green;
+    /* border:1px solid green; */
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-bottom:280px ;
     width: 100%;
-    height: 970px;
+    height: 800px;
 }
 .skinMenu>ol>li:last-of-type{
     margin-bottom: 0;
@@ -361,6 +356,16 @@ nav>i{
     /* border: 1px solid lime; */
     margin-right:84px;
     margin-top: 152px;
+    position:relative;
+}
+.sc1:before {
+    position: absolute;
+    left: -120px;
+    top: -113px;
+    content: "01";
+    border: 1px solid red;
+    font-size: 7rem;
+    color: #133647;
 }
 .skinContents>h3{ 
     /* border:1px solid blue; */
@@ -405,7 +410,6 @@ nav>i{
 
 /* 랩시리즈 공식몰 event */
 .event{
-    border:1px solid red;
     width: 100%;
     height:970px;
     margin: 0 auto;
@@ -451,8 +455,6 @@ nav>i{
     margin-left: 20px;
 }
 
-
-
 /* **********train1 ************/
 .eventTrain li>img.review{
     position: relative;
@@ -474,10 +476,10 @@ nav>i{
     top:-5%;
 }
 .eventTrain li>.bannerImg>img.bannerOne{
-    height: 560px;
-    width: 380px;
+    height: 500px;
+    width: 320px;
     object-fit: cover;
-    transform:rotate(-32deg); 
+    transform:rotate(-30deg); 
 }
 .eventTrain li>.bannerImg>img.bannerTwo{
     left: 63%;
@@ -660,39 +662,62 @@ nav>i{
 
 /* ***************************** */
 footer{
-    border:1px solid green;
     width: 1440px;
     margin: 0 auto;
     font-size: 1.5rem;
+    margin-bottom: 100px;
 }
 .footerTop{
-    border:1px solid red;
+    border-bottom:1px solid #999;
     display: flex;
     justify-content: space-between;
     position: relative;
 }
+
 .footerTop ul{
     display: flex;
 }
 .footerTop ul>li{
     margin-right: 28px;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
+    font-weight: 500;
 }
+
 .footerTop ul>li:last-of-type{
     margin-right:0;
 }
-.footerTop ul>li::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    top:100%;
-    width: 1440px;
-    height: 1px;
-    background: #9fadb8;
-}
+
 .footerBottom{
-    border:1px solid red;
+    /* border:1px solid red; */
     display: flex;
     justify-content: space-between;
-    
+    margin-top: 20px;
+}
+.footerBottom .address{
+    /* border:1px solid blue; */
+    margin-bottom: 25px;
+}
+
+.footerBottom .copy{
+    /* border:1px solid red; */
+    margin-top: 25px;
+    font-size: 1.1rem;
+    color:#999;
+}
+.footLogo{
+    font-size:1.8rem;
+    font-family: "stencil";
+    margin:50px 10px;
+    position: relative;
+    color: #2c4b5d;
+}
+.footLogo::after{
+    content: "";
+    background: black;
+    position: absolute;
+    left: 0;
+    top: 90%;
+    width: 120px;
+    height: 1px;
+
 }

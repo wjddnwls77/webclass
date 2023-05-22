@@ -5,7 +5,7 @@ window.onload = function(){
     let titleParent = title.parentElement
     titleParent.style.border = "1px solid blue"
 
-    leg = document.querySelector(".list")
+    let ulTag= document.querySelector(".list")
     let list = ulTag.children
 
     // list[0].style.borderBottom = "1px solid black"
