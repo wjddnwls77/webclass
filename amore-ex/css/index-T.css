@@ -1,203 +1,188 @@
+/* reset */
 *{margin:0;padding:0;}
+a{text-decoration: none;color:inherit;}
+ul,ol{list-style:none;}
 h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: normal;}
-b,strong{font-weight: normal;}
+strong,b{font-weight: normal;}
 i,em,address{font-style: normal;}
-a{color:inherit;text-decoration: none;}
-ul,ol{list-style: none;}
 
+/* common */
 html{
     font-size: 12px;
     font-family: 'Noto Sans KR', sans-serif;
 }
-
-.backgroundN{
-    background: url("../img\ \(6\)/bg_body.jpg" ) no-repeat center center;
-    background-size: cover;
-}
-.all{
-    width: 1000px;
-    margin:0 auto;
-    /* border: 1px solid red; */
-}
-.bottomB{
-    width: 100%;
-    background:#2a377f;
-    /* background: url("../img\ \(6\)/bg_lower.jpg"); */
+.cw{
+    width:1000px;
+    margin:0 auto;     
 }
 
-
-.bodyLogo{
-    width: 100%;
-    height: 500px;
-    position: relative;
-    /* border:1px solid red; */
-    object-fit: cover;
+/* layout */
+#container{}
+.top{
+    background:url("../img/bg_body.jpg") no-repeat 50% 50%;
+    background-size:cover;
+}
+.bottom {
+    background: #2a367e;
 }
 
-/* header*/
+/* 
+footer{border:1px solid blue;} */
 
-
+/* header */
 header{
-    /* border: 1px solid red; */
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
-/* nav{
-    border: 1px solid red;
-} */
 .lnb{
-    /* border: 1px solid red; */
-    display: flex;
+    display:flex;
     justify-content: flex-end;
+    margin-bottom:30px;
 }
 .lnb>li{
-    padding: 0 5px;
-    color:gray;
-    text-transform:uppercase;
-    font-size: 0.5rem;
+    padding-right:15px;
+    background:url("../img/bg_sideMenu.gif") no-repeat calc(100% - 5px) 50%;
+    color:#888;
+    font-size:0.9rem;
+    text-transform: uppercase;
 }
-
-.gnb{
-    /* border: 1px solid red; */
-    display: flex;
+.lnb>li:last-of-type{
+    padding-right:0;
+    background:none;
 }
+.gnb{display:flex;}
 .gnb>li{
+    padding:10px 20px;
+    color:#333;
     font-weight: bold;
-    padding:5px 32px;
 }
 
-/* ************main *****************/
-/* 
-main{
-    border: 1px solid lime;
-} */
-h2{ padding:70px 0;
-    /* border: 1px solid lime; */
-    font-size: 5rem;
-    font-family:'Times New Roman', Times, serif ;
-    color: rgb(20, 93, 230);
-
+/* mainBanner */
+.mainBanner{
+    /* border:1px solid blue; */
+    padding-top:40px;
+    padding-bottom:100px;
+    /* 첫번째 자식 태그한테 margin-top을 만들어서 여백을 주는 것보다 부모태그한테 padding-top을 지정해주는게 좋다. 그 이유는 자식태그는 content-box에 안에 놓여있고 content-box안에서 바깥쪽으로 부모태그의 padding그리고 border를 밀어내는것이 자식태그의 margin이기 때문이다 만약에 부모태그에 padding과 border가 없다면 자식태그가 밀어내는 여백이 부모태그 바깥으로 흘러버리게되어 부모태그의 높이가 정상적으로 유지되지 않는다. */
 }
-
-.bannerTabMenu{ 
-    height: 130px;
-    display: flex;
-    position: relative;
-    align-items: flex-start;
-    margin-bottom: 40px;
+.mainBanner>h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3.8rem;
+    color: #2a367e;
+    margin-bottom:40px;
 }
-
-.bannerTabMenu>dt{
-    height: 30px;
-    padding:0 10px;
+.mainBanner>dl{
+    width:400px;
+    height:120px;
+    position:relative;
+}
+.mainBanner>dl>dt{
+    
+    height:30px;
+    float:left;
     display: flex;
     align-items: center;
-}
-.bannerTabMenu>dt.a{
-    border-bottom: 1px solid navy;
-    font-weight: bold;
-    color: gray;
-    
-}
-.bannerTabMenu>dd.on{
-    display: block;
-}
-
-.bannerTabMenu>dd{
-    position: absolute;
-    left:0;top:40px;
-    width: 100%;
-    display: none;
-}
-.on{
-    color:gray;
-}
-.on li>span{
-    /* border:1px solid red; */
-    margin-left: 50px;
-
-}
- 
-/************* main2********** */
-.contents{
-    margin: 0 auto;
-    color:white;
-    width: 1000px;
-    border: 3px solid lime;
-    display: flex;
-    padding-bottom: 80px;
-    justify-content: left;
-    
-}
-
-.contents>article{
-    margin-right:70px ;
-    /* border: 1px solid red; */
-}
-
-h3{
-   font-size: 1.2rem;
-   padding:10px 0;
-}
-
-/* .quick>ol{
-    list-style: decimal;
-} */
-
-.person{ 
-    display: flex;
-    position: relative;
-    align-items: flex-start;
-    border: 1px solid red;
-   
-}
-
-.person>dl{
-    display: flex;
-}
-.person>dl>dt{
-    height: 20px;
     padding:0 10px;
-    display: flex;
-   
 }
-
-.person>dl>.A{
-    background: #4154bd;
+.mainBanner>dl>dt.on{
+    font-weight: bold;
+    color:#2a367e;
+    border-bottom:1px solid #2a367e;
 }
-.person>dl>.B{background:#1d2668}
-.person>dl>dd{
-    display: none;
-    position: absolute;
+.mainBanner>dl>dd{
+    position:absolute;
     left:0;top:40px;
-    
+    width:100%;
+    display:none;
 }
-.person .open{
-    display: block;
-
+.mainBanner>dl>dt.on+dd{
+    display:block;
 }
-
-/* footer */
-footer{
-    margin:0 auto;
-    color:white;
-    width: 1000px;
+.mainBanner dd li{
+    margin-bottom:2px;
     display: flex;
     justify-content: space-between;
-    border-top:0.5px solid #999;
+}
+.mainBanner dd li:last-of-type{margin-bottom:0;}
+
+/* contents */
+.contents{
+    padding-top:30px;
+    padding-bottom:100px;
+    display:flex;
+    color:#fff;
+}
+.contents>article{
+    margin-right:80px;
+}
+.contents>article:last-of-type{
+    margin-right:0;
+}
+.contents>article>h3{
+    margin-bottom:24px;
+}
+.quickList{
+    /* list-style-type: decimal;
+    list-style-position: inside; */
+    background:url("../img/bg_service.gif") no-repeat 0 0;
+    padding-left:12px;
+    background: url(../img/bg_service.gif) no-repeat 0 4px;
+    line-height: 163%;
+}
+.tabMenu{
+    width:190px;
+    height:110px;
+    position:relative;
+}
+.tabMenu>dt{
+    float:left;
+    
+    height:24px;
+    display: flex;
+    align-items: center;
+    padding:0 14px;
+    background:#1c2566;
+    margin-right:4px;
+}
+.tabMenu>dt.on{
+    background:#4152ba;
+}
+.tabMenu>dd{
+    position:absolute;
+    
+    left:0;top:30px;
+    width:100%;
+    height:80px;
+    display:none;
+}
+.tabMenu>dt.on+dd{
+    display:block;   
+}
+.tabMenu>dd>a{
+    
+    display:block;
+    height:100%;
+}
+.tabMenu>dd>a>img{
+    width:100%;
+    height:100%;
+    object-fit: contain;
+}
+/* footer */
+footer{
+    display: flex;
+    justify-content: space-between;
+    border-top:1px solid #fff;
     padding-top:20px;
 }
-
-
-footer>section>label{
-    display: none;
+footer>section{
+    color:#fff;
 }
-
-#family{
-    border: 1px solid white;
-    background: none;
-    color: white;
-    margin-right: 10px;
+footer>section>label{display:none;}
+footer>section>select{
+    background:#2a367e;
+    color:#fff;
+    border:1px solid #fff;
+    padding:3px 40px 3px 10px;
+    margin-right:15px;
 }

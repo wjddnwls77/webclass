@@ -30,7 +30,7 @@ header{
     align-items: center;
     font-family: "stencil";
     width: 100%;
-    height: 50px;
+    height: 30px;
      padding: 10px 0px;
     position: fixed;
     background: #fff;
@@ -38,10 +38,12 @@ header{
     border-bottom: 1px solid #9fadb8;  
 }
 
-header::before{content: "";}
+header::before{
+    content: "";
+}
 
 .mainLogo{
-    font-size: 2.4rem;
+    font-size: 2rem;
     text-transform: uppercase;
     color: #133647;
    
@@ -358,18 +360,27 @@ nav>i{
     margin-top: 152px;
     position:relative;
 }
-.sc1:before {
+.skinContents:before {
     position: absolute;
     left: -120px;
-    top: -113px;
+    top: -180px;
     content: "01";
-    border: 1px solid red;
     font-size: 7rem;
     color: #133647;
+    font-family: "stencil";
+}
+.skinContents.sc2::before{
+    color: #6a8492;
+    content: "02";
+    left: 90%;
+}
+.skinContents.sc3::before{
+    color: #9fadb8;
+    content: "03";
 }
 .skinContents>h3{ 
     /* border:1px solid blue; */
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight:400;
     padding: 10px 0;
 }
@@ -720,4 +731,53 @@ footer{
     width: 120px;
     height: 1px;
 
+}
+
+/* ********************** sub1************************* */
+
+
+.mainBanner{
+    border:1px solid red;
+    padding-top: 30px;
+    width: 100%;
+    height: 970px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.mainBanner>img{
+    border:1px solid lime;
+    display: inline-block;
+    width: 900px;
+    height: 800px;
+    object-fit: contain;
+    margin-left:-140px; 
+   
+}
+.mainBanner>.subMain{
+    border:1px solid lime;
+    color:#133647
+}
+.subMain>h1{
+    border:1px solid lime;
+    font-size: 3.8rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.subMain>p{
+    border:1px solid lime;
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+/* main */
+.subMain{
+    border:1px solid red;
+    width: 1440px;
+    margin: 0 auto;
+}
+.subTitle{
+    display: flex;
 }

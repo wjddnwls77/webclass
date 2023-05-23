@@ -3,7 +3,7 @@ window.onload = function(){
 
     for(let i=0 ; i<dtList.length; i++){
         dtList[i].addEventListener("click",function(){
-            for(let i=0 ; i<dtList.length; i++)
+            // for(let i=0 ; i<dtList.length; i++)
             // dtList[0].classList.remove("on")
             // dtList[1].classList.remove("on")
             // dtList[2].classList.remove("on")
