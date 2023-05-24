@@ -14,6 +14,7 @@ img{
     border:3px solid red;
     margin:0 auto;
     overflow: hidden;
+    position: relative;
 }
 
 .train{
@@ -21,13 +22,15 @@ img{
     height:100%;
     display: flex;
     /* transform: translateX(-500px); */
-    transition: all 1s ease 0s;
+    transition: all 0s ease 0.5s;
 }
 
 .train>li{
     border:1px solid aqua;
     flex: 1;
     position: relative;   
+    /* transform: translateX(-100%); */
+
 }
 .train>li::after{
     content: "";
@@ -54,7 +57,7 @@ img{
 .slideTxt{
     width: 1200px;
     position: absolute;
-    top: 50%;
+    top:calc(50% + 80px);
     left: 50%;
     transform: translate(-50%,-50%);
     z-index: 10;
@@ -71,4 +74,32 @@ img{
 }
 .slideTxt p{
     font-size: 0.4em;
+}
+
+.pagination{
+    position: absolute;
+    border:1px solid lime;
+    left: 50%;
+    bottom: 50px;
+    display: flex;
+    color: #fff;
+    transform: translateX(-50%);
+
+}
+.pagination>li{
+    border:1px solid red;
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    margin-right:5px ;
+    border-radius: 50%;
+
+}
+
+.pagination>li.on{
+    border:1px solid aqua;
+}
+
+.pagination>li:last-of-type{
+    margin-right: 0;
 }
