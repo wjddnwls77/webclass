@@ -782,8 +782,9 @@ footer{
    
 }
 .mainBanner>.mainSub1{
-    /* border:1px solid lime; */
-    color:#133647
+    border:1px solid lime;
+    color:#133647;
+    text-align: center;
 }
 .mainSub1>h1{
     /* border:1px solid lime; */
