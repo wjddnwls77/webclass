@@ -530,7 +530,6 @@ nav>i{
     width:calc(300%/1);
     height: 100%;
     display: flex;
-    /* overflow: hidden; */
 }
 .eventTrain li{
     /* border:5px solid blue; */
@@ -802,16 +801,10 @@ footer{
     margin-right:0;
 }
 .footerTop>.sns li{
-    width: 55px;
-    height: 55px;
-  
+  font-size: 30px;
+  margin-right: 10px;
 }
-.footerTop>.sns li img{  
-    width: 55px;
-    height: 55px;
-    object-fit: cover;
- 
-}
+
 .footerBottom{
     /* border:1px solid red; */
     display: flex;
@@ -830,19 +823,19 @@ footer{
     color:#999;
 }
 .footLogo{
-    font-size:1.6rem;
+    font-size:1.4rem;
     font-family: "stencil";
     margin:50px 10px;
     position: relative;
-    color: #003a55;
+    color: black;
 }
 .footLogo::after{
     content: "";
-    background:#003a55;
+    background:black;
     position: absolute;
     left: 0;
-    top: 90%;
-    width: 110px;
+    top: 70%;
+    width:100px;
     height: 1px;
 
 }
@@ -850,7 +843,7 @@ footer{
 /* ********************** sub1************************* */
 
 
-.mainBanner{
+.mainSubBanner1{
     border:1px solid red;
     padding-top: 30px;
     width: 100%;
@@ -862,23 +855,23 @@ footer{
     margin-bottom: 200px;
 }
 
-.mainBanner>img{
+.mainSubBanner1>img{
     /* border:1px solid lime; */
     display: inline-block;
-    width: 900px;
+    width: 800px;
     height: 800px;
     object-fit: contain;
-    margin-left:-140px;
+    margin-left:-215px;
    
 }
-.mainBanner>.mainSub1{
+.mainSubBanner1>.mainSub1{
     border:1px solid lime;
     color:#133647;
     text-align: center;
 }
 .mainSub1>h1{
     /* border:1px solid lime; */
-    font-size: 3.8rem;
+    font-size: 3.3rem;
     font-weight: 400;
     margin-bottom: 40px;
 }
@@ -891,19 +884,110 @@ footer{
 /* main */
 
 .subMain1{
-    border:1px solid red;
     width: 1440px;
     margin: 0 auto;
+    margin-bottom: 280px;
 }
 
 .subMain1>ul>li{
-    border:1px solid lime;
     height: 970px;
     width:100%;
 }
-.subTitle{
-    border:1px solid red;
+.subTitle1 {
+    color: #28404c;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 400px;
+    margin-left: auto;
 }
-.subTitle>h2{
-    font-size: 4rem;
+.titleLeft {
+    width: 504px;
+    margin-left: 0px;
+}
+.subTitle1>h2{
+    font-size: 5rem;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+.subTitle1>h2::after{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 2.5px;
+    background:#28404c ;
+    top: 94px;
+    right: 184px;
+}
+.subTitle1>h2.leftbar::after{left: 228px;}
+
+.subTitle1>p{
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+.subTitleContents1{
+    border-top:1px solid #28404c;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position: relative;
+}
+.subContents1{
+    font-size: 1.7rem;
+    text-align: center;
+    padding: 179px 80px; 
+    margin-left:50px;
+    font-weight: 300;
+}
+.conLeft{
+    margin-right:66px;
+}
+.subContents1::after {
+    content: "";
+    position: absolute;
+    width:  0.2px;
+    height: 680px;
+    background: #28404c;
+    top: 0px;
+    left: 47%;
+}
+.subContents1>p{
+    margin-bottom: 30px;
+}
+.proTrain{
+    display: flex;
+    margin-top:20px;
+    margin-left:55px;
+    
+}
+.proTrain>li>a>img{
+    width: 250px;
+    height: 400px;
+    object-fit: contain;
+    margin-right:85px;
+}
+
+.proTrain>li{
+    color: #2c4b5d;
+}
+.proTrain>li>h3{
+    font-size: 1.8rem;
+    margin-bottom: 28px;
+    width: 350px;
+    height: 70px;
+}
+.proTrain>li>p{
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-bottom: 28px;
+}
+.proTrain>li>a.purhcaseBtn{
+    font-size: 1.4rem;
+    border:1px solid #2c4b5d;
+    width: 170px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
