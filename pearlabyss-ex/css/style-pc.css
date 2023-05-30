@@ -56,7 +56,8 @@ header:hover .logoArea a{
 }
 .langList{width: 160px;}
 .gnb{width: 800px;}
-.gnb>ul{display:flex;height: 70px;}
+.gnb>ul{display:flex;
+    height: 70px;}
 .gnb>ul>li{
     /* border:1px solid lime; */
     flex: 1;

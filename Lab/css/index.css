@@ -1055,7 +1055,9 @@ footer{
     text-align: center;
     color:#2C4B5D ;
     margin-bottom: 200px;
+    position: relative;
 }
+
 .sub2Contents>ul>li>img{
     width: 140px;
     height: 140px;
@@ -1081,6 +1083,18 @@ footer{
     border-top: 0;
     transform: rotate(-45deg);
 }
+.sub2Pro{
+    position: relative;
+}
+.sub2Pro>ol section::before{
+    position: absolute;
+    left: -120px;
+    top: -180px;
+    content: "01";
+    font-size: 7rem;
+    color: #133647;
+    font-family: "stencil"
+}
 .sub2Pro>ol>li>ul{
     border:1px solid red;
     display: flex;
@@ -1098,7 +1112,7 @@ footer{
     object-fit: contain;
 }
 .sub2Pro>ol>li>section{
-    border:1px solid #red;
+    border:1px solid red;
     margin-bottom: 80px;
     margin-left:400px;
 }
