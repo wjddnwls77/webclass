@@ -1201,6 +1201,93 @@ footer{
 }
 
 /* sub3 */
+.mainSubBanner3{
+    border:1px solid red;
+    padding-top: 30px;
+    width: 100%;
+    height: 970px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 200px;
+}
+
+.mainSubBanner3>img{
+    border:1px solid lime;
+    display: inline-block;
+    width: 800px;
+    height: 800px;
+    object-fit: contain;
+    margin-left:-215px;
+
+   
+}
+.mainSubBanner3>.mainSub3{
+    color:#133647;
+    text-align: center;
+}
+.mainSub3>h1{
+    font-size: 3.3rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.mainSub3>p{
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+.sub3wrap{
+    border:1px solid red;
+    width: 1440px;
+    margin: 0 auto;
+}
+.aboutLab{
+    color:#315C6D ;
+    width: 100%;
+    height: 970px;
+    text-align: center;
+}
+.aboutLab>h2{
+    font-family:"stencil"; 
+    font-size: 5rem;
+}
+.aboutLab>p{
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+.aboutLab2{
+    width: 100%;
+    height: 970px;
+    text-align: center;
+    color:#315C6D ;
+}
+.aboutLab2>h2{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.aboutLab2>p{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.promiseContents{
+    color:#315C6D ;
+   
+}
+
+.promiseContents>ul>li>h3{
+    font-weight: 400;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.promiseContents>ul>li>.promise{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
 
 
 /* sub4 */
