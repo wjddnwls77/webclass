@@ -237,18 +237,14 @@ main{
 .news ul{
     display:flex;
 }
-/* .news ul>li{
-    border-right:1px solid #ebebeb;
-    flex:1;
-    padding:0 30px;
-} */
-/* .news ul>li:first-of-type{
+
+ .news ul>li:first-of-type{
     padding-left:0;
 }
 .news ul>li:last-of-type{
     padding-right:0;
     border-right:none;
-} */
+} 
 .news ul>li h4{
     font-size:15px;
     font-weight: bold;
@@ -315,9 +311,10 @@ main{
     height:1px;
     background:#fff;
 }
-.notice_station{
+.notice{
     border:1px solid red;
     width:90%;
+    margin:0 auto;
 }
 .notice_station>ul{
     display:flex;
@@ -343,9 +340,14 @@ main{
 .notice .swiper-pagination{
     position: relative;
     margin-top: 50px;
-    border:1px solid blue;
 }
 
+
+span.swiper-pagination-bullet-active {
+    background: black;
+}
+
+/* footer */
 footer{margin-top:200px;}
 .footMenu1{
     border-top:1px solid #ebebeb;
