@@ -37,6 +37,7 @@ nav{
 nav.on{
     transform: translateX(0%);
 }
+
 .gnb{}
 .gnb ul{
     background: rgba(255, 233, 199, 0.478);
@@ -52,7 +53,41 @@ nav.on{
     height: 50px;
     box-sizing: border-box;
     align-items: center;
+    border:1px solid lime;
+    display: flex;
+    justify-content: space-between;
 }
+
+.depi{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transition: all 0.5s ease 0s;
+}
+
+.depi::before{
+    content: "";
+    width: 20px;
+    height: 1px;
+    background: black;
+    position: absolute;
+    left: 0;
+    top: 9px;
+
+}
+.depi::after{content: "";
+    width: 1px;
+    height: 20px;
+    background: black;
+    position: absolute;
+    left: 10px;
+    top: 0;
+}
+
+.gnb>li.on .depi::after{
+    display: none;
+}
+
 .gnb ul>li{
     height: 50px;
     padding-left:10px ;

@@ -14,7 +14,11 @@
     <!-- jQ -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="./js/index.js"></script>
-   
+    <!-- slider -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </head>
 <body>
         <header>
@@ -24,29 +28,35 @@
                     </a>
             </div>
             <nav class="gnb">
-                <ul>
-                    <li><a href="">PRODUCT</a>
+                <div class="login">
+                    <ul>
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </div>
+                <ul class="menu">
+                    <li><a href="">PRODUCT<span class="depi"></span></a>
                     <ul>
                         <li><a href="">CLEANSER</a></li>
                         <li><a href="">WATER LOTION</a></li>
                         <li><a href="">MOISTURE</a></li>
                     </ul>
                     </li>
-                    <li><a href="">BEST SELLER</a></li>
-                    <li><a href="">SKIN SOLTION</a>
+                    <li><a href="./bestseller.html">BEST SELLER</a></li>
+                    <li><a href="">SKIN SLOUTION<span class="depi"></span></a>
                         <ul>
                             <li><a href="">OIL CONTROL</a></li>
                             <li><a href="">DAILY RESCUE</a></li>
                             <li><a href="">ANTI AGES-MAX</a></li>
                         </ul>
                     </li>
-                    <li><a href="">ABOUT</a>
+                    <li><a href="">ABOUT<span class="depi"></span></a>
                         <ul>
                             <li><a href="">BRAND</a></li>
                             <li><a href="">REVIEW</a></li>
                         </ul>
-                    </li>
-                    <li><a href="" class="login">로그인 / 회원가입</a></li>
+                    </li>  
                 </ul>
             </nav>
                 <div class="btnMenu">
@@ -54,7 +64,6 @@
                     <span></span>
                     <span></span>
                 </div>
-            </div>
         </header>
             
         <main>
@@ -102,8 +111,8 @@
             </div>
             <div class="best">
                 <h2>best sellers</h2>
-                <div class="bestTrain">
-                <ul>
+                <div class="bestStation">
+                <ul class="train">
                     <li>
                         <a href="#">
                             <img src="./img/bestseller/BEST1.png" alt="">
@@ -160,9 +169,9 @@
                     </li>
                 </ul>
                 </div>
-                <div class="point" >
-                    <img src="./img/left.png" alt="leftPoint">
-                    <img src="./img/right.png" alt="rightPoint">
+                <div class="controler">
+                    <a href="#" class="btnPrev">prev</a>
+                    <a href="#" class="btnNext">next</a>
                 </div>
             </div>
             <div class="slideLine">
