@@ -152,9 +152,32 @@ header::before{
     object-fit: cover;
     margin-bottom: 280px;
  }
+.controlerMain{
+    background: black;
+    position: absolute;
+    top: 50%;
+    right: 23px;
+    width: 50px;
+    height: 50px;
+    z-index: 30;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
 
+.controlerMain>.btnNext {
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    font-size: 0;
+    width: 25px;
+    height: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: 18px;
+    transform: rotate(45deg);
+    margin-top: 12px;
+}
 
- /* ***********about*********** */
+/* ***********about*********** */
 
  .about{
     /* border:1px solid red; */
@@ -220,7 +243,10 @@ header::before{
     width: 400px;
     height: 550px;
     object-fit: cover;
-
+}
+.mainImgslider>ul>li.sideImg{
+    /* filter:grayscale(0.9); */
+    filter:brightness(0.5) 
 }
 .mainImgslider>ul>li>img.bigImg{
     width:525px ;
@@ -426,6 +452,12 @@ header::before{
     transform: translateX(-50%);
     font-weight: 200;
     font-size: 2rem;
+    transition: all 0.5s ease 0s ;
+}
+.skinSolution>a:hover{
+    background: #fff;
+    color:#133647;
+    border:1px solid #133647;
 }
 .skinSolution>h3{
     /* border:1px solid orange; */
@@ -579,15 +611,26 @@ header::before{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: lighter;
+    font-weight: 300;
+    transition: all 0.5s ease 0s;
+}
+.skinContents>a:hover{
+    color: #133647;
+    background: #fff;
+    border:1px solid #133647;
 }
 .skinContents>a.colorTWO{
     background:#6a8492;
 }
+.skinContents>a.colorTWO:hover{
+    background: #fff;
+}
 .skinContents>a.colorThree{
     background:#9fadb8;
 }
-
+.skinContents>a.colorThree:hover{
+    background: #fff;
+}
 
 /* 랩시리즈 공식몰 event */
 .event{
@@ -1099,7 +1142,6 @@ footer{
 
 
 .mainSubBanner2{
-    border:1px solid red;
     padding-top: 30px;
     width: 100%;
     height: 970px;
@@ -1111,17 +1153,18 @@ footer{
 }
 
 .mainSubBanner2>img{
-    border:1px solid lime;
     display: inline-block;
-    width: 800px;
-    height: 800px;
-    object-fit: contain;
-    margin-left:-215px;
-
+    width:550px;
+    height: 550px;
+    object-fit: cover;
    
 }
 .mainSubBanner2>.mainSub1{
     color:#133647;
+    text-align: center;
+}
+.mainSub2{
+    margin-left: 50px;
     text-align: center;
 }
 .mainSub2>h1{
@@ -1259,14 +1302,24 @@ footer{
     border-radius: 30px;
     font-weight: 300;
 }
+.sub2Pro>ol>li>ul a:hover{
+    background: #fff;
+    border:1px solid #2D4C5D;
+    color: #2D4C5D;
+}
 .sub2Pro>ol>li>ul a.purBtn2{
     background: #6a8492;
+}
+.sub2Pro>ol>li>ul a.purBtn2:hover{
+    background: #fff;
 }
 .sub2Pro>ol>li>ul a.purBtn3{
     background: #9fadb8;
 }
-
-/* sub3 */
+.sub2Pro>ol>li>ul a.purBtn3:hover{
+    background: #fff;
+}
+/* *********************sub3***************** */
 .mainSubBanner3{
     border:1px solid red;
     padding-top: 30px;
@@ -1281,12 +1334,9 @@ footer{
 
 .mainSubBanner3>img{
     display: inline-block;
-    width: 800px;
-    height: 800px;
-    object-fit: contain;
-    margin-left:-415px;
-
-   
+    width: 550px;
+    height: 550px;
+    object-fit: cover;
 }
 .mainSubBanner3>.mainSub3{
     color:#133647;
@@ -1341,7 +1391,16 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-   
+    position: relative; 
+}
+.promiseContents:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:red;
+    width: 1px;
+    height: 50px;
 }
 .promise{
     margin-bottom: 100px;
@@ -1385,7 +1444,6 @@ footer{
     width: 1440px;
     margin: 0 auto;
     padding-top: 182px;
-    border: 1px solid red;
     margin-bottom: 280px;
    
 }
@@ -1497,8 +1555,7 @@ footer{
     display: flex;
     font-weight: 300;
     position: relative;
-    border:1px solid red;
-    margin-left: 793px;
+    margin-left: 740px;
 }
 .star2::after{
     background:#6a8492;
@@ -1506,11 +1563,27 @@ footer{
     width: 1px;
     content: "";
     position: absolute;
-    top: 0;
-    left: 167px;
+    top: -2px;
+    left: 187px;
+}
+.star2>p{
+    padding:0 15px;
 }
 .star>p{
     padding:0 15px;
+}
+
+.sub4review>a{
+    border:1px solid #2D4C5D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 70px;
+    margin: 70px auto;
+    color: #2D4C5D;
+    font-size: 2rem;
+    border-radius: 50px;
 }
 .reviewBox>li>p{
     margin-top: 45px;
@@ -1552,7 +1625,9 @@ footer{
     height:50px;
     font-size: 1.5rem;
 }
-
+.highLight{
+   background:rgba(161, 218, 248, 0.2)
+}
 
 /* BESTSELLER */
 .bestMain{
@@ -1623,4 +1698,240 @@ footer{
     width: 170px;
     height: 45px;
     font-size: 1.5rem;
+}
+
+/********************* sub5**************** */
+.productWrap{
+    border:1px solid red;
+    width: 1440px;
+    margin: 200px auto;
+}
+.porductTop{
+    border:1px solid blue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+    position: relative;
+}
+.porductTop::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 46%;
+    width: 1px;
+    height: 564px;
+    background: #2C4B5D;
+}
+.porductTop h1{
+    font-weight: 500;
+    font-size: 2.8rem;
+    margin-bottom: 50px;
+}
+.porductTop>section{
+    font-size: 1.7rem;
+    font-weight: 300;
+} 
+.porductTop p{
+    margin-bottom: 20px;
+}
+.porductTop a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 55px;
+    border:1px solid #25434a;
+} 
+
+.tabMenu{
+    width:1000px;
+    height:300px;
+    margin: 0 auto;
+    position:relative;
+    display: flex;
+    margin-bottom: 100px;
+}
+.tabMenu>dt{
+    font-size: 1.5rem;
+    color: #003a55;
+    cursor: pointer;
+    width:100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tabMenu::after {
+    content: "";
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    background: #003a55;
+    width: 1000px;
+    height: 1px;
+}
+
+.tabMenu>dt.on{
+  border-bottom: 2px solid red;
+}
+.tabMenu>dd{
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    box-sizing: border-box;
+    display: none;
+    font-size: 1.5rem;
+    color: #003a55;
+    font-weight: 300;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+.tabMenu>dt.on + dd{
+    display: block;
+}
+.waterLotion>h2{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 20px 0;
+}
+.waterLotion>img{
+    margin-left:36px ;
+}
+.waterLotion>p{
+    color:#808285 ;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 20px 0;
+}
+.waterLotionSet{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    margin-bottom: 50px;
+}
+.waterLotionSet::after {
+    content: "";
+    position: absolute;
+    top: 165px;
+    left: 306px;
+    width: 190px;
+    height: 2px;
+    background: #003a55;
+}
+.circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #2C4B5D;
+    position: absolute;
+    top: 270px;
+    left: 370px;
+}
+.circle>span {
+    background:#fff;
+    width: 30px;
+    height: 1.5px;
+    position: absolute;
+    top: 22px;
+    left: 10px;
+}
+
+.circle>span.ho{
+    background: #fff;
+    width: 30px;
+    height: 1.5px;
+    transform: rotate(90deg);
+}
+
+.waterLotionSet>div{
+    color: #003a55; 
+}
+.waterLotionSet>div>.Bs>h3{
+    font-size: 3rem;
+    font-weight: 400;
+    font-family: "stencil";
+    padding: 10px 0;
+}
+.waterLotionSet>div>.Bs>h4{
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: "stencil";
+    padding: 10px 0;
+}
+.Bs{
+    padding:0 220px;
+    margin-bottom: 50px;
+}
+.waterBox{
+    border:1px solid #003a55;
+    height: 280px;
+    width: 600px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+    margin-left: 20px ;
+}
+.waterBox>p{
+    text-align: center;
+    margin-top:75px;
+}
+.detailBlue{
+    margin-bottom: 50px;
+}
+.detailBlue>p{
+    color:#003a55 ;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px 0;
+}
+.threeCircle{
+    border:1px solid blue;
+    position: relative;
+}
+.threeCircle>span{
+    border:2px solid blue;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.threeCircle>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.threeCircle>div>p>span{
+    border:2px solid green;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    display:block;
+    margin-right: 150px;
+}
+
+.stairs{
+    border:1px solid red;
+    height: 500px;
+    width: 100%;
+    background: #2D4C5D;
+}
+.stairs>ol{
+    color: #fff;
+    font-size: 2rem;
+    border:1px solid red;
+    margin: 80px 10px;
+}
+
+.stairs>ol>li{
+    border:1px solid blue;
+    padding: 20px;
+    padding-left: 100px;
+    line-height: 150%;
 }

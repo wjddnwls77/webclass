@@ -30,6 +30,21 @@ $(document).ready(function(){
         return false
     })
 
+    // MAIN PAGE SLIDER_1
+    
+    let count = 0;
+    // 다음 버튼을 눌렀을 때
+    $(".btnNext").click(function(){
+        count++;
+        if(count>1){count = 0}
+        slideMove(count)
+        $(".mainTrain>li").removeClass("on")
+        $(".mainTrain>li").eq(count).addClass("on")
+
+    })
+
+
+
     
     //BEST SELLERS SLIDE
     

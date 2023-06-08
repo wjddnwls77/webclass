@@ -11,5 +11,5 @@ $(document).ready(function(){
             $("body").removeClass("dark")
         }
     })
-
+    // if(winSCT>400 && winSCT<1500){}
 })
