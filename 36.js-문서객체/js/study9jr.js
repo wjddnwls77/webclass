@@ -15,8 +15,8 @@ $(document).ready(function(){
     })
     //이전 버튼을 눌렀을 때
     $(".btnPrev").click(function(){
-        count--;
-        if(count<3){count = 0}
+        count++;
+        if(count>3){count = 0}
        $(".train").css("transform","translateX(-"+count*25+"%)")
        $(".train>li").removeClass("on")
        $(".train>li").eq(count).addClass("on")
@@ -28,5 +28,6 @@ $(document).ready(function(){
     function slideMove(idx){
         $(".train").css("transform","translateX(-"+idx*25+"%)")
     }
+    slideMove(1)
 
 })

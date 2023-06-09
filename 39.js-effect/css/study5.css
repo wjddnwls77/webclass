@@ -1,0 +1,41 @@
+*{margin:0;padding:0;}
+ul,ol{list-style: none;}
+a{text-decoration: none;color:inherit}
+img{max-width: 100%;}
+
+.station{
+    width: 500px;
+    height: 300px;
+    border:1px solid red;
+    overflow: hidden;
+    position: relative;
+}
+.train{
+    width: 500%;
+    height: 100%;
+    display: flex;
+    transition: all 0.5s ease 0s;
+}
+.train>li{
+    width: 20%;
+    height: 100%;
+}
+.train>li>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.controler{
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-between;
+}
+.controler>a{
+    padding: 10px;
+    cursor: pointer;
+    background: #fff;
+}

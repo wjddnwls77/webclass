@@ -11,18 +11,20 @@ $(document).ready(function(){
         }
     })
     
-    $(".menu>li").click(function(e){
-        e.preventDefault()
-        if($(this).hasClass("on")==true){
-            $(this).css("height","50px")
-            $(this).removeClass("on")
+    $(".menu>li .depi").click(function(e){
+        // e.preventDefault()
+        let _this = $(this).parent().parent()
+        if(_this.hasClass("on")==true){
+            _this.css("height","50px")
+            _this.removeClass("on")
         }else{
             $(".menu>li").css("height","50px")
             $(".menu>li").removeClass("on")
-            let li2dep = $(this).children("ul").children().length
-            $(this).css("height",(li2dep+1)*50+"px")
-            $(this).addClass("on")
+            let li2dep = _this.children("ul").children().length
+            _this.css("height",(li2dep+1)*50+"px")
+            _this.addClass("on")
         }
+        return false;
         
     })
     
@@ -33,26 +35,51 @@ $(document).ready(function(){
     // MAIN PAGE SLIDER_1
     
     let count = 0;
-    // 다음 버튼을 눌렀을 때
-    $(".btnNext").click(function(){
+    //다음 버튼을 눌렀을 때
+    $(".btnNext").click(function(e){
         count++;
-        if(count>1){count = 0}
+        e.preventDefault()
+        if(count>2){count = 0}
         slideMove(count)
-        $(".mainTrain>li").removeClass("on")
-        $(".mainTrain>li").eq(count).addClass("on")
-
+        
+    })
+    $(".btnPrev").click(function(e){
+        count--;
+        e.preventDefault()
+        if(count<0){count = 0}
+        slideMove(count)
+        
     })
 
+    function slideMove(idx){
+        $(".mainTrain").css("transform","translateX("+(-(100/3)*idx)+"%)")
+    }
+    
 
 
     
     //BEST SELLERS SLIDE
-    
 
+    let bestCount = 0;
+    //다음 버튼을 눌렀을 때
+    $(".btnNext").click(function(e){
+        bestCount++;
+        e.preventDefault()
+        if(bestCount>2){bestCount = 0}
+        slideMove(bestCount)
+        
+    })
+    $(".btnPrev").click(function(e){
+        bestCount--;
+        e.preventDefault()
+        if(bestCount<0){bestCount = 0}
+        slideMove(bestCount)
+        
+    })
 
-
-
-
+    function slideMove(idx){
+        $(".mainTrain").css("transform","translateX("+(-(100/3)*idx)+"%)")
+    }
 
 
 

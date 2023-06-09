@@ -139,44 +139,75 @@ header::before{
     overflow: hidden;
     margin-bottom: 280px;
 }
-.mainStation.mainTrain{
-    width: calc(200%/1);
+.mainTrain{
+    width:300%;
     height: 100%;
     display: flex;
     transform: translateX(0px);
     transition: all 0.5s ease 0s;
 }
+.mainTrain>li{
+    width: calc(100%/3);
+    height: 100%;
+}
+.mainTrain>li>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .videoBanner video{
     width:100%;
     height: 970px;
-    object-fit: cover;
+    object-fit: contain;
     margin-bottom: 280px;
  }
-.controlerMain{
-    background: black;
+ .mainBanner3 {
     position: absolute;
     top: 50%;
-    right: 23px;
-    width: 50px;
-    height: 50px;
-    z-index: 30;
-    justify-content: space-between;
     transform: translateY(-50%);
+    margin-left: 225px;
+    
 }
-
-.controlerMain>.btnNext {
-    border-top: 1px solid #fff;
-    border-right: 1px solid #fff;
-    font-size: 0;
-    width: 25px;
-    height: 25px;
-    display: block;
-    margin-left: auto;
-    margin-right: 18px;
+.mainBanner3>h2{
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.mainBanner3>p{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.mainBanner3>a{
+    display: flex;
+    border: 1px solid black;
+    width: 150px;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.controlerMain{
+    width: 95%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-between;
+}
+.controlerMain>a{
+    padding: 10px;
+    cursor: pointer;
+    border-top:2px solid black;
+    border-right:2px solid black;
     transform: rotate(45deg);
-    margin-top: 12px;
+    font-size: 0;
+    width: 10px;
+    height: 10px;
 }
-
+.controlerMain>a.btnPrev{
+    transform: rotate(-135deg);
+}
 /* ***********about*********** */
 
  .about{
@@ -377,19 +408,28 @@ header::before{
     color: #133647;
     font-size: 2rem;
 }
-.controler{
-   border:1px solid red;
+.controlerBest{
    display: flex;
    justify-content: space-between;
-   font-size: 1.5rem;
    position: absolute;
    top: 50%;
-   transform: translateY(-50%);
-   width: 1440px;
+   left: 50%;
+   transform: translate(-50%,-50%);
    z-index: 2;
+   width: 95%;
 }
-
-
+.controlerBest>a{
+    padding: 10px 0;
+    width: 30px;
+    height: 12px;
+    border-top:2px solid #133647;
+    border-right:2px solid #133647;
+    transform: rotate(45deg);
+    font-size: 0;
+}
+.controlerBest>a.btnPrev{
+    transform: rotate(-135deg);
+}
 /* skinSolution */
 
 .skinSolution{
@@ -1321,7 +1361,6 @@ footer{
 }
 /* *********************sub3***************** */
 .mainSubBanner3{
-    border:1px solid red;
     padding-top: 30px;
     width: 100%;
     height: 970px;
@@ -1353,7 +1392,6 @@ footer{
     margin-bottom: 40px;
 }
 .sub3wrap{
-    border:1px solid red;
     width: 1440px;
     margin: 0 auto;
     margin-bottom: 200px;
@@ -1363,20 +1401,39 @@ footer{
     width: 100%;
     height: 970px;
     text-align: center;
+    border:1px solid lime;
+    margin-bottom: 500px;
+    position: relative;  
+}
+.aboutLab::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 335px;
+    background: #6a8492;
+    /* bottom: -10px; */
+    left: 50%;
+    transform: translateX(50%);
 }
 .aboutLab>h2{
     font-family:"stencil"; 
-    font-size: 5rem;
+    font-size: 6.2rem;
+    margin-top: 385px;
 }
 .aboutLab>p{
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-weight: 300;
+    margin-top: 130px;
 }
-.aboutLab2{
+.aboutLab>p.scroller {
+    letter-spacing: 15px;
+    padding: 37px 0;
+}
+.aboutLab2 {
     width: 100%;
-    height: 970px;
     text-align: center;
-    color:#315C6D ;
+    color: #315C6D;
+    margin-bottom: 95px;
 }
 .aboutLab2>h2{
     font-size: 2.5rem;
@@ -1403,7 +1460,7 @@ footer{
     height: 50px;
 }
 .promise{
-    margin-bottom: 100px;
+    margin-bottom: 200px;
 }
 .promise>img{
     width: 500px;
@@ -1702,7 +1759,6 @@ footer{
 
 /********************* sub5**************** */
 .productWrap{
-    border:1px solid red;
     width: 1440px;
     margin: 200px auto;
 }
@@ -1888,50 +1944,65 @@ footer{
     text-align: center;
     padding: 10px 0;
 }
+
 .threeCircle{
-    border:1px solid blue;
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 100px;
     position: relative;
 }
 .threeCircle>span{
-    border:2px solid blue;
+    background: #133647;
     width: 180px;
     height: 180px;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    display: block;
+    margin: 0 auto;
 }
-
+.threeCircle>p{
+    font-size: 1.8rem;
+    color: #fff;
+}
+.threeCircle>p.circle1{
+    position: absolute;
+    top: 60px;
+    left: 45.7%;
+}
 .threeCircle>div{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
+    font-size: 1.8rem;
+    color: #133647;
 }
-.threeCircle>div>p>span{
-    border:2px solid green;
+.threeCircle>div>p{
+    border:1px solid #133647;
     width: 180px;
     height: 180px;
     border-radius: 50%;
-    display:block;
-    margin-right: 150px;
+    margin:20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.stairs{
+    background: #2D4C5D;
+    padding: 30px 150px;
 }
 
-.stairs{
-    border:1px solid red;
-    height: 500px;
-    width: 100%;
-    background: #2D4C5D;
-}
 .stairs>ol{
     color: #fff;
-    font-size: 2rem;
-    border:1px solid red;
-    margin: 80px 10px;
+    font-size: 2rem; 
+    font-weight: 300;
 }
 
 .stairs>ol>li{
-    border:1px solid blue;
-    padding: 20px;
+    padding: 30px;
     padding-left: 100px;
     line-height: 150%;
+}
+.stairs>ol>li>span{
+    font-size: 4.8rem;
+    font-style: italic;
 }

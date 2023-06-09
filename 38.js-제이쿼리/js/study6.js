@@ -11,12 +11,14 @@ $(document).ready(function(){
         }
     })
 
-    //console 창에서 origibakEvent->wheelDelta:(-)120 값을 확인할 수 있음 위로 올렸는지 아래로 내렸는지.firefox에서는 detail (-)3 크롬이랑 다르게 나와서 맞춰야함.
+    //console 창에서 origibakEvent->wheelDelta:(-)120 값을 확인할 수 있음 위로 올렸는지 아래로 내렸는지.firefox에서는 detail (-)3 크롬이랑 다르게 나와서 맞춰야함 firefox는 DOMMMouseScroll사용.
     // .on 이라는 함수는 여러 이벤트를 묶어줄수 있음 "wheel click.."
 
-    // $(".wrap>div").click(function(){}) = 아래거랑 같음
+    // $(".wrap>div").click(function(){}) 
+    //  $(".wrap>div").on("click mouseover",(function(){})두개 다 아래거랑 같음
+
     $(".wrap>div").on("wheel DOMMouseScroll",function(event){
-        // console.log(event)
+        // console.log(event) 호환성을 위한것이라 수정할 일이 없다.
         let E = event.originalEvent
         let delta = 0;
         if(E.detail){
@@ -29,9 +31,8 @@ $(document).ready(function(){
 
         if(delta<0){
             //마우스 휠을 내렸을 때
-        if($(this).next().length!=0){
+        if($(this).next().length){
             let posTop = $(this).next().offset().top
-            console.log(posTop)
             $("html,body").stop().animate({scrollTop:posTop},1000)
             }
 
@@ -40,7 +41,6 @@ $(document).ready(function(){
             //마우스 휠을 올렸을 때
         if($(this).prev().length!=0){
             let posTop = $(this).prev().offset().top
-            console.log(posTop)
             $("html,body").stop().animate({scrollTop:posTop},1000)}
         } 
         return false
