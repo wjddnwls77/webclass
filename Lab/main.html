@@ -8,6 +8,7 @@
     <!-- css -->
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/mo.css">
+    <link rel="stylesheet" href="./css/pc.css">
     <!-- font -->
     <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,9 +23,10 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </head>
 <body>
+    <div class="blackcover"></div>
         <header>
             <div class="mainLogo">
-                    <a href="#">
+                    <a href="./main.html">
                         <h1>lab series</h1>
                     </a>
             </div>
@@ -94,15 +96,14 @@
                     <a href="#"class="btnNext">next</a>
                 </div>
             </div>
-           
             <div class="about">
                 <div class="mainContents">
                     <h2>lab<br>seires</h2>
                     <p>30년 이상의 지속적인 연구와 개발을 통해 남성<br> 피부를 위한 솔루션 개발을 지금 만나보세요.</p>
                </div> 
-                <div class="mainImgslider" >
-                    <ul>
-                        <li class="sideImg">
+                <div class="mainImgslider aboutStation" >
+                    <ul class="aboutTrain">
+                    <li class="sideImg">
                         <img src="./img/person/waterLotionMen.jpg"  alt="워터로션">
                         <h3>water lotion</h3>
                     </li>
@@ -110,12 +111,11 @@
                         <img class="bigImg" src="./img/person/cleanserMen.jpg" alt="클렌져">
                         <h3 class="bigFont">cleanser</h3>
                     </li>
-                    <li  class="sideImg">
+                    <li class="sideImg">
                          <img src="./img/person/moistureMen.png" alt="모이스쳐">
                          <h3>moisture</h3>
                     </li>
                     </ul>
-
                 </div>
             </div>
             <div class="aboutContent">
@@ -126,7 +126,7 @@
             <div class="best">
                 <h2>best sellers</h2>
                 <div class="bestStation">
-                <ul class="train">
+                <ul class="bestTrain">
                     <li>
                         <a href="./bestseller.html">
                             <img src="./img/bestseller/BEST1.png" alt="">
@@ -184,13 +184,14 @@
                 </ul>
                 </div>
                 <div class="controlerBest">
-                    <a href="#" class="btnPrev">prev</a>
-                    <a href="#" class="btnNext">next</a>
+                    <a href="#" class="bestPrev">prev</a>
+                    <a href="#" class="bestNext">next</a>
+                </div>
+                <div class="slideLine">
+                    <div></div>
                 </div>
             </div>
-            <div class="slideLine">
-                <div></div>
-            </div> 
+             
             <div class="skinSolution">
                 <h2>skin solution</h2>
                 <p>랩 시리즈는 연구를 기반으로 맞춤솔루션을 제공합니다.</p>
@@ -284,6 +285,7 @@
                     <li>2</li>
                     <li>3</li>
                 </ul>
+            </div>
         </main> 
         <footer>
             <div class="footerTop">

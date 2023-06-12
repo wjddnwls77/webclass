@@ -60,29 +60,28 @@ $(document).ready(function(){
     
     //BEST SELLERS SLIDE
 
-    let bestCount = 0;
-    //다음 버튼을 눌렀을 때
-    $(".btnNext").click(function(e){
-        bestCount++;
-        e.preventDefault()
-        if(bestCount>2){bestCount = 0}
-        slideMove(bestCount)
+    // let bestCount = 0;
+    // //다음 버튼을 눌렀을 때
+    // $(".bestNext").click(function(e){
+    //     bestCount++;
+    //     e.preventDefault()
+    //     if(bestCount>1){bestCount = 0}
+    //     bestslide(bestCount)
         
-    })
-    $(".btnPrev").click(function(e){
-        bestCount--;
-        e.preventDefault()
-        if(bestCount<0){bestCount = 0}
-        slideMove(bestCount)
+    // })
+    // $(".bestPrev").click(function(e){
+    //     bestCount--;
+    //     e.preventDefault()
+    //     if(bestCount<0){bestCount = 0}
+    //     bestslide(bestCount)
         
-    })
+    // })
 
-    function slideMove(idx){
-        $(".mainTrain").css("transform","translateX("+(-(100/3)*idx)+"%)")
-    }
+    // function bestslide(idx){
+    //     $(".bestStation").css("transform","translateX("+(-100*idx)+"%)")
+    // }
 
-
-
+    //EVENT SLIDER 
 
 
 
