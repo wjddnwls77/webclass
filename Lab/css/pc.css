@@ -2,7 +2,8 @@
 
     /* header */
 
-
+.mo{ display: none;}
+.moMenuBtn{display: none;}
 header{
     /* border:1px solid red; */
     display: flex;
@@ -235,17 +236,15 @@ header::before{
  }
  .mainImgslider>ul{
     background: #a9b9bf;
-    display: flex;
     height: 510px;
-    justify-content: center;
-    align-items: center;
-   
  }
- .mainImgslider>ul>li{
+ .aboutTrain{
     position: relative;
  }
-.mainImgslider>ul>li>h3{
-    /* border:1px solid lime; */
+ .aboutTrain>li{
+    transition:all 0.5s ease 0s;
+ }
+ .aboutTrain>li>h3{
     font-family: "stencil";
     font-size: 2.5rem;
     color: #fff;
@@ -258,51 +257,76 @@ header::before{
     height: 550px;
     object-fit: cover;
 }
-.mainImgslider>ul>li.sideImg{
-    /* filter:grayscale(0.9); */
+.sideImg0{
+   position: absolute;
+   top: -19px;
+   left:20%;
     filter:brightness(0.5) 
 }
-.mainImgslider>ul>li>img.bigImg{
-    width:525px ;
-    height: 670px;
-    object-fit: cover;
+.sideImg1 {
+    position: absolute;
+    top: -19px;
+    left: 40%;
+    transform: scale(1.1);
+    filter:brightness(1);
+    z-index: 1;
 }
-.mainImgslider>ul>li>.bigFont{
-    font-size: 4.2rem;
-}
+ .sideImg2{
+    position: absolute;
+    top:-19px;
+    left:59%;
+    filter:brightness(0.5) 
+ }
 
 .aboutContent{
-    /* border:1px solid red; */
     height: 340px;
     width: 100%;
     margin: 0 auto;
     text-align: center;
     color: #133647;
     position: relative;
-    margin-top:300px;
-    margin-bottom:500px;
+    padding-top:300px;
+    padding-bottom:500px;
 
 }
-.aboutContent>h3::before{
+.aboutContent::before {
     position: absolute;
     background: #a9b9bf;
     content: "";
     width: 1px;
     height: 230px;
-    top: -80%;
+    top: 0;
     left: 50%;
-   
- }
-.aboutContent>h3::after{
+}
+.aboutContent::after {
     position: absolute;
     background: #a9b9bf;
     content: "";
     width: 1px;
-    height: 230px;
-    top: 135%;
+    height: 420px;
+    bottom: 30px;
     left: 50%;
-    
- }
+}
+ .mTtB{
+    transform: translateY(-50px);
+    opacity: 0.1;
+    transition: all 1s ease 0s;
+}
+.mTtB.on{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.mTtBaleady{
+    transform:translateX(-50%)translateY(-50px)!important;
+    opacity: 0.1;
+    transition: all 1s ease 0s;
+}
+.mTtBaleady.on{
+    transform:translateX(-50%)translateY(0px)!important;
+    opacity: 1;
+}
+
+
 .aboutContent>h3{
     /* border:1px solid lime; */
     font-size: 3.7rem;
@@ -344,11 +368,12 @@ header::before{
     left: 50%;
     transform: translateX(-50%);
 }
-
+.bestStation{
+    transition: all 0.7s ease 0s;
+}
 .bestTrain{
     width:calc(600%/3); 
-    display: flex;
-    transition: all 0.5s ease 0s;
+    display: flex;   
     
 }
 .bestTrain>li{
@@ -507,6 +532,17 @@ header::before{
 
 
 /* skinMenu */
+.mTtB{
+    transform: translateY(-50px);
+    opacity: 0.1;
+    transition: all 1s ease 0s;
+}
+
+.mTtB.on{
+    transform: translateY(0);
+    opacity: 1;
+}
+
 .skinMenu{
     /* border:1px solid red; */
     width: 1440px;
@@ -667,6 +703,7 @@ header::before{
     height:460px;
     overflow: hidden;
     position: relative;
+    transition: all 0.5s ease 0s;
 }
 .eventTrain{
     /* border:3px solid lime; */
@@ -674,11 +711,11 @@ header::before{
     height: 100%;
     display: flex;
 }
-.eventTrain li{
+.eventTrain>li{
     /* border:5px solid blue; */
     width: 100%;
     height:100%;
-    flex:1;
+    /* flex:1; */
 }
 
 .event>h2{
@@ -706,43 +743,50 @@ header::before{
 }
 
 /* **********train1 ************/
-.eventTrain li>img.review{
+.eventTrain>li>img.review{
     position: relative;
     width: 100%;
     height:100%;
 }
 
-.eventTrain li>.train1{
+.eventTrain>li>.train1{
     position: absolute;
     left: 18%;
-    top: 15%;
+    top: 20%;
 }
-.eventTrain li>.bannerImg>img{
+
+.eventTrain>li>.bannerImg>img{
     height: 500px;
     width: 250px;
     object-fit: cover;
     position: absolute;
-    left: 50%;
-    top:-5%;
+    top: -4%;
+    left: 63%;
 }
-.eventTrain li>.bannerImg>img.bannerOne{
+
+.eventTrain>li>.bannerImg>img.bannerOne{
     height: 500px;
     width: 320px;
     object-fit: cover;
     transform:rotate(-30deg); 
+    top: -4%;
+    left: 50%;
 }
-.eventTrain li>.bannerImg>img.bannerTwo{
+
+
+.eventTrain>li>.bannerImg>img.bannerTwo{
     left: 63%;
-    transform:rotate(15deg);
+    transform:rotate(10deg);
+    
 }
-.eventTrain li>.train1{
+.eventTrain>li>.train1{
     color: #fff;
 
 }
-.eventTrain li>.train1>h3{
+.eventTrain>li>.train1>h3{
     font-size: 3.5rem;
 }
-.eventTrain li>.train1>h3::after{
+.eventTrain>li>.train1>h3::after{
     content: "";
     width: 550px;
     height: 1px;
@@ -752,7 +796,7 @@ header::before{
     left: 50%;
     transform: translateX(-50%);
 }
-.eventTrain li>.train1>p{
+.eventTrain>li>.train1>p{
     /* border:1px solid green; */
     font-size: 2.2rem;
     font-weight: 200;
@@ -760,7 +804,7 @@ header::before{
     margin-bottom: 40px;
 }
 
-.eventTrain li>.train1>a{
+.eventTrain>li>.train1>a{
     border:1px solid #fff;
     width: 260px;
     height: 70px;
@@ -779,7 +823,7 @@ header::before{
 
 /* **********train2 ************/
 
-.eventTrain li>.train2{
+.eventTrain>li>.train2{
     color: #003a55;
     position: relative;
     left: 18%;
@@ -787,15 +831,15 @@ header::before{
     height:100%;
     background-color: #fff;
 }
-.eventTrain li>.train2>h3{
+.eventTrain>li>.train2>h3{
     font-size: 4.5rem;
     font-weight: 500;
 }
-.eventTrain li>.train2>h3>span{
+.eventTrain>li>.train2>h3>span{
     font-size: 2.3rem;
     font-weight: 400;
 }
-.eventTrain li>.train2>h3::after {
+.eventTrain>li>.train2>h3::after {
     content: "";
     width: 635px;
     height: 1px;
@@ -805,7 +849,7 @@ header::before{
     left: 17%;
     transform: translateX(-50%);
 }
-.eventTrain li>.train2>.blueLotion {
+.eventTrain>li>.train2>.blueLotion {
     height: 500px;
     width: 500px;
     object-fit: contain;
@@ -814,20 +858,20 @@ header::before{
     left: 24%;
     top: -17%;
 }
-.eventTrain li>.train2>p {
+.eventTrain>li>.train2>p {
     font-size: 2.2rem;
     font-weight: 200;
     margin-top: 5px;
     margin-bottom: 20px;
 }
-.eventTrain li>.train2>.cafe{
+.eventTrain>li>.train2>.cafe{
     font-family: "Cafe2";
     font-size: 2.8rem;
     font-weight: 200;
     margin-top: 40px;
 }
 
-.eventTrain li>.train2>a{
+.eventTrain>li>.train2>a{
     background:#133647;
     color: #fff;
     width: 174px;
@@ -844,36 +888,36 @@ header::before{
 
 /* **********train3 ************/
 
-.eventTrain li>.train3 {
+.eventTrain>li>.train3 {
     color: #fff;
     position: relative;
     width: 100%;
     height:100%;
 }
-.eventTrain li>.train3>.Contents3{
+.eventTrain>li>.train3>.Contents3{
      position:absolute;
      left: 50%;
      top: 18%;
 }
-.eventTrain li>.train3>.Contents3>h4{
+.eventTrain>li>.train3>.Contents3>h4{
     font-size:2.5rem;
     font-weight: 500;
     font-family: "Cafe2";
     color: #fff;
     margin-bottom: 10px;
 }
-.eventTrain li>.train3>.Contents3>h3{
+.eventTrain>li>.train3>.Contents3>h3{
     font-size: 3.5rem;
     font-weight: 500;
     margin-bottom:35px;
 }
-.eventTrain li>.train3>.Contents3>p{
+.eventTrain>li>.train3>.Contents3>p{
     font-size: 2rem;
     font-weight: 200;
     margin-bottom: 10px; 
 }
 
-.eventTrain li>.train3>.Contents3>a{
+.eventTrain>li>.train3>.Contents3>a{
     font-size: 1.5rem;
     font-weight: 200;
     width: 140px;
@@ -881,17 +925,17 @@ header::before{
     display: inline-block;
     text-align: center;
 }
-.eventTrain li>.train3>.Contents3>.miniOne{
+.eventTrain>li>.train3>.Contents3>.miniOne{
     border:1px solid #fff;
     background: black;
     color: #fff;
 }
-.eventTrain li>.train3>.Contents3>.miniTwo{
+.eventTrain>li>.train3>.Contents3>.miniTwo{
     border:1px solid black;
     background: #fff;
     color: black;
 }
-.eventTrain li>.train3>.blackLotion {
+.eventTrain>li>.train3>.blackLotion {
     position: absolute;
     top: 10%;
     left: 20%;
@@ -906,15 +950,15 @@ header::before{
     justify-content: center;
     margin: 0 auto;
     font-size: 0;
+    margin-top:30px;
 }
-.bannerLine>li {
-    margin-right: 20px;
-    width: 64px;
-    height: 1px;
+.bannerLine>span {
+    width: 60px;
+    height: 2px;
     background: #52838e;
-    margin-top: 40px;
+    border-radius: 0!important;
 }
-.bannerLine>li.on{
+.bannerLine>span.on{
     height: 2px;
     background: #2c4b5d;
 }

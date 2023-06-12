@@ -4,7 +4,6 @@ $(document).ready(function(){
         let winTop = $(window).scrollTop()
         //스크롤바가 위에서 얼만큼 내려와 있는지를 계산
 
-
         //윈도우스크롤이 400이상으로 내려가면 header태그의 스타일이 작은 스타일이 되고,
         //그렇지 않다면 기본스타일이 적용될 수 있도록
         if(winTop>400){
