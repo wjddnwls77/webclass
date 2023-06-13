@@ -8,8 +8,7 @@ $(document).ready(function(){
     //train클래스 너비를 변경 => train클래스의 너비를 불러와서 perView로 나눈 후 결과를 다시 적용
     let stationWidth;
     let trainWidth;
-    let winWidth = $(window).width()
-        
+    let winWidth = $(window).width()   
     if(winWidth>=1024){
         console.log("pc사이즈입니다.")
         perView = 2.5
@@ -32,7 +31,7 @@ $(document).ready(function(){
         trainWidth = stationWidth * 5 / perView
         $(".train").width(trainWidth)
     }    
-
+    // 바깥쪽에 뺀 이유 ? => 
     // let stationWidth = $(".station").width()
     // let trainWidth = stationWidth * 5 / perView
     // console.log(trainWidth)
@@ -40,6 +39,7 @@ $(document).ready(function(){
 
 
     // $(".train").width(trainWidth/perView)
+    // $(window).resize(function(){}) 브라우저 크기가 변형될때마다 실행
     $(window).resize(function(){
         let winWidth = $(window).width()
         
@@ -68,8 +68,7 @@ $(document).ready(function(){
         
     })
     $(".btnNext").click(function(e){
-        count++
-                  
+        count++          
         e.preventDefault()
         if(count>4){count=0}
         moveSlider(count)
@@ -85,8 +84,29 @@ $(document).ready(function(){
         // $(".train").css("transform","translateX("+(-20*count)+"%)")
     })
 
+    //자동슬라이드 기능 
+    let timer = setInterval(function(){
+        count++          
+        if(count>4){count=0}
+        moveSlider(count)
+    },2000)
+
+    $(".station").mouseover(function(){
+        clearInterval(timer)
+    })
+
+    $(".station").mouseout(function(){
+        timer = setInterval(function(){
+        count++          
+        if(count>4){count=0}
+        moveSlider(count)
+        },2000)
+    })
+// let 을 지워야 바깥에 있는 timer를 가리킴.
     function moveSlider(idx){
         $(".train").css("transform","translateX("+(-20*idx)+"%)")        
     }
     // moveSlider(2)
+
+
 })

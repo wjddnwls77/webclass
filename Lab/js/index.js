@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    // MENU
+    // ******************TAB MENU******************
     $(".skinSolution>*").addClass("mTtBaleady")
 
     $(".btnMenu,.btnMoMenu").click(function(){
@@ -33,7 +33,7 @@ $(document).ready(function(){
         return false
     })
 
-    // MAIN PAGE SLIDER_1
+    //****************** MAIN PAGE SLIDER_1******************
     
     let count = 0;
     //다음 버튼을 눌렀을 때
@@ -42,7 +42,7 @@ $(document).ready(function(){
         e.preventDefault()
         if(count>2){count = 0}
         slideMove(count)
-        
+
     })
     $(".btnPrev").click(function(e){
         count--;
@@ -57,7 +57,7 @@ $(document).ready(function(){
     }
     
 
-    //MAIN PAGE SCROLL
+    //**********************MAIN PAGE SCROLL******************
     $(window).scroll(function(){
         let winst = $(window).scrollTop()
         let winHeight = $(window).height()*0.7
@@ -70,7 +70,7 @@ $(document).ready(function(){
         })
     })
     
-    //BEST SELLERS SLIDE
+    //**********************BEST SELLERS SLIDER******************
 
     let bestCount = 0;
     //다음 버튼을 눌렀을 때
@@ -91,9 +91,14 @@ $(document).ready(function(){
     function bestslide(idx){
         $(".bestStation").css("transform","translateX("+(-100*idx)+"%)")
     }
+    // setInterval(function(){
+    //     bestCount++;
+    //     if(bestCount>1){bestCount = 0}
+    //     bestslide(bestCount)
+    // },3000)
 
-    //EVENT SLIDER 
-    let eventSliderBanner = new Swiper(".eventSliderBanner",{
+    //*********************EVENT SLIDER*********************** 
+    let eventSliderBanner = new Swiper(".eventSliderBanner,.moEventSliderBanner",{
 
         breakpoints:{
             280:{
@@ -108,11 +113,11 @@ $(document).ready(function(){
             el: ".bannerLine",
         },
         autoplay:{
-            delay:2800,
+            delay:2000,
         }
-    
-    
     })
+
+    //ABOUT SLIDER
     console.log()
     let mi_count = 0;
     $(".mi_next").click(function(){
@@ -137,8 +142,6 @@ $(document).ready(function(){
             $(this).addClass("sideImg"+classIdx)
         })
     })
-
-
 
     // $(".mi_prev").click(function(){
     //     mi_count++

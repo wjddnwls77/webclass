@@ -240,7 +240,7 @@ header{
  .about{
     /* border:1px solid red; */
     height: 970px;
-   
+    overflow: hidden;
  }
 
  .mainContents{
@@ -729,6 +729,9 @@ header{
 }
 
 /* 랩시리즈 공식몰 event */
+.event>.moEventSliderBanner{
+    display: none;
+}
 .event{
     width: 100%;
     height:970px;
