@@ -61,7 +61,7 @@ $(document).ready(function(){
     $(window).scroll(function(){
         let winst = $(window).scrollTop()
         let winHeight = $(window).height()*0.7
-        $(".mTtB,.mTtBaleady,.mLtR,.mBtT").each(function(){
+        $(".mTtB,.mTtBaleady,.mLtR,.mBtT,.mRtL").each(function(){
             if(winst+winHeight>$(this).offset().top){
                 $(this).addClass("on")
             }else{
