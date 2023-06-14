@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
     // ******************TAB MENU******************
     $(".skinSolution>*").addClass("mTtBaleady")
 
@@ -13,7 +12,7 @@ $(document).ready(function(){
     })
     
     $(".menu>li .depi").click(function(e){
-        // e.preventDefault()
+        e.preventDefault()
         let _this = $(this).parent().parent()
         if(_this.hasClass("on")==true){
             _this.css("height","50px")
@@ -74,7 +73,6 @@ $(document).ready(function(){
 
     let bestCount = 0;
     let perViewBest = 1;
-
     let deviceWidth = $(window).width()
     if(deviceWidth>=1024){
         perViewBest = 3;
@@ -92,10 +90,7 @@ $(document).ready(function(){
         }   
         $(".bestTrain").css("width",600/perViewBest+"%")
     })
-
-
-    
-    //다음 버튼을 눌렀을 때
+   //다음 버튼을 눌렀을 때
     $(".bestNext").click(function(e){
         bestCount++;
         e.preventDefault()
@@ -193,6 +188,112 @@ $(document).ready(function(){
         $(".tabMenu>dt").removeClass("on")
         $(this).addClass("on")
     })
+
+
+    //*********************SUB1 SLIDER*********************** 
+//     let subOneCount = 0;
+//     let perViewsubOne;
+//     let subStationWidth;
+//     let subTrainWidth;
+//     let winWidth =$(window).width();
+
+//     if(winWidth>=1024){
+//         perViewsubOne = 2;
+//         subStationWidth = $(".proStation").width()
+//         subTrainWidth = subStationWidth * 4 /perViewsubOne
+//         $(".proTrain").width(subTrainWidth)
+//     }else{
+//         perViewsubOne = 1;
+//         subStationWidth = $(".proStation").width()
+//         subTrainWidth = subStationWidth * 4 /perViewsubOne
+//         $(".proTrain").width(subTrainWidth)
+//     }
+
+//     $(window).resize(function(){
+//         let winWidth =$(window).width();
+//         if(winWidth>=1024){
+//             perViewsubOne = 2;
+//             subStationWidth = $(".proStation").width()
+//             subTrainWidth = subStationWidth * 4 /perViewsubOne
+//             $(".proTrain").width(subTrainWidth)
+//         }else{
+//             perViewsubOne = 1;
+//             subStationWidth = $(".proStation").width()
+//             subTrainWidth = subStationWidth * 4 /perViewsubOne
+//             $(".proTrain").width(subTrainWidth)
+//         }
+
+//     })
+//    //다음 버튼을 눌렀을 때
+//     $(".subOneNext").click(function(e){
+//         subOneCount++;
+//         e.preventDefault()
+//         if(subOneCount>4){subOneCount = 0}
+//         subOneslider(subOneCount)
+       
+      
+//     })
+//     $(".subOnePrev").click(function(e){
+//         subOneCount--;
+//         e.preventDefault()
+//         if(subOneCount>4){subOneCount = 0}
+//         subOneslider(subOneCount)
+        
+//     })
+//     let timer = setInterval(function(){
+//         subOneCount++;
+//         if(subOneCount>4){subOneCount = 0}
+//         subOneslider(subOneCount)
+//     },2000)
+
+
+//     function subOneslider(idx){
+//         $(".proTrain").css("transform","translateX("+(-(100/4)*idx)+"%)")
+
+//     }
+
+let subOneCount = 0;
+    //다음 버튼을 눌렀을 때
+    $(".subOneNext").click(function(e){
+        subOneCount++;
+        e.preventDefault()
+        if(subOneCount>2){subOneCount = 0}
+        slideMove(subOneCount)
+
+    })
+    $(".subOnePrev").click(function(e){
+        subOneCount--;
+        e.preventDefault()
+        if(subOneCount<0){subOneCount = 0}
+        slideMove(subOneCount)
+        
+    })
+
+    function subOneslider(idx){
+        $(".proStation").css("transform","translateX("+(-(100/4)*idx)+"%)")
+    }
+    
+
+
+let slidersubOne = new Swiper(".proStation",{
+    breakpoints:{
+        280:{
+            slidesPerView :2,
+        },
+        768:{
+            slidesPerView :2,
+        
+        }
+    },
+    navigation: {
+        nextEl: '.subOneNext',
+        prevEl: '.subOnePrev',
+      },
+    // autoplay:{
+    //     delay:2500,
+    // }
+})
+
 
 
 

@@ -1227,12 +1227,26 @@ footer{
     border: 1px solid red;
     height: 660px;
     width: 750px;
-    /* overflow: hidden; */
+    overflow: hidden;
     position: relative;
 }
-
 .sub1Controler{
-    border:1px solid red;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 500px;
+    left: 0;
+    width: 100%;
+    height: 50px;  
+    padding: 0 10px;
+}
+.sub1Controler>a{
+    border:1px solid lime;
+    height: 35px;
+    width: 35px;
+    /* transform: rotate(45deg); */
 }
 .proTrain{
     width:calc(400%/2);
@@ -1241,8 +1255,6 @@ footer{
     transform: translateX(0px);
     transition: all 0.5s ease 0s;
 }
-
-
 .proTrain>li>a>img {
     width: 100%;
     height: 368px;
@@ -1530,7 +1542,7 @@ section{
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    margin-bottom: 200px;
+    margin-bottom: 10px;
 }
 
 .mainSubBanner3>img{
@@ -1556,17 +1568,20 @@ section{
 .sub3wrap{
     width: 1440px;
     margin: 0 auto;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 .aboutLab{
     color:#315C6D ;
     width: 100%;
     height: 970px;
     text-align: center;
-    border:1px solid lime;
+    /* border:1px solid lime; */
     margin-bottom: 500px;
     position: relative;  
 }
+/* .aboutLab>ul>li{
+    border:1px solid red;
+} */
 .aboutLab::after {
     content: "";
     position: absolute;
@@ -1612,6 +1627,7 @@ section{
     justify-content: center;
     position: relative; 
 }
+
 .promise{
     margin-bottom: 200px;
 }
@@ -1814,6 +1830,7 @@ section{
 .sub4event{
     width: 1440px;
     margin: 0 auto;
+    position: relative;
 }
 .setEventMo{
     display: none;
@@ -1822,6 +1839,7 @@ section{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    margin-bottom: 100px;
 }
 .sub4event>section>ul{
     display: flex;
@@ -1829,11 +1847,40 @@ section{
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 200px;
+    /* border: 1px solid lime; */
 }
 .sub4event>section>ul>li{
     margin:0px 100px;
     color: #003a55;
     font-size: 2rem;
+    /* border: 3px solid lime; */
+    width:500px;
+    height: 900px;
+    margin-bottom: 50px;
+}
+.sub4event>section>ul>li>img{
+    /* border:1px solid red; */
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.sub4event>section>ul>li>span{
+    background:#3C6D8E;
+    width: 130px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-left:auto;
+    color: #fff;
+    text-align: center;
+}
+.sub4event>section>ul>li>span.sGreen{
+    background: #89A7A0;
+}
+.sub4event>section>ul>li>span.sBlack{
+    background: #46464C;
 }
 .sub4event>section>ul>li>h3{
     font-size: 2.3rem;
@@ -1933,7 +1980,7 @@ section{
     margin: 200px auto;
 }
 .porductTop{
-    border:1px solid blue;
+    /* border:1px solid blue; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -2058,8 +2105,8 @@ section{
     border-radius: 50%;
     background: #2C4B5D;
     position: absolute;
-    top: 270px;
-    left: 370px;
+    top: -25px;
+    left: 267px;
 }
 .circle>span {
     background:#fff;
