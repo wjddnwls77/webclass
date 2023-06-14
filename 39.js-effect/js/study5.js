@@ -2,8 +2,6 @@ $(document).ready(function(){
 
 
     let count = 0;//body태그를 다 읽고 최초 한번실행
-
-   
     let perView;
     //train클래스 너비를 변경 => train클래스의 너비를 불러와서 perView로 나눈 후 결과를 다시 적용
     let stationWidth;

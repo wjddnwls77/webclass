@@ -73,23 +73,47 @@ $(document).ready(function(){
     //**********************BEST SELLERS SLIDER******************
 
     let bestCount = 0;
+    let perViewBest = 1;
+
+    let deviceWidth = $(window).width()
+    if(deviceWidth>=1024){
+        perViewBest = 3;
+    }else{
+        perViewBest = 1;
+    }
+    $(".bestTrain").css("width",600/perViewBest+"%")
+
+    $(window).resize(function(){
+        let deviceWidth = $(window).width()
+        if(deviceWidth>=1024){
+            perViewBest = 3;
+        }else{
+            perViewBest = 1;
+        }   
+        $(".bestTrain").css("width",600/perViewBest+"%")
+    })
+
+
+    
     //다음 버튼을 눌렀을 때
     $(".bestNext").click(function(e){
         bestCount++;
         e.preventDefault()
-        if(bestCount>1){bestCount = 0}
+        if(bestCount>=6/perViewBest){bestCount = 0}
         bestslide(bestCount)
+        $(".slideLine>div").css("width",(100/6)*(bestCount+1)+"%")
       
     })
     $(".bestPrev").click(function(e){
         bestCount--;
         e.preventDefault()
-        if(bestCount<0){bestCount = 0}
+        if(bestCount<0){bestCount = 5}
         bestslide(bestCount)
+        $(".slideLine>div").css("width",(100/6)*(bestCount+1)+"%")
         
     })
     function bestslide(idx){
-        $(".bestStation").css("transform","translateX("+(-100*idx)+"%)")
+        $(".bestTrain").css("transform","translateX("+((-(100/6)*idx)*perViewBest)+"%)")
     }
     // setInterval(function(){
     //     bestCount++;
@@ -113,7 +137,7 @@ $(document).ready(function(){
             el: ".bannerLine",
         },
         autoplay:{
-            delay:2000,
+            delay:2500,
         }
     })
 
@@ -163,6 +187,12 @@ $(document).ready(function(){
     //         $(this).addClass("sideImg"+classIdx)
     //     })
     // }
+
+    // ***************sub5 TABMENU****************
+    $(".tabMenu>dt").click(function(){
+        $(".tabMenu>dt").removeClass("on")
+        $(this).addClass("on")
+    })
 
 
 

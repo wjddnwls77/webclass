@@ -119,27 +119,30 @@ header{
 
 /* main */
 .mainStation{
+    display: none;
+}
+.mo_MainStation{
     position: relative;
     width: 90%;
-    height: 80vh;
+    height: 50vh;
     overflow: hidden;
-    border: 1px solid blue;
+    border: 1px solid aqua;
     margin: 0 auto;
     margin-top: 54px;
     margin-bottom: 50px;
 }
-.mainTrain{
+.mo_MainTrain{
     width:300%;
     height: 100%;
     display: flex;
     transform: translateX(0px);
     transition: all 0.5s ease 0s;
 }
-.mainTrain>li{
+.mo_MainTrain>li{
     width: calc(100%/3);
     height: 100%;
 }
-.mainTrain>li>img{
+.mo_MainTrain>li>img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -149,22 +152,22 @@ header{
     height: 100%;
     object-fit: cover;
  }
- .mainBanner3 {
+ .mo_MainBanner3 {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     margin-left: 225px; 
 }
-.mainBanner3>h2{
+.mo_MainBanner3>h2{
     font-size: 2.8rem;
     font-weight: bold;
     margin-bottom: 20px;
 }
-.mainBanner3>p{
+.mo_MainBanner3>p{
     font-size: 2rem;
     margin-bottom: 20px;
 }
-.mainBanner3>a{
+.mo_MainBanner3>a{
     display: flex;
     border: 1px solid black;
     width: 150px;
@@ -173,59 +176,84 @@ header{
     align-items: center;
     font-size: 1.5rem;
 }
-.mainBanner3>a:hover{
-    background: black;
-    color: #fff;
-}
+
 .moMenuBtn{
-    /* border:1px solid red; */
+    border-top:1px solid #ebebeb;
     position: fixed;
-    top: 80%;
+    bottom:0;
     left: 0;
     width: 100%;
     height: 60px;
     background: #fff;
-    display: none;
-    
 }
 .moMenuBtn>ul{
     width: 100%;
     height: 100%;
     display: flex;
-    border:1px solid blue;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 .moMenuBtn>ul>li{
-    border:1px solid green;
+    justify-content: center;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.moMenuBtn>ul>li img{
     width: 30px;
     height: 30px;
+    object-fit: contain;
 }
-
-
-
-.controlerMain{
+.bMenu_mo{
     display: none;
-    
+    border:3px solid yellow;
+    width: 90%;
+    margin-top: 54px;
+    z-index: 5000;
+    display: block;
 }
-
+.bMenu_mo>ul{
+    display: flex;
+    border:3px solid yellow;
+    z-index: 5000;
+}
+.controlerMain{
+    width: 95%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-between;
+}
+.controlerMain>a{
+    padding: 10px;
+    cursor: pointer;
+    border-top:2px solid black;
+    border-right:2px solid black;
+    transform: rotate(45deg);
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+}
+.controlerMain>a.btnPrev{
+    transform: rotate(-135deg);
+}
    
 /* ***********about*********** */
 
  .about{
     border:1px solid red;
-    height: 80vh;
     width: 90%;
     margin: 0 auto;
-    overflow: hidden;
     margin-bottom: 50px;
-
  }
 
  .mainContents{
     border-bottom: 0.5px solid #2c4b5d;
     color: #2c4b5d;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     margin-bottom: 10px;
     position: relative;
@@ -236,36 +264,46 @@ header{
  }
  .mainContents>h2{
     text-transform: uppercase;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-family: "stencil";
  }
  .mainContents>p{
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 400;
  }
  .aboutStation{
-    position: relative;
+    width: 100%;
+    height: 360px;
+    /* overflow: hidden; */
+    border:1px solid lime;
  }
  .aboutTrain{
     position: relative;
+    width: calc(300%/1);
+    height: 100%;
+    display: flex;
+    transform: translateX(0px);
+    transition: all 0.5s ease 0s;
+    border: 1px solid blue;
  }
  .aboutTrain>li{
     transition:all 0.5s ease 0s;
-    width: 90%;
-    height: 45%;
     margin: 0 auto;
+    width: 100%;
+    height: 100%;
  }
  .aboutTrain>li>h3{
     font-family: "stencil";
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     color: #fff;
     position: absolute;
-    left: 20px;
-    bottom: 20px;
+    left: 15px;
+    bottom: 40px;
+    border: 1px solid lime;
 }
 .aboutTrain>li>img{
     width: 100%;
-    height:70vh;
+    height:100%;
     object-fit: cover;
 }
 
@@ -296,7 +334,7 @@ header{
 .best{
     border:1px solid blue;
     width: 90%;
-    height: 60vh;
+    /* height: 60vh; */
     margin: 0 auto;
     position: relative;
     margin-bottom: 50px;
@@ -356,11 +394,11 @@ header{
 }
 .slideLine>div{
     background: #52838e;
-    width: 60px;
+    width: calc(100%/6);
     height: 3px;
     position: absolute;
     left: 0%;
-   
+    transition:all 0.5s ease 0s;
 }
 
 .bestTrain>li .productName{
@@ -438,11 +476,6 @@ header{
     transition: all 0.5s ease 0s ;
     
 }
-.skinSolution>a:hover{
-    background: #fff;
-    color:#133647;
-    border:1px solid #133647;
-}
  .skinSolution>h3{
      display: none;
 }
@@ -469,7 +502,6 @@ header{
 }
 
 .skinMenu>ol>li{
-
     width: 90%;
     margin: 0 auto;
     display: flex;
@@ -544,23 +576,15 @@ header{
     font-weight: 300;
     font-size: 0.8rem;
 }
-.skinContents>a:hover{
-    color: #133647;
-    background: #fff;
-    border:1px solid #133647;
-}
+
 .skinContents>a.colorTWO{
     background:#6a8492;
 }
-.skinContents>a.colorTWO:hover{
-    background: #fff;
-}
+
 .skinContents>a.colorThree{
     background:#9fadb8;
 }
-.skinContents>a.colorThree:hover{
-    background: #fff;
-}
+
 
 /* 랩시리즈 공식몰 event */
 .event{
@@ -783,7 +807,7 @@ header{
     justify-content: center;
     margin: 0 auto;
     font-size: 0;
-    margin-top:30px;
+    margin-top:17px;
 }
 .bannerLine>span {
     width: 30px;
@@ -873,8 +897,9 @@ footer{
 .mainSubBanner1{
     border: 1px solid red;
     width: 90%;
-    height: 80vh;
-    margin: 54px auto;
+    margin: 0 auto;
+    margin-top: 54px;
+   margin-bottom: 100px;
 }
 
 .mainSubBanner1>img{
@@ -980,7 +1005,6 @@ footer{
 .mainSubBanner2{
     border: 1px solid red;
     width: 90%;
-    height: 80vh;
     margin: 54px auto;
 }
 
@@ -1107,7 +1131,7 @@ section{
 }
 .sub2Pro>ol>li>ul a{
     display: flex;
-    width: 130px;
+    width: 98px;
     height: 30px;
     justify-content: center;
     align-items: center;
@@ -1116,28 +1140,17 @@ section{
     border-radius: 30px;
     font-weight: 300;
 }
-.sub2Pro>ol>li>ul a:hover{
-    background: #fff;
-    border:1px solid #2D4C5D;
-    color: #2D4C5D;
-}
 .sub2Pro>ol>li>ul a.purBtn2{
     background: #6a8492;
-}
-.sub2Pro>ol>li>ul a.purBtn2:hover{
-    background: #fff;
 }
 .sub2Pro>ol>li>ul a.purBtn3{
     background: #9fadb8;
 }
-.sub2Pro>ol>li>ul a.purBtn3:hover{
-    background: #fff;
-}
+
 /* *********************sub3***************** */
 .mainSubBanner3{
     border: 1px solid red;
     width: 90%;
-    height: 80vh;
     margin: 54px auto;
 }
 
@@ -1275,7 +1288,7 @@ section{
     border: 1px solid red;
     margin: 0 auto;
     margin-bottom: 50px;
-    margin-top: 54px;
+    margin-top: 60px;
 }
 .re{
     border-bottom: 1px solid #28404c;
@@ -1366,8 +1379,10 @@ section{
     margin-bottom: 50px;
 }
 .setEvent{
+    display: none;
+}
+.setEventMo{
     width: 100%;
-    height: 350px;
     object-fit: cover;
     border: 1px solid blue;
     margin-bottom: 20px;
@@ -1407,8 +1422,8 @@ section{
     justify-content: center;
     align-items: center;
     border: 1px solid  #003a55;
-    width: 50px;
-    height:20px;
+    width: 85px;
+    height: 21px;
     font-size: 0.3rem;
 }
 .highLight{
