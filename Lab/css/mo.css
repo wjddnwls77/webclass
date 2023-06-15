@@ -17,11 +17,11 @@ header{
     width: 30px;
     height: 30px;
     margin-right: 10px;
-    border:1px solid red;
+    /* border:1px solid red; */
 
 }
 .innerheader{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 90%;
     margin: 0 auto;
     display: flex;
@@ -126,7 +126,7 @@ header{
     width: 90%;
     height: 50vh;
     overflow: hidden;
-    border: 1px solid aqua;
+    /* border: 1px solid aqua; */
     margin: 0 auto;
     margin-top: 54px;
     margin-bottom: 50px;
@@ -207,15 +207,14 @@ header{
 }
 .bMenu_mo{
     display: none;
-    border:3px solid yellow;
+    
     width: 90%;
     margin-top: 54px;
     z-index: 5000;
-    display: block;
 }
 .bMenu_mo>ul{
     display: flex;
-    border:3px solid yellow;
+    
     z-index: 5000;
 }
 .controlerMain{
@@ -244,7 +243,7 @@ header{
 /* ***********about*********** */
 
  .about{
-    border:1px solid red;
+   
     width: 90%;
     margin: 0 auto;
     margin-bottom: 50px;
@@ -275,7 +274,7 @@ header{
     width: 100%;
     height: 360px;
     /* overflow: hidden; */
-    border:1px solid lime;
+   
  }
  .aboutTrain{
     position: relative;
@@ -284,7 +283,7 @@ header{
     display: flex;
     transform: translateX(0px);
     transition: all 0.5s ease 0s;
-    border: 1px solid blue;
+    
  }
  .aboutTrain>li{
     transition:all 0.5s ease 0s;
@@ -299,7 +298,7 @@ header{
     position: absolute;
     left: 15px;
     bottom: 40px;
-    border: 1px solid lime;
+    
 }
 .aboutTrain>li>img{
     width: 100%;
@@ -313,7 +312,7 @@ header{
     text-align: center;
     color: #133647;
     position: relative;
-    border: 1px solid red;
+   
     margin-bottom: 80px;
 }
 
@@ -332,7 +331,7 @@ header{
 
 /* ***********best*********** */
 .best{
-    border:1px solid blue;
+  
     width: 90%;
     /* height: 60vh; */
     margin: 0 auto;
@@ -361,7 +360,7 @@ header{
     width: 100%;
     height: auto;
     overflow: hidden;
-    border:1px solid red;
+    
 }
 .bestTrain{
     display: flex;
@@ -375,7 +374,7 @@ header{
 .bestTrain>li{
     width: calc(100%/6);
     height: 100%;
-    border:1px solid blue;
+   
 }
 .bestTrain>li>a>img{
     width: 100%;
@@ -498,7 +497,7 @@ header{
     width: 90%;
     margin: 0 auto;
     margin-bottom: 50px;
-    border: 1px solid red;
+    
 }
 
 .skinMenu>ol>li{
@@ -591,7 +590,7 @@ header{
     width: 90%;
     margin: 0 auto;
     position: relative;
-    border:1px solid red;
+   
     /* overflow: hidden; */
     height: 50vh;
     margin-bottom: 50px;
@@ -895,7 +894,7 @@ footer{
 
 
 .mainSubBanner1{
-    border: 1px solid red;
+   
     width: 90%;
     margin: 0 auto;
     margin-top: 54px;
@@ -1003,7 +1002,7 @@ footer{
 /* ********************** sub2************************* */
 
 .mainSubBanner2{
-    border: 1px solid red;
+    
     width: 90%;
     margin: 54px auto;
 }
@@ -1092,7 +1091,7 @@ section{
 }
 
 .sub2Pro>ol>li{
-    border:1px solid red;
+   
     margin-bottom: 20px;
 }
 
@@ -1149,7 +1148,7 @@ section{
 
 /* *********************sub3***************** */
 .mainSubBanner3{
-    border: 1px solid red;
+   
     width: 90%;
     margin: 54px auto;
 }
@@ -1186,7 +1185,7 @@ section{
     width: 100%;
     height: 970px;
     text-align: center;
-    border:1px solid lime;
+   
     margin-bottom: 500px;
     position: relative;  
 }
@@ -1240,7 +1239,7 @@ section{
     position: absolute;
     top: 0;
     left: 0;
-    background:red;
+  
     width: 1px;
     height: 50px;
 }
@@ -1285,7 +1284,7 @@ section{
 .sub4review {
     width: 90%;
     margin: 0 auto;
-    border: 1px solid red;
+    
     margin: 0 auto;
     margin-bottom: 50px;
     margin-top: 60px;
@@ -1384,7 +1383,7 @@ section{
 .setEventMo{
     width: 100%;
     object-fit: cover;
-    border: 1px solid blue;
+   
     margin-bottom: 20px;
 }
 .sub4event>section>ul{
@@ -1433,7 +1432,7 @@ section{
 /* BESTSELLER */
 .bestMain{
     margin: 0 auto;
-    border: 1px solid red;
+   
     width: 90%;
     margin-top: 54px;
 }
@@ -1470,7 +1469,7 @@ section{
 .bestContents{
     color: #234249;
     width: 100%;
-    border: 1px solid red;
+   
     margin-bottom: 40px;
 }
 .bestContents>ul{
@@ -1514,12 +1513,12 @@ section{
 /********************* sub5**************** */
 .productWrap{
     width: 90%;
-   border: 1px solid lime;
+   
    margin: 0 auto;
    margin-top: 54px;
 }
 .porductTop{
-    border:1px solid blue;
+ 
     margin-bottom: 50px;
     position: relative;
 }
@@ -1527,7 +1526,7 @@ section{
     width: 100%;
     height: 300px;
     object-fit: contain;
-    border: 1px solid red;
+   
 }
 .porductTop h1{
     font-weight: 500;
@@ -1576,7 +1575,7 @@ section{
     height: 1px;
 }
 .tabMenu>dt.on{
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid #003a55;
 }
 .tabMenu>dd{
     position: absolute;
@@ -1589,7 +1588,7 @@ section{
     color: #003a55;
     font-weight: 300;
     padding: 10px;
-    border: 1px solid blue;
+   
     height: 240px;
 }
 .tabMenu>dt.on + dd{

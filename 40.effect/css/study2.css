@@ -1,0 +1,91 @@
+*{margin: 0;padding:0}
+ul,ol{list-style: none;}
+
+
+.intro{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.mainVideo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* width: auto; */
+    /* 바디 태그의 기본 너비는 auto(자동으로 늘어나거나 줄어듦.), width: 100%;
+    부모만큼의 너비로 지정하겠다.*/
+}
+.floatingTxt{
+    border: 1px solid ;
+    position:absolute ;
+    left: 50%; 
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    border:1px solid aliceblue;
+    color: aliceblue;
+    padding: 20px;
+    text-transform: uppercase;
+}
+.floatingTxt>h1{
+    font-size: 5rem;
+    line-height: 100%;
+}
+.floatingTxt>p{
+    text-align: center;
+    border-top: 1px solid #fff;
+    margin-top: 30px;
+    letter-spacing: 10px;
+    padding-top:20px ;
+}
+
+.intro::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: black;
+    /* after태그는 inline 이지만 position =absolute적용하면 암묵적으로 inline block이된다. */
+    /* 이미지는 텍스트와 같다 */
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+}
+
+@keyframes introAni{
+    0%{
+        opacity: 0;
+        transform: translateY(-10px)rotateY(45deg);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px)rotateY(0deg);
+    }
+}
+.floatingTxt>h1{
+    /* animation:introAni 1s ease 0s infinite alternate; */
+    font-size: 0;
+    perspective: 300PX;
+}
+
+.floatingTxt>h1 b{
+    opacity: 0;
+    font-size: 5rem;
+    line-height: 5rem;
+    display: inline-block;
+}
+.floatingTxt>h1 b:nth-of-type(1){animation: introAni 1s ease 0s forwards;}
+.floatingTxt>h1 b:nth-of-type(2){animation: introAni 1s ease 0.25s forwards;}
+.floatingTxt>h1 b:nth-of-type(3){animation: introAni 1s ease 0.5s forwards;}
+.floatingTxt>h1 b:nth-of-type(4){animation: introAni 1s ease 0.75s forwards;}
+.floatingTxt>h1 b:nth-of-type(5){animation: introAni 1s ease 1s forwards;}
+.floatingTxt>h1 b:nth-of-type(6){animation: introAni 1s ease 1.25s forwards;}
+.floatingTxt>h1 b:nth-of-type(7){animation: introAni 1s ease 1.5s forwards;}
+.floatingTxt>h1 b:nth-of-type(8){animation: introAni 1s ease 1.75s forwards;}
+.floatingTxt>h1 b:nth-of-type(9){animation: introAni 1s ease 2s forwards;}
+.floatingTxt>h1 b:nth-of-type(10){animation: introAni 1s ease 2.25s forwards;}
+.floatingTxt>h1 b:nth-of-type(11){animation: introAni 1s ease 2.5s forwards;}
+.floatingTxt>h1 b:nth-of-type(12){animation: introAni 1s ease 2.75s forwards;}
+.floatingTxt>h1 b:nth-of-type(13){animation: introAni 1s ease 3s forwards;}
+.floatingTxt>h1 b:nth-of-type(14){animation: introAni 1s ease 3.25s forwards;}

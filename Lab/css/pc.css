@@ -1214,7 +1214,7 @@ footer{
     height: 680px;
     background: #28404c;
     top: 0px;
-    left: 47%;
+    left: 44%;
 }
 .conLeft::after{
    left: 54%;
@@ -1224,14 +1224,15 @@ footer{
 }
 
 .proStation {
-    border: 1px solid red;
+    /* border: 1px solid blue; */
     height: 660px;
-    width: 750px;
+    width: 730px;
     overflow: hidden;
     position: relative;
+    
 }
-.sub1Controler{
-    border: 1px solid red;
+.sub1Controler {
+    /* border: 1px solid red; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1239,11 +1240,14 @@ footer{
     top: 500px;
     left: 0;
     width: 100%;
-    height: 50px;  
+    height: 50px;
     padding: 0 10px;
+    box-sizing: border-box;
+    z-index: 5;
+    display: none;
 }
 .sub1Controler>a{
-    border:1px solid lime;
+    /* border:1px solid lime; */
     height: 35px;
     width: 35px;
     /* transform: rotate(45deg); */
@@ -1254,7 +1258,11 @@ footer{
     display: flex;
     transform: translateX(0px);
     transition: all 0.5s ease 0s;
+    /* border:1px solid red; */
 }
+/* .proStation>.li.swiper-slide-active{
+    margin-right: 0;
+} */
 .proTrain>li>a>img {
     width: 100%;
     height: 368px;
@@ -1284,8 +1292,12 @@ footer{
     opacity: 1;
 }
 .proTrain>li {
-    margin: 0 10px;
+    /* border:1px solid lime; */
+    margin-right:10px;
     position: relative;
+}
+.proTrain>li:last-of-type{
+    margin-right: 0;
 }
 .proTrain>li>span{
     background: #808285;
