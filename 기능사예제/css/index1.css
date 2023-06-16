@@ -1,0 +1,210 @@
+
+/* 1. html 파일을 만든다.
+    2. html 파일안에 img 파일을 만들고 img를 다 작업해놓고 넣어둔다. */
+
+    /* logo - > 포토샵 200x40 (transparent /RGB 적용.)
+    색 적용(alt+d) -> png로 저장
+    slide img 크기변경 / 모든 이미지 크기,용량 확인.
+
+    제이쿼리 파일을 js 폴더에 넣는다.
+    ctrl+ A ctrl+ C =이미지 파일명 복사 
+    */
+*{margin:0;padding:0;}
+a{text-decoration:none;color:inherit}
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: normal;}
+ul,ol{list-style: none;}
+img{max-width:100%;}
+strong,b{font-weight: normal;}
+i,em,address{font-style:normal}
+
+
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+header{
+    height: 100px;
+}
+
+
+footer{
+    height: 100px;
+}
+
+/* header */
+.popUP{
+    position: fixed;
+    border:1px solid black;
+    top:150px;
+    left: 50%;
+    background: #fff;
+    z-index: 100;
+    width: 500px;
+    height: 200px;
+    transition: all 0.5s ease 0s;
+    display: none;
+}
+.popUP>h2{
+    font-weight: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.popUP.on{
+    display: block;
+}
+.btnPopupClose{
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 5px;
+    right: 10px;
+    bottom: 10px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    margin-top: 25px;
+}
+/* 메뉴의 너비,높이 잡기. =>디스플레이 플렉스
+ overflow:hidden ,트렌지션 효과 마지막에 적용
+*/
+.gnb{
+    width: 800px;
+    height: 50px;
+    display: flex;
+    text-align: center;
+    transition: all 0.5s ease 0s;
+    position: relative;
+    z-index: 1;
+    margin-top: 25px;
+    overflow: hidden;
+   
+}
+/* 메뉴에 마우스를 올리면 2뎁스가 보일 수 있도록. */
+.gnb:hover{
+    height: 250px;
+}
+/* 각각 1뎁스 리스트들이 동일한너비로 적용될
+수있또록 flex1 */
+.gnb>li{
+    flex: 1;
+}
+/* a태그의 기본적인 디스플레이 속성 바꿔주기 */
+.gnb>li>a{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+}
+.gnb>li>a:hover{
+   font-weight: bold;
+   border-bottom: 2px solid lightcoral;
+}
+.gnb>li ul{
+    background: #fff;
+}
+.gnb>li ul>li{
+    padding: 10px 0;
+}
+.gnb>li ul>li:hover{
+    background: lightcoral;
+    color: #fff;
+}
+
+/* main =station */
+.station{
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+}
+.train{
+    width: 300%;
+    height: 100%;
+    display: flex;
+    transition:all 0.5s ease 0s;
+}
+.train>li{
+    width: 100%;
+    height: 100%;
+}
+.train>li>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* contents */
+.contents{
+    height: 200px;
+    display: flex;
+}
+.contents>section{
+    flex: 1;
+    position: relative;
+}
+/* dl dt 때문에 relative 적용 */
+.tebmenu{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+}
+.tebmenu>dt{
+    height: 50px;
+    padding: 0 20px;
+    line-height: 50px;
+}
+.tebmenu>dt.on{
+    border-bottom: 2px solid black;
+}
+.tebmenu>dd{
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    height: 150px;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    display: none;
+}
+.tebmenu>dd.on{
+    display: block;
+}
+.noticeList>li{
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 0;
+}
+.galleryList{
+    display: flex;
+    justify-content: space-between;
+}
+.contents>section h2{
+    background: violet;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* footer */
+footer{
+    display: flex;
+    background: #000;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+}
+.snsList{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.snsList>li{
+    margin-left: 10px;
+}
