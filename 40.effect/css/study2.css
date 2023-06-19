@@ -4,10 +4,12 @@ ul,ol{list-style: none;}
 
 .intro{
     width: 100%;
+    /* body태그만큼의 너비-100% 스크롤이 생기지않고 100vW 스크롤이생김(화면의너비만큼.스크롤포함) */
     height: 100vh;
     overflow: hidden;
     position: relative;
 }
+
 .mainVideo{
     width: 100%;
     height: 100%;
@@ -23,14 +25,15 @@ ul,ol{list-style: none;}
     top: 50%;
     transform: translate(-50%,-50%);
     z-index: 1;
+    /* 포지션인없으면 설정이 되지 않음. */
     border:1px solid aliceblue;
     color: aliceblue;
     padding: 20px;
     text-transform: uppercase;
 }
 .floatingTxt>h1{
-    font-size: 5rem;
-    line-height: 100%;
+    /* font-size: 5rem;
+    line-height: 100%; */
 }
 .floatingTxt>p{
     text-align: center;
@@ -65,27 +68,21 @@ ul,ol{list-style: none;}
 }
 .floatingTxt>h1{
     /* animation:introAni 1s ease 0s infinite alternate; */
-    font-size: 0;
+    /* font-size:0; */
     perspective: 300PX;
 }
 
-.floatingTxt>h1 b{
+/* .floatingTxt>h1 b{
     opacity: 0;
     font-size: 5rem;
     line-height: 5rem;
     display: inline-block;
+} */
+
+.con{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.floatingTxt>h1 b:nth-of-type(1){animation: introAni 1s ease 0s forwards;}
-.floatingTxt>h1 b:nth-of-type(2){animation: introAni 1s ease 0.25s forwards;}
-.floatingTxt>h1 b:nth-of-type(3){animation: introAni 1s ease 0.5s forwards;}
-.floatingTxt>h1 b:nth-of-type(4){animation: introAni 1s ease 0.75s forwards;}
-.floatingTxt>h1 b:nth-of-type(5){animation: introAni 1s ease 1s forwards;}
-.floatingTxt>h1 b:nth-of-type(6){animation: introAni 1s ease 1.25s forwards;}
-.floatingTxt>h1 b:nth-of-type(7){animation: introAni 1s ease 1.5s forwards;}
-.floatingTxt>h1 b:nth-of-type(8){animation: introAni 1s ease 1.75s forwards;}
-.floatingTxt>h1 b:nth-of-type(9){animation: introAni 1s ease 2s forwards;}
-.floatingTxt>h1 b:nth-of-type(10){animation: introAni 1s ease 2.25s forwards;}
-.floatingTxt>h1 b:nth-of-type(11){animation: introAni 1s ease 2.5s forwards;}
-.floatingTxt>h1 b:nth-of-type(12){animation: introAni 1s ease 2.75s forwards;}
-.floatingTxt>h1 b:nth-of-type(13){animation: introAni 1s ease 3s forwards;}
-.floatingTxt>h1 b:nth-of-type(14){animation: introAni 1s ease 3.25s forwards;}

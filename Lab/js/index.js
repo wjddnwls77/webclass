@@ -1,36 +1,36 @@
 $(document).ready(function(){
     // ******************TAB MENU******************
-    $(".skinSolution>*").addClass("mTtBaleady")
+    // $(".skinSolution>*").addClass("mTtBaleady")
 
     $(".btnMenu,.btnMoMenu").click(function(){
 
-        if($(".gnb").hasClass("on")==false){
-            $(".gnb").addClass("on")
+        if($("nav").hasClass("on")==false){
+            $("nav").addClass("on")
         }else{
-            $(".gnb").removeClass("on")
+            $("nav").removeClass("on")
         }
     })
     
-    $(".menu>li .depi").click(function(e){
-        e.preventDefault()
-        let _this = $(this).parent().parent()
-        if(_this.hasClass("on")==true){
-            _this.css("height","50px")
-            _this.removeClass("on")
-        }else{
-            $(".menu>li").css("height","50px")
-            $(".menu>li").removeClass("on")
-            let li2dep = _this.children("ul").children().length
-            _this.css("height",(li2dep+1)*50+"px")
-            _this.addClass("on")
-        }
-        return false;
+    // $(".menu>li .depi").click(function(e){
+    //     e.preventDefault()
+    //     let _this = $(this).parent().parent()
+    //     if(_this.hasClass("on")==true){
+    //         _this.css("height","50px")
+    //         _this.removeClass("on")
+    //     }else{
+    //         $(".menu>li").css("height","50px")
+    //         $(".menu>li").removeClass("on")
+    //         let li2dep = _this.children("ul").children().length
+    //         _this.css("height",(li2dep+1)*50+"px")
+    //         _this.addClass("on")
+    //     }
+    //     return false;
         
-    })
+    // })
     
-    $(".menu ul").click(function(){
-        return false
-    })
+    // $(".menu ul").click(function(){
+    //     return false
+    // })
 
     //****************** MAIN PAGE SLIDER_1******************
     
@@ -132,7 +132,7 @@ $(document).ready(function(){
             el: ".bannerLine",
         },
         autoplay:{
-            delay:2500,
+            delay:2800,
         }
     })
 
