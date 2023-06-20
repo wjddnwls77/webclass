@@ -47,76 +47,87 @@ header{
     margin: 6.7px auto; 
     display: block;
 }
-.login>ul{
-    display: flex;
-    margin-top: 50px;
-    margin-left:100px;
-}
-
-.login>ul>li{
-    padding:10px;
-    font-size: 0.8rem;
-}
-
-.gnb{
-    width: 300px;
+nav{
+    width: 280px;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background: #fff;
-    border-right:1px solid #dde3e8;
     transform: translateX(-100%);
-    transition: all 0.7s ease 0s;
-}
-.gnb.on{transform: translateX(0%);}
-
-.gnb>ul{
-    color: #2C4B5D;
-    height: 100%;
-    margin-top: 100px;
-    margin:50px 20px;
-}
-.gnb>ul>li{
-    font-size: 1.3rem;
-    font-weight: 500;
-    border-bottom:1px solid #8ea9b9;
-    height: 50px;
-    overflow: hidden;
     transition: all 0.5s ease 0s;
 }
-.gnb>ul>li:last-of-type{
-    border-bottom: 0;
+
+.gnb{
+    margin-top: 150px;
 }
-.gnb>ul>li>ul{
-    font-size: 1.1rem;
-    font-weight: 300;
-    padding-left: 80px;
-}
-.gnb>ul>li>ul>li{
-    height: 30px;
-}
-.gnb>ul>li>a{
-    display: flex;
-    justify-content: space-between;
+
+.gnb>li{
+    font-size: 1.3rem;
     height: 50px;
+    width: 280px;
+    font-weight: 500;
+    overflow: hidden;
+    border-bottom:1px solid #a9b9bf;
+    transition:all 0.5s ease 0s;
+}
+.gnb>li>a {
+    width: 100%;
+    height: 50px;
+    display: flex;
     align-items: center;
+    justify-content: center;
 }
-
-.depi{
-    border-right: 1px solid #234249;
-    border-top: 1px solid #234249;
-    width: 10px;
-    height: 10px;
-    transform: rotate(133deg);
-    margin-right: 5px;
+.gnb>li:hover>a{
+    font-weight: bold;
+    color: #315C6D;
 }
-
-.gnb>ul>li>ul>li{
+.gnb>li.down:hover{
+   height: 300px;
+}
+.gnb>li>ul>li{
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
     padding: 5px 0;
+    font-size: 1.1rem;
+}
+.gnb>li>ul>li:hover{
+    background: #315C6D;
+    color: #fff;
+}
+nav.on{
+    transform: translateX(0%);
 }
 
 
+.login{
+    display: flex;
+    margin-top: 100px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left:auto;
+    /* border: 1px solid red; */
+    padding-right:10px;
+}
+
+.login>li>a {
+    width: 50px;
+    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 0.8rem;
+}
+.login>li>a>img{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    margin: 0 auto;
+}
 /* main */
 .mainStation{
     display: none;
@@ -270,12 +281,12 @@ header{
     font-size: 0.9rem;
     font-weight: 400;
  }
- .aboutStation{
+ .aboutStation {
     width: 100%;
     height: 360px;
-    /* overflow: hidden; */
-   
- }
+    margin-bottom: 20px;
+    overflow: hidden;
+}
  .aboutTrain{
     position: relative;
     width: calc(300%/1);
@@ -290,6 +301,7 @@ header{
     margin: 0 auto;
     width: 100%;
     height: 100%;
+    position: relative;
  }
  .aboutTrain>li>h3{
     font-family: "stencil";

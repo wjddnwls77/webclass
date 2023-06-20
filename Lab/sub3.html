@@ -10,12 +10,15 @@
      <link rel="stylesheet" href="./css/mo.css">
     <link rel="stylesheet" href="./css/pc.css">
      <!-- font -->
-     <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <!-- jQ -->
      <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
      <script src="./js/index.js"></script>
+     <script src="./js/slider.js"></script>
       <!-- fontawesome -->
     <link rel="stylesheet" href="./font-awesome/css/all.min.css">
 </head>
@@ -23,105 +26,92 @@
     <div class="blackcover"></div>
     <header class="mo">
         <div class="innerheader">
-        <div class="mainLogo">
-                <a href="./main.html">
-                    <h1>lab series</h1>
-                </a>
-        </div>
-        <nav class="gnb">
-            <div class="login">
-                <ul>
-                    <li><a href="#">로그인</a></li>
-                    <li><a href="#">회원가입</a></li>
-                    <li><a href="#">고객센터</a></li>
-                </ul>
-            </div>
-            <ul class="menu">
-                <li><a href="./sub1.html">PRODUCT<span class="depi"></span></a>
-                <ul>
-                    <li><a href="">CLEANSER</a></li>
-                    <li><a href="">WATER LOTION</a></li>
-                    <li><a href="">MOISTURE</a></li>
-                </ul>
-                </li>
-                <li><a href="./bestseller.html">BEST SELLER</a></li>
-                <li><a href="">SKIN SLOUTION<span class="depi"></span></a>
-                    <ul>
-                        <li><a href="">OIL CONTROL</a></li>
-                        <li><a href="">DAILY RESCUE</a></li>
-                        <li><a href="">ANTI AGES-MAX</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">ABOUT<span class="depi"></span></a>
-                    <ul>
-                        <li><a href="#">BRAND</a></li>
-                        <li><a href="#">REVIEW</a></li>
-                    </ul>
-                </li>  
-            </ul>
-        </nav>
-            <div class="btnMoMenu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div> 
-        </div>
-        <div class="moMenuBtn">
-            <ul>
-                <li><a href="#"><img src="./img/SVG/all.svg" alt="">카테고리</a></li>
-                <li><a href="#"><img src="./img/SVG/like.svg" alt="">좋아요</a></li>
-                <li><a href="#"><img src="./img/SVG/home.svg" alt="">홈</a></li>
-                <li><a href="#"><img src="./img/SVG/login.svg" alt="">로그인</a></li>
-                <li><a href="#"><img src="./img/SVG/bag.svg" alt="">장바구니</a></li>
-            </ul>
-        </div>
-    </header>
-        <header class="pc">
-            <div class="innerheader">
-            <div class="mainLogo">
-                    <a href="./main.html">
-                        <h1>lab series</h1>
-                    </a>
-            </div>
-            <nav class="gnb">
-                <div class="login">
-                    <ul>
-                        <li><a href="#">로그인</a></li>
-                        <li><a href="#">회원가입</a></li>
-                        <li><a href="#">고객센터</a></li>
-                    </ul>
-                </div>
-                <ul class="menu">
-                    <li><a href="./sub1.html">PRODUCT<span class="depi"></span></a>
-                    <ul>
-                        <li><a href="">CLEANSER</a></li>
-                        <li><a href="">WATER LOTION</a></li>
-                        <li><a href="">MOISTURE</a></li>
-                    </ul>
-                    </li>
-                    <li><a href="./bestseller.html">BEST SELLER</a></li>
-                    <li><a href="">SKIN SLOUTION<span class="depi"></span></a>
-                        <ul>
-                            <li><a href="">OIL CONTROL</a></li>
-                            <li><a href="">DAILY RESCUE</a></li>
-                            <li><a href="">ANTI AGES-MAX</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="">ABOUT<span class="depi"></span></a>
-                        <ul>
-                            <li><a href="">BRAND</a></li>
-                            <li><a href="">REVIEW</a></li>
-                        </ul>
-                    </li>  
-                </ul>
-            </nav>
+               <h1 class="mainLogo"><a href="./main.html">lab series</a></h1>
                 <div class="btnMenu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            
-        </header> 
+                <span></span>
+                <span></span>
+                <span></span>
+                
+            </div>
+        </div>
+        <nav>
+            <ul class="gnb">
+                <li><a href="#">피부 고민별</a>
+                    <ul>
+                        <li><a href="">안티에이지</a></li>
+                        <li><a href="#">수분 활력공급</a></li>
+                        <li><a href="#">올인원 케어</a></li>
+                        <li><a href="#">유분&피지 조절</a></li>
+                        <li><a href="#">피부보정</a></li>
+                        <li><a href="#">고보습 활력</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">스킨케어</a>
+                    <ul>
+                        <li><a href="#">클렌저</a></li>
+                        <li><a href="#">원터로션(토너)</a></li>
+                        <li><a href="#">수분 자외선</a></li>
+                        <li><a href="#">아이&립 케어</a></li>
+                        <li><a href="#">세럼</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">베스트 셀러</a></li>
+                <li><a href="#">이벤트&기획전</a></li>
+                <li><a href="#">브랜드 소개</a></li>
+            </ul>
+           <div>
+                <ul class="login">
+                    <li><a href="#"><img src="./img/SVG/login.svg" alt="로그인"><p>로그인</p></a></li>
+                    <li><a href="#"><img src="./img/SVG/bag.svg" alt="장바구니"><p>장바구니</p></a></li>
+                    <li><a href="#"><img src="./img/SVG/customer.svg" alt="고객센터"><p>고객센터</p></a></li>
+                </ul>
+           </div>
+        </nav> 
+    </header>
+    <header class="pc">
+        <div class="innerheader">
+               <h1 class="mainLogo"><a href="./main.html">lab series</a></h1>
+                <div class="btnMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+                
+            </div>
+        </div>
+        <nav>
+            <ul class="gnb">
+                <li><a href="#">피부 고민별</a>
+                    <ul>
+                        <li><a href="">안티에이지</a></li>
+                        <li><a href="#">수분 활력공급</a></li>
+                        <li><a href="#">올인원 케어</a></li>
+                        <li><a href="#">유분&피지 조절</a></li>
+                        <li><a href="#">피부보정</a></li>
+                        <li><a href="#">고보습 활력</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">스킨케어</a>
+                    <ul>
+                        <li><a href="#">클렌저</a></li>
+                        <li><a href="#">원터로션(토너)</a></li>
+                        <li><a href="#">수분 자외선</a></li>
+                        <li><a href="#">아이&립 케어</a></li>
+                        <li><a href="#">세럼</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">베스트 셀러</a></li>
+                <li><a href="#">이벤트&기획전</a></li>
+                <li><a href="#">브랜드 소개</a></li>
+            </ul>
+           <div>
+                <ul class="login">
+                    <li><a href="#"><img src="./img/SVG/login.svg" alt="로그인"><p>로그인</p></a></li>
+                    <li><a href="#"><img src="./img/SVG/bag.svg" alt="장바구니"><p>장바구니</p></a></li>
+                    <li><a href="#"><img src="./img/SVG/customer.svg" alt="고객센터"><p>고객센터</p></a></li>
+                </ul>
+           </div>
+        </nav> 
+    </header> 
     <main>
         <div class="mainSubBanner3">
             <img src="./img/person/sub3.png" alt="">

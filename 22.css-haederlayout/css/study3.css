@@ -1,0 +1,117 @@
+*{margin:0;padding:0;}
+a{text-decoration: none;color:inherit}
+ul,ol{list-style: none;}
+img{max-width: 100%;}
+
+/* latout */
+
+header{
+    border:1px solid red;
+    height: 80px;
+    position: relative;
+}
+header::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 80px;
+    width: 100%;
+    height: 0;
+    background: lightsalmon;
+    opacity: 0.85;
+    transition: all 0.5s ease 0s;
+}
+header.on::after{
+    height: 230px; 
+}
+header::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 80px;
+    width: 50%;
+    height: 0;
+    background: darkorchid;
+    opacity: 0.85;
+    transition: all 0.5s ease 0s;
+}
+header.on::before{
+    height: 230px; 
+}
+.innerHeader{
+    border:1px solid blue;
+    width: 1400px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    position: relative;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+.logo{
+    align-self: center;
+    /* 선택한 아이템만 수직축 기준 중앙정렬이 됨. */
+}
+.gnb{
+    width: 800px;
+    display: flex;
+    text-transform: uppercase;
+    font-weight: 600;
+    
+}
+/* align-itens:strech이기때문에 gnb>li의 높이가 gnb 의 높이로 잡힘. */
+.gnb>li{
+    flex: 1;
+}
+.gnb>li>a{
+    /* display: block;
+    text-align: center;
+    line-height: 80px; */
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+/* 2뎁스 */
+.gnb2dep{
+    border:1px solid lime;
+    position: absolute;
+    left: 0;
+    top: 80px;
+    width: 100%;
+    display: flex;
+    font-weight: 400;
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+    pointer-events: none;
+    z-index: 1;
+}
+.gnb2dep>section{
+    flex: 1;
+    flex-basis:0 ;
+    flex-shrink: 1;
+    flex-grow: 1;
+    padding: 30px;
+}
+.gnb>li:hover .gnb2dep{
+    opacity: 1;
+    pointer-events: auto;
+}
+.gnb>li>a:hover{
+    background: #000;
+    color: gold;
+}
+.gnb2dep>section:nth-of-type(2){
+    display: flex;
+}
+.gnb2dep>section:nth-of-type(2)>ul{
+    margin-left: 15px;
+    border-left:1px solid black ;
+    padding-left: 15px;
+}
+.banner{
+    height: 60vh;
+}
+.banner img{
+    width: 100%;height: 100%;object-fit: cover;
+}
