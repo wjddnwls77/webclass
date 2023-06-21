@@ -52,9 +52,9 @@ $(document).ready(function(){
     })
 
     //********************SCROLL2******************
-        $(".").click(function(){
-            $(".mainBanner3").addClass("on")
-        })
+        // $(".").click(function(){
+        //     $(".mainBanner3").addClass("on")
+        // })
     // ***************sub5 TABMENU****************
     $(".tabMenu>dt").click(function(){
         $(".tabMenu>dt").removeClass("on")

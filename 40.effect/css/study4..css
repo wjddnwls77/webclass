@@ -1,0 +1,161 @@
+*{margin:0;padding:0}
+a{text-decoration: none;color: inherit;}
+ul,ol{list-style: none;}
+img{max-width: 100%;}
+
+/* layout */
+body{
+    background: rgb(194, 211, 243);
+}
+header{
+    display: flex;
+    /* flex-direction: row-reverse;
+    justify-content: flex-end; */
+    /* container 전용 속성 items들한테는 적용되지않음. */
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    padding-bottom: 0;
+    
+}
+.snsMenu{
+    display: flex;
+    margin-left: 20px;
+    margin-top: 20px;
+   
+}
+
+.snsMenu>li{
+    font-size: 20px;
+    color: #fff;
+    margin-right: 14px;
+    transition: transform 0.5s ease 0s,color 1s ease 0s;
+}
+.snsMenu>li:hover{
+    transform: scale(1.2);
+    color: rgb(51, 55, 161);
+}
+.snsMenu>li:last-of-type{
+    margin-right: 0;
+}
+.logo{
+    box-shadow:5px 5px 10px rgb(90, 90, 90) ;
+    /* box-shadow: x , y, 확산정도,color */
+    line-height: 0;
+    /* margin-right: 20px;
+    margin-top: 20px; */
+}
+.stationMenu{
+    display: flex;
+    padding-left: 20px;
+    margin-bottom:70px;
+}
+.stationMenu>li{
+    margin-right: 20px;
+    text-transform: capitalize;
+    transition: all 0.5s ease 0s;
+    color: #fff;
+}
+.stationMenu>li:hover{
+    color: rgb(51, 55, 161);
+}
+.station{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+.train{
+    width: 4600px; 
+    /* 리스트를 클릭했을 때 원래 크기보다 600픽셀이 더 늘어날 것을 예상 */
+    height: 500px;
+    transition: all 1s ease 0s;
+    /* border: 1px solid green; */
+    display: flex;
+}
+
+.train>li{
+    /* border: 1px solid blue; */
+    width: 180px;
+    height: 400px;
+    margin-right: 20px;
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    opacity: 0.7;
+    transition: all 0.3s ease 0s;
+
+}
+
+.train>li:hover{opacity: 1;}
+
+.train>li>.title{
+    /* border: 1px solid red; */
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom:60px;
+    background: black;
+    color: #fff;
+    padding: 14px 0;
+    padding-left: 10px;
+    text-transform: capitalize;
+    font-size: 20px;
+    transition: all 0.5s ease 0s;
+}
+
+.big{
+    display: none;
+    
+}
+.small{width: 100%;}
+
+.btnClose{
+    display: none;
+}
+
+
+.train>li.on{
+    width: 780px;
+    height: 500px;
+    opacity: 1;
+    
+}
+
+.train>li.on .small{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;   
+
+}
+
+.train>li.on .title{
+    font-size: 35px;
+    padding: 20px 0;
+    padding-left:20px;
+    bottom:280px;
+    opacity: 0.5;
+}
+
+.train>li.on .btnClose{
+    display: block;
+    /* border: 1px solid lime; */
+    position: absolute;
+    right: 33px;
+    top: 145px;
+    padding: 20px;
+    cursor: pointer;
+}
+.big{display: none;}
+
+.train>li>p{display: none;}
+.train>li.on>p{
+    display: block;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background: #000;
+    color: #fff;
+    padding: 14px;
+}
+

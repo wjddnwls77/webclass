@@ -11,17 +11,18 @@ header{
     background: #fff;
     width: 100%;
     height:54px;
+    margin: 0 auto;
 }
 .innerheader::before{
     content: "";
     width: 30px;
     height: 30px;
     margin-right: 10px;
-    /* border:1px solid red; */
+    border:1px solid red;
 
 }
 .innerheader{
-    /* border: 1px solid red; */
+    border: 1px solid red;
     width: 90%;
     margin: 0 auto;
     display: flex;
@@ -30,7 +31,7 @@ header{
     padding: 10px 0;
 }
 .mainLogo{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-family:"stencil";
     color:#234249
 }
@@ -39,6 +40,7 @@ header{
     height: 30px;
     margin-right: 10px;
     cursor: pointer;
+    border:1px solid red;
 }
 .btnMoMenu>span{
     width: 20px;
@@ -110,7 +112,6 @@ nav.on{
     align-items: center;
     justify-content: space-between;
     margin-left:auto;
-    /* border: 1px solid red; */
     padding-right:10px;
 }
 
@@ -135,9 +136,9 @@ nav.on{
 .mo_MainStation{
     position: relative;
     width: 90%;
-    height: 50vh;
+    height: 65vh;
     overflow: hidden;
-    /* border: 1px solid aqua; */
+    border: 1px solid aqua;
     margin: 0 auto;
     margin-top: 54px;
     margin-bottom: 50px;
@@ -170,22 +171,22 @@ nav.on{
     margin-left: 225px; 
 }
 .mo_MainBanner3>h2{
-    font-size: 2.8rem;
+    font-size:1rem;
     font-weight: bold;
     margin-bottom: 20px;
 }
 .mo_MainBanner3>p{
-    font-size: 2rem;
+    font-size: 0.9rem;
     margin-bottom: 20px;
 }
 .mo_MainBanner3>a{
     display: flex;
     border: 1px solid black;
-    width: 150px;
-    height: 45px;
+    width: 100px;
+    height: 25px;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .moMenuBtn{
@@ -194,7 +195,7 @@ nav.on{
     bottom:0;
     left: 0;
     width: 100%;
-    height: 60px;
+    height: 50px;
     background: #fff;
 }
 .moMenuBtn>ul{
@@ -212,22 +213,11 @@ nav.on{
     text-align: center;
 }
 .moMenuBtn>ul>li img{
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     object-fit: contain;
 }
-.bMenu_mo{
-    display: none;
-    
-    width: 90%;
-    margin-top: 54px;
-    z-index: 5000;
-}
-.bMenu_mo>ul{
-    display: flex;
-    
-    z-index: 5000;
-}
+
 .controlerMain{
     width: 95%;
     position: absolute;
@@ -274,12 +264,11 @@ nav.on{
  }
  .mainContents>h2{
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-family: "stencil";
  }
  .mainContents>p{
-    font-size: 0.9rem;
-    font-weight: 400;
+    font-size: 0.8rem;
  }
  .aboutStation {
     width: 100%;
@@ -324,18 +313,19 @@ nav.on{
     text-align: center;
     color: #133647;
     position: relative;
-   
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
 
 .aboutContent>h3{
     font-size: 1.3rem;
     margin-bottom: 30px;
-    font-weight: 500;
+    font-weight: bold;
+   
 }
 .aboutContent>p{
-    margin-bottom: 10px;
-    font-weight: 300;
+    margin-bottom: 12px;
+    font-weight: 500;
+    font-size: 1rem;
 }
 .miCont{
  display: none;
@@ -343,7 +333,6 @@ nav.on{
 
 /* ***********best*********** */
 .best{
-  
     width: 90%;
     /* height: 60vh; */
     margin: 0 auto;
@@ -356,6 +345,7 @@ nav.on{
     color: #133647;
     text-align: center;
     margin-bottom :10px;
+    font-weight: bold;
 }
 
 .best>h2::after{
@@ -372,7 +362,6 @@ nav.on{
     width: 100%;
     height: auto;
     overflow: hidden;
-    
 }
 .bestTrain{
     display: flex;
@@ -414,31 +403,41 @@ nav.on{
 
 .bestTrain>li .productName{
     text-align: center;
-    padding: 10px 0;
     color: #133647;
-    font-size: 1rem;
-
+    font-weight: bold;
+    font-size: 0.9rem
+}
+.controlerBest{
+    border:1px solid red;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.controlerBest>.bestPrev{
+    border:1px solid blue;
+}
+.controlerBest>.bestNext{
+    border:1px solid green;
 }
 
 
 /* skinSolution */
 
 .skinSolution{
-    /* border:1px solid aqua; */
     color: #133647;
     background: url(../img/skin.png) no-repeat
     center center;
     background-size: cover;
     position: relative;
     width: 90%;
-    height: 60vh;
+    height: 50vh;
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: 5px;
     
 }
 
 .skinSolution>h2{
-    /* border:1px solid red; */
     font-size: 1.3rem;
     text-transform: uppercase;
     text-align: center;
@@ -447,6 +446,7 @@ nav.on{
     top: 13%;
     left: 50%;
     transform: translateX(-50%);
+    font-weight: bold;
 }
 .skinSolution>h2::after{
     content: "";
@@ -465,9 +465,7 @@ nav.on{
     left: 50%;
     transform: translateX(-50%);
     font-weight: 400;
-    width:250px;
-    
-    
+    width:230px;
 }
 .skinSolution>a{
     background: #133647;
@@ -569,8 +567,8 @@ nav.on{
 
 .skinContents>p{
     margin-top:10px;
-    /* border:1px solid red; */
-    font-size: 0.8rem;
+    font-size:0.9rem;
+    font-weight: 500;
 }
 
 .skinContents>a{
@@ -618,7 +616,6 @@ nav.on{
     /* width: 100%;*/
 } 
 .moEventTrain{
-    /* border:3px solid lime; */
     width:calc(300%/1);
     height:195px;
     display: flex;
@@ -629,7 +626,6 @@ nav.on{
 }
 
 .event>h2{
-
     font-size: 1.5rem;
     color: #133647;
     text-align: center;
@@ -906,7 +902,6 @@ footer{
 
 
 .mainSubBanner1{
-   
     width: 90%;
     margin: 0 auto;
     margin-top: 54px;

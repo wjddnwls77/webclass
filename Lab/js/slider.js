@@ -42,7 +42,7 @@ $(document).ready(function(){
     })
 
     function slideMove(idx){
-        $(".mainTrain").css("transform","translateX("+(-(100/3)*idx)+"%)")
+        $(".mainTrain,.mo_MainTrain").css("transform","translateX("+(-(100/3)*idx)+"%)")
     }
     //*********************SUB1 SLIDER*********************** 
     let subOneCount = 0;
@@ -94,11 +94,11 @@ $(document).ready(function(){
         subOneslider(subOneCount)
         
     })
-    let timer = setInterval(function(){
-        subOneCount++;
-        if(subOneCount>4){subOneCount = 0}
-        subOneslider(subOneCount)
-    },2000)
+    // let timer = setInterval(function(){
+    //     subOneCount++;
+    //     if(subOneCount>4){subOneCount = 0}
+    //     subOneslider(subOneCount)
+    // },2000)
 
 
     function subOneslider(idx){

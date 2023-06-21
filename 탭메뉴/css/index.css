@@ -1,0 +1,32 @@
+*{margin:0;padding:0;}
+
+.tebmenu{
+    border:1px solid #000;
+    width: 500px;
+    height: 150px;
+    display: flex;
+    position: relative;
+    
+}
+.tebmenu>dt{
+    border:1px solid #999;
+    height: 45px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease 0s;
+}
+.tebmenu>dt.on{
+    background: #000;
+    color: #fff;
+}
+.tebmenu>dd{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    display: none;
+}
+.tebmenu>dd.on{
+    display: block;
+}

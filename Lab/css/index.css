@@ -9,7 +9,7 @@ ul,ol {list-style: none;}
 /* common */
 html{
     font-size:14px ;
-    /* font-family: 'Spoqa Han Sans Neo', 'sans-serif'; */
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 @font-face {
@@ -20,4 +20,7 @@ html{
     font-family: "Cafe2";
     src: url(../font/Cafe24Shiningstar.ttf)
 }
-
+@font-face{
+    font-family: "nanum";
+    src: url(../font/nanum-square/)
+}
