@@ -82,7 +82,7 @@ $(document).ready(function(){
     $(".subOneNext").click(function(e){
         subOneCount++;
         e.preventDefault()
-        if(subOneCount>2){subOneCount = 0}
+        if(subOneCount>3){subOneCount = 0}
         subOneslider(subOneCount)
        
       
@@ -90,7 +90,7 @@ $(document).ready(function(){
     $(".subOnePrev").click(function(e){
         subOneCount--;
         e.preventDefault()
-        if(subOneCount>2){subOneCount = 0}
+        if(subOneCount<0){subOneCount = 0}
         subOneslider(subOneCount)
         
     })

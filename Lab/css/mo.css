@@ -18,11 +18,9 @@ header{
     width: 30px;
     height: 30px;
     margin-right: 10px;
-    border:1px solid red;
 
 }
 .innerheader{
-    border: 1px solid red;
     width: 90%;
     margin: 0 auto;
     display: flex;
@@ -40,7 +38,6 @@ header{
     height: 30px;
     margin-right: 10px;
     cursor: pointer;
-    border:1px solid red;
 }
 .btnMoMenu>span{
     width: 20px;
@@ -138,7 +135,6 @@ nav.on{
     width: 90%;
     height: 65vh;
     overflow: hidden;
-    border: 1px solid aqua;
     margin: 0 auto;
     margin-top: 54px;
     margin-bottom: 50px;
@@ -308,7 +304,7 @@ nav.on{
 }
 
 .aboutContent{
-    width: 90%;
+    width: 91%;
     margin: 0 auto;
     text-align: center;
     color: #133647;
@@ -922,30 +918,32 @@ footer{
     text-align: center;
 }
 .mainSub1>h1{
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: bold;
     padding: 10px 0;
 }
 .mainSub1>p{
-   font-size: 0.8rem;
    padding: 10px 0;
+   width: 310px;
+   border:1px solid lime;
+   margin: 0 auto;
 }
-/* main */
 
+/* main */
 .subMain1{
     width: 90%;
     margin: 0 auto;
-    /* border: 1px solid red; */
 }
 
 .subMain1>ul>li{
     margin-bottom: 30px;
-    /* border: 1px solid red; */
     width:100%;
 }
 .subTitle1 {
     color: #28404c;
     text-align: center;
+    width: 90%;
+    margin-bottom: 15px;
 }
 .subTitle1>h2{
     font-size: 1.3rem;
@@ -957,59 +955,96 @@ footer{
 .subTitle1>p{
     font-weight: 300;
 }
+
 .subContents1{
     display: none;
 }
 .proStation {
-    /* border: 1px solid blue; */
     width:100%;
-    height: 360px;
+    height: 450px;
     overflow: hidden;
     position: relative;
     margin: 0 auto;
+    border:1px solid green;
 }
 
 .proTrain{
-    width:calc(400%/2);
+    width:400%;
     height: 100%;
     display: flex;
-    margin-top:20px;
     transform: translateX(0px);
     transition: all 0.5s ease 0s;
 }
-
+.proTrain>li>a{
+    width: 230px;
+    height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .proTrain>li>a>img{
-    width: 150px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
 }
 
 .proTrain>li{
     width:calc(100%/4);
-    /* border: 1px solid red; */
-    color: #2c4b5d;
+    height: 100%;
 }
-.proTrain>li>h3{
-    /* border: 1px solid red; */
-    font-weight: 500;
-    height: 50px;
-}
-.proTrain>li>p{
-    margin-bottom: 20px;
-}
-.proTrain>li>a.purhcaseBtn{
-    border:1px solid #2c4b5d;
-    width: 120px;
+.proTrain>li>span {
+    background: #808285;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
     height: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #fff;
+    font-size: 0.9rem;
+    margin-left: 5px;
+}
+.proTrain>li>h3{
+    font-weight: 600;
+    padding: 5px;
+}
+.proTrain>li>p{
+    padding: 5px;
+}
+.starReview{
+    display: flex;
+    color: #999;
+    align-items: center;
+}
+.starReview>p{
+    font-size: 0.8rem;
+}
+.proTrain>li>a.purhcaseBtn{
+    border:1px solid #2c4b5d;
+    width: 95px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 5px;
 }
 
+.proTrain>li>a>p {
+   display:none;
+}
+.sub1Controler{
+    display: none;
+}
+.sub2Controler{
+    display: none;
+}
 /* ********************** sub2************************* */
 
 .mainSubBanner2{
-    
     width: 90%;
     margin: 54px auto;
 }
@@ -1028,12 +1063,11 @@ footer{
     text-align: center;
 }
 .mainSub2>h1{
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: bold;
     padding: 10px 0;
 }
 .mainSub2>p{
-   font-size: 0.8rem;
    padding: 10px 0;
 }
 .sub2wrap{
@@ -1098,8 +1132,8 @@ section{
 }
 
 .sub2Pro>ol>li{
-   
     margin-bottom: 20px;
+ 
 }
 
 .sub2Pro>ol>li>ul{
@@ -1107,7 +1141,20 @@ section{
     justify-content: space-around;
     align-items: center;
     color: #28404c;
-    
+    position: relative;
+}
+.sub2Pro>ol>li>ul>li>span{
+    background: #6a8492;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 0.9rem;
 }
 .sub2Pro>ol>li>ul img{
     width: 120px;
@@ -1117,11 +1164,13 @@ section{
 .sub2Pro>ol>li>section{
     position: relative;
     padding: 0 10px;
+    margin-bottom: 10px;
 }
 
 .sub2Pro>ol>li>section>h2{
     font-size: 1.2rem;
     padding: 10px 0;
+    font-weight: bold;
 }
 .sub2Pro>ol>li>section>p{
     font-size: 0.8rem;
@@ -1130,9 +1179,9 @@ section{
 }
 .sub2Pro>ol>li>ul h3{
     margin-bottom: 15px;
+    font-weight: 500;
 }
 .sub2Pro>ol>li>ul p{
-    font-weight: 300;
     padding:10px 0;
 }
 .sub2Pro>ol>li>ul a{
@@ -1414,13 +1463,10 @@ section{
    object-fit: cover;
 }
 .sub4event>section>ul>li>h3{
-    font-size: 0.8rem;
-    height: 20px;
-    padding: 10px 0;
+    height: 40px;
     font-weight: 500;
 }
 .sub4event>section>ul>li>p{
-    font-size: 0.3rem;
     margin-bottom: 10px;
 }
 .sub4event>section>ul>li>a{
@@ -1430,12 +1476,30 @@ section{
     border: 1px solid  #003a55;
     width: 85px;
     height: 21px;
-    font-size: 0.3rem;
+    margin-bottom: 10px;
 }
 .highLight{
    background:rgba(161, 218, 248, 0.2)
 }
-
+.sub4event>section>ul>li>span {
+    background: #3C6D8E;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-left: auto;
+    color: #fff;
+    text-align: center;
+    font-size: 0.8rem;
+}
+.sub4event>section>ul>li>span.sGreen {
+    background: #89A7A0;
+}
+.sub4event>section>ul>li>span.sBlack {
+    background: #46464C;
+}
 /* BESTSELLER */
 .bestMain{
     margin: 0 auto;

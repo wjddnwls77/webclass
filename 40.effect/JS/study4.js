@@ -1,16 +1,23 @@
 $(document).ready(function(){
 
     let result = ""
-    for(let i = 1; i<=20 ; i ++){
-        result+= `<li>
-            <img src="./img/img (8)/s${i}.jpg" alt="작은이미지${i}" class="small">
-            <img src="./img/img (8)/pic${i}.jpg" alt="큰이미지${i}" class="big">
-                <h2 class="title">art work ${i}</h2>
-                <p>Artwork description comes here.<br>2023.06.20</p>
+    // for(let i = 1; i<=20 ; i ++){
+    //     result+= `<li>
+    //         <img src="./img/img (8)/s${i}.jpg" alt="작은이미지${i}" class="small">
+    //         <img src="./img/img (8)/pic${i}.jpg" alt="큰이미지${i}" class="big">
+    //         <h2 class="title">art work ${i}</h2>
+    //         <p>Artwork description comes here.<br>2023.06.20</p>
+    //         <span class="btnClose">close</span>
+    //     </li>`
+    //     }
+    for(let i=0; i<20 ; i++){
+        result+=`<li>
+                <img src="./img/img (8)/${artwork[i].imgFileName}" alt="${artwork[i].title}" class="small">
+                <h2 class="title">${artwork[i].title}</h2>
+                <p>${artwork[i].description}</p>
                 <span class="btnClose">close</span>
-                </li>`
+            </li>`
     }
-
     // let a = 4
     // a=a+2 a+=2
     // b=b-2 b-=2 
@@ -32,9 +39,10 @@ $(document).ready(function(){
         $(".train").css("transform","translateX("+(-1000*idx)+"px)")
 
     })
-    let count = 0;
+    let count = 0; //변수를 어디에 만드느냐가 중요하다 .
     $(".station").on("wheel DOMMouseScroll",function(event){
         // console.log(event) 호환성을 위한것이라 수정할 일이 없다.
+        // let count = 0; =>여기에 실행하면 계속 카운트가0으로됨. 
         let E = event.originalEvent
         let delta = 0;
         if(E.detail){
@@ -73,7 +81,7 @@ $(document).ready(function(){
     //닫는버튼 기능
     $(".btnClose").click(function(){
         $(".train>li").removeClass("on")
-        return false//상위태그로 클릭이벤트가 전달되지 않게(버블링되지 않게)설정
+        return false//상위태그로".train>li" 클릭이벤트가 전달되지 않게(버블링되지 않게)설정
     })
         
 
