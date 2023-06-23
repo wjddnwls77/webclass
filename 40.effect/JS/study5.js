@@ -7,6 +7,7 @@ $(document).ready(function(){
         $(".cursor").css("left",posX+"px")
         $(".cursor").css("top",posY+"px")
         $(".cursor").addClass("on")
+        
         $(".cursorGuideBox").css("left",(posX+150)+"px")
         $(".cursorGuideBox").css("top",posY+"px")
     

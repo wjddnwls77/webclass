@@ -1058,12 +1058,14 @@ footer{
     display: flex;
 }
 .footerTop>.footerTleft li{
-    margin-right: 28px;
     margin-bottom: 20px;
     font-weight: 500;
+    padding: 0 20px;
+    border-right: 1px solid #000;
 }
+
 .footerTop .footerTleft li:last-of-type{
-    margin-right:0;
+    border-right: none;
 }
 .sns li{
   font-size: 30px;
