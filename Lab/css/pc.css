@@ -325,15 +325,43 @@ nav.on{
  }
  .aboutTrain>li>h3{
     font-family: "stencil";
-    font-size: 2.5rem;
+    font-size: 4rem;
     color: #fff;
     position: absolute;
     left: 20px;
-    bottom: 20px;
+    bottom: 100px;
 }
-.mainImgslider>ul>li>img{
+
+.aboutTrain>li>a{
+    border:1px solid #fff;
+    color:#fff;
+    position: absolute;
+    bottom: 30px;
+    left: 140px;
+    font-size: 1.3rem;
+    width: 130px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.aboutTrain>li>a:hover{
+    background: #ffffffd0;
+    color:#0000007b;
+}
+.aboutTrain>li>a.on{
+    display: block;
+}
+.mainImgslider>ul>li{
+    border:1px solid red;
     width: 400px;
     height: 550px;
+
+}
+.mainImgslider img{
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 .sideImg0{
@@ -349,6 +377,7 @@ nav.on{
     transform: scale(1.1);
     filter:brightness(1);
     z-index: 1;
+    border:1px solid lime;
 }
  .sideImg2{
     position: absolute;
@@ -356,6 +385,7 @@ nav.on{
     left:59%;
     filter:brightness(0.5) 
  }
+
 
 .aboutContent{
     height: 340px;
@@ -422,24 +452,26 @@ nav.on{
 }
 
 /* ***********best*********** */
-.best{
+.bestAll{
     /* border:3px solid blue; */
-    width: 1440px;
+    width: 100%;
     height: 970px;
     margin: 0 auto;
     position: relative;
     margin-bottom: 200px;
     overflow: hidden;
+    display: flex;
 }
 .best>h2{
-    font-size: 3.8rem;
+    font-size: 3rem;
     text-transform: uppercase;
     color: #133647;
     text-align: center;
-    margin-bottom :120px;
+    border:1px solid red;
+    width: 350px;
 }
 
-.best>h2::after{
+/* .best>h2::after{
     content: "";
     width: 30px;
     height: 4px;
@@ -448,14 +480,19 @@ nav.on{
     top: 10%;
     left: 50%;
     transform: translateX(-50%);
-}
+} */
 .bestStation{
     position: relative;
+    width: 100%;
+    height: 600px;
+    border:1px solid aqua;
+    overflow: hidden;
 }
 .bestTrain{
     width:calc(600%/3); 
     display: flex;   
     transition: all 0.7s ease 0s; 
+    border:1px solid lime;
 }
 
 .bestTrain>li{
@@ -463,26 +500,25 @@ nav.on{
     justify-content: center;
     align-items: center;
     flex: 1;
+   
 }
 
-.bestTrain>li{
-    border: 1px solid lime;
-}
 .bestTrain>li>a>img{
-    width: 360px;
-    height: 450px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    margin-bottom: 50px;
+    width: 300px;
+    height: 390px;
+
 }
 
 .slideLine{
     background: #52838e;
-    width: 1320px;
+    width: 200px;
     height: 1px;
     position: relative;
-    bottom:340px;
-    left: 50%;
-    top: 50px;
+    top:900px;
+    left: 10px;
     transform: translateX(-50%);
 }
 .slideLine>div {
@@ -490,11 +526,11 @@ nav.on{
     width: calc(100%/6);
     height: 3px;
     position: absolute;
-    left: 0%;
+    left: 0%; 
 }
 
 .bestStation>ul>li .productName{
-    /* border: 1px solid red; */
+    border: 1px solid red;
     text-align: center;
     padding: 10px 0;
     color: #133647;
