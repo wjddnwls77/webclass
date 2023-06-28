@@ -217,9 +217,9 @@ nav.on{
     top: 50%;
     transform: translateY(-50%);
     margin-left: 225px;
-    transform: translateY(-0%);
-    transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0.5s;
 }
+
 .mainBanner3.on{
     transform: translateY(-10%);
 }
@@ -227,11 +227,24 @@ nav.on{
     font-size: 2.8rem;
     font-weight: bold;
     margin-bottom: 20px;
+    transform: translateY(-50px);
+    transition: all 0.8s ease 0.5s;
+    opacity: 0;
 }
-
+.mainTrain>li.on .mainBanner3>h2{
+    transform: translateY(0px);
+    opacity: 1;
+}
 .mainBanner3>p{
     font-size: 2rem;
     margin-bottom: 20px;
+    transform: translateY(-50px);
+    transition: all 0.8s ease 1s;
+    opacity: 0;
+}
+.mainTrain>li.on .mainBanner3>p{
+    transform: translateY(0px);
+    opacity: 1;
 }
 .mainBanner3>a{
     display: flex;
@@ -241,6 +254,12 @@ nav.on{
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
+    transition: all 0.8s ease 1s;
+    opacity: 0;
+}
+.mainTrain>li.on .mainBanner3>a{
+    transform: translateY(0px);
+    opacity: 1;
 }
 .mainBanner3>a:hover{
     background: black;
@@ -2371,4 +2390,26 @@ section{
     font-size: 4.8rem;
     font-style: italic;
 }
+aside{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+aside>ul>li{
+    width: 38px;
+    height: 38px;
+    margin-bottom: 5px;
+    transition: all 0.5s ease 0s;
+}
+aside>ul>li:hover{
+    transform: scale(1.2);
+}
+aside>ul>li img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+
 }

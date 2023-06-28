@@ -25,12 +25,27 @@ $(document).ready(function(){
         }
     })
 
+    // $(".btnNext").click(function(){
+    //     count++;
+    //     if(count>3){count = 0}
+    // //    $(".train").css("transform","translateX(-"+count*25+"%)")
+    //     slideMove(count)
+    //    $(".train>li").removeClass("on")
+    //    $(".train>li").eq(count).addClass("on")
+    //    $(".pagination>li").removeClass("on")
+    //    $(".pagination>li").eq(count).addClass("on")
+ 
+    // })
     //다음 버튼을 눌렀을 때
     $(".btnNext").click(function(e){
         count++;
         e.preventDefault()
         if(count>2){count = 0}
         slideMove(count)
+        $(".mainTrain>li").removeClass("on")
+        $(".mainTrain>li").eq(count).addClass("on")
+        $(".controlerMain>li").removeClass("on")
+        $(".controlerMain>li").eq(count).addClass("on")
 
     })
     $(".btnPrev").click(function(e){
@@ -38,6 +53,11 @@ $(document).ready(function(){
         e.preventDefault()
         if(count<0){count = 0}
         slideMove(count)
+        $(".mainTrain>li").removeClass("on")
+        $(".mainTrain>li").eq(count).addClass("on")
+        $(".controlerMain>li").removeClass("on")
+        $(".controlerMain>li").eq(count).addClass("on")
+
         
     })
 

@@ -1,7 +1,4 @@
 $(document).ready(function(){
-
-
-    
     let count = 0
     $(".btnNext").click(function(e){
         e.preventDefault

@@ -50,7 +50,16 @@ $(document).ready(function(){
             }
         })
     })
-
+    //********************BTNTOP******************
+    $(".btntop").click(function(){
+         moveScroll({
+             top:0,
+             speed:1000
+         })
+    })
+    function moveScroll(option){
+        $("html,body").stop().animate({scrollTop:option.top},option.speed)
+    }
     //********************SCROLL2******************
         // $(".").click(function(){
         //     $(".mainBanner3").addClass("on")

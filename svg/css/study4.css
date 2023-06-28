@@ -1,0 +1,26 @@
+*{margin:0;padding: 0;}
+
+
+.intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.intro>figure{
+    width: 1600px;
+}
+
+#introtxt path{
+    fill:transparent;
+    stroke: black;
+    /* transition: all 0.5s ease 0s; */
+}
+/* #introtxt path:nth-of-type(1){
+    fill: red;
+} */
+
+#introtxt.on path{
+    stroke-dashoffset:0 !important;
+    fill: aqua;
+}
