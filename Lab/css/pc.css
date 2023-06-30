@@ -1611,12 +1611,12 @@ section{
     font-size: 1.5rem;
 }
 .sub2Pro>ol>li>ul>li{
-    border:1px solid lime;
+    border:2px solid lime;
     width: 500px;
     position: relative;
 }
-.sub2Pro>ol>li>ul img{
-    width: 320px;
+.sub2Pro>ol>li>ul>li>img{
+    width: 100%;
     height: 450px;
     object-fit: contain;
     border: 1px solid red;
@@ -1651,12 +1651,17 @@ section{
 .sub2Pro>ol>li>ul h3{
     font-size: 1.8rem;
     margin-bottom: 15px;
+    font-weight: 500;
 }
 .sub2Pro>ol>li>ul p{
     margin-bottom: 20px;
     font-size: 2rem;
+
 }
-.sub2Pro>ol>li>ul a{
+.sub2Pro>ol>li .starReview>p{
+    font-size: 0.89em;
+}
+.sub2Pro>ol>li>ul>li>a{
     display: flex;
     width: 195px;
     height: 51px;
@@ -1666,6 +1671,7 @@ section{
     color: #fff;
     border-radius: 30px;
     font-weight: 300;
+    transition: all 0.5s ease 0s;
 }
 .sub2Pro>ol>li>ul a:hover{
     background: #fff;
@@ -1684,37 +1690,32 @@ section{
 .sub2Pro>ol>li>ul a.purBtn3:hover{
     background: #fff;
 }
-/* *********************sub3***************** */
-.mainSubBanner3{
-    padding-top: 30px;
+.sub2Pro>ol>li>ul>li:hover .sub2Btn{
+    opacity: 1;
+}
+.sub2Btn {
+    position: absolute;
     width: 100%;
-    height: 970px;
+    top: 42%;
+    left: 0px;
+    opacity: 0;
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    margin-bottom: 10px;
+    justify-content: space-around;
+    background: rgba(0, 0, 0, 0.353);
+    transition: all 0.5s ease 0s;
+    height: 146px;
+    z-index: 100;
 }
-
-.mainSubBanner3>img{
-    display: inline-block;
-    width: 550px;
-    height: 550px;
-    object-fit: cover;
+.sub2Btn img{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border:1px solid lime;
 }
-.mainSubBanner3>.mainSub3{
-    color:#133647;
-    text-align: center;
-}
-.mainSub3>h1{
-    font-size: 3.3rem;
-    font-weight: 400;
-    margin-bottom: 40px;
-}
-.mainSub3>p{
-    font-size: 1.8rem;
-    font-weight: 300;
-    margin-bottom: 40px;
+/* *********************sub3***************** */
+.line{
+    border:1px solid red;
 }
 .sub3wrap{
     width: 1440px;

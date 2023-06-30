@@ -244,41 +244,10 @@ $(document).ready(function(){
     //         $(this).addClass("sideImg"+classIdx)
     //     })
     // }
-    $(".aboutStation").on("wheel DOMMouseScroll",function(event){
-        let E = event.originalEvent
-        let delta = 0;
-        if(E.detail){
-            delta = E.detail * -40
-        }else{
-            delta = E.wheelDelta
-        }
-        
-        if(delta<0){
-            // 마우스 휠을 내렸을때
-            mi_count--
-            $(".aboutTrain>li").each(function(){
-                let idx = $(this).index()
-                console.log("리스트의 순번"+idx)
-                console.log("더해지는 증가값"+mi_count)
-                let classIdx = ((idx+mi_count) % 3)<0?((idx+mi_count) % 3)+3:((idx+mi_count) % 3)
-                console.log("추가되는 클래스순번:"+classIdx)
-                $(this).removeClass()
-                $(this).addClass("sideImg"+classIdx)
-            })
-        }else{
-        //마우스 휠을 올렸을 때
-        mi_count++
-        $(".aboutTrain>li").each(function(){
-            let idx = $(this).index()
-            let classIdx = ((idx+mi_count) % 3)
-            $(this).removeClass()
-            $(this).addClass("sideImg"+classIdx)
-        })
-        }
+    
 
 
-
-    })
+    
     
  
 
