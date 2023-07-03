@@ -165,16 +165,21 @@ nav.on{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    margin-left: 225px; 
+    margin-left: 20px;
+
 }
 .mo_MainBanner3>h2{
     font-size:1rem;
     font-weight: bold;
     margin-bottom: 20px;
+    width: 110px;
+    
 }
 .mo_MainBanner3>p{
     font-size: 0.9rem;
     margin-bottom: 20px;
+    width: 130px;
+
 }
 .mo_MainBanner3>a{
     display: flex;
@@ -183,7 +188,7 @@ nav.on{
     height: 25px;
     justify-content: center;
     align-items: center;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 .moMenuBtn{
@@ -330,9 +335,12 @@ nav.on{
 }
 
 /* ***********best*********** */
+.bestAll{
+    border:1px solid red;
+    margin-bottom: 20px;
+}
 .best{
     width: 90%;
-    /* height: 60vh; */
     margin: 0 auto;
     position: relative;
     margin-bottom: 50px;
@@ -342,17 +350,22 @@ nav.on{
     text-transform: uppercase;
     color: #133647;
     text-align: center;
-    margin-bottom :10px;
+    margin-bottom :15px;
     font-weight: bold;
 }
-
+.best>p{
+    text-align: center;
+}
+.bestBtn{
+    display: none;
+}
 .best>h2::after{
     content: "";
     width: 15px;
     height: 2px;
     background: #133647;
     position: absolute;
-    top: 50px;
+    top: 35px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -411,6 +424,7 @@ nav.on{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    display: none;
 }
 .controlerBest>.bestPrev{
     border:1px solid blue;
@@ -1209,7 +1223,6 @@ section{
 
 /* *********************sub3***************** */
 .mainSubBanner3{
-   
     width: 90%;
     margin: 54px auto;
 }
@@ -1820,7 +1833,25 @@ section{
     font-style: italic;
     padding: 0 5px;
 }
-
+aside{
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+}
+aside>ul>li{
+    width: 15px;
+    height: 15px;
+    margin-bottom: 5px;
+    transition: all 0.5s ease 0s;
+}
+aside>ul>li:hover{
+    transform: scale(1.2);
+}
+aside>ul>li img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
 
 
 

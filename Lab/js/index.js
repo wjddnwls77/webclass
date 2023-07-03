@@ -2,19 +2,25 @@ $(document).ready(function(){
     // ******************TAB MENU******************
     // $(".skinSolution>*").addClass("mTtBaleady")
 
-    $(".btnMenu,.btnMoMenu").click(function(){
-
-        if($("nav").hasClass("on")==false){
-            $("nav").addClass("on")
+    let menuState = false;
+    $(".btnMenu").click(function(){
+        //btnMenu 클래스를 클릭했을 때 실행될 동작
+        if(menuState == false){
+            //메뉴가 현재 닫현 있는 상태 ->여는기능
+            $(".btnMenu").addClass("close")
+            $(".gnb").addClass("show")
+            $(".blackcover").addClass("on")
+            menuState = true
         }else{
-            $("nav").removeClass("on")
+            //메뉴가 현재 열려있는 상태 -> 닫는기능
+            $(".btnMenu").removeClass("close")
+            $(".gnb").removeClass("show")
+            $(".blackcover").removeClass("on")
+            menuState = false
         }
+       
     })
 
-    $(".gnb>li.down").click(function(){
-        $(".gnb>li.down").addClass("on")
-        $(".gnb>li.down").removeClass("on")
-    })
 
     //********화살표2뎁스열기******* */
     // $(".menu>li .depi").click(function(e){
@@ -72,7 +78,6 @@ $(document).ready(function(){
 
 
     
-
 
 
 })

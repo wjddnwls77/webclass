@@ -28,7 +28,6 @@ $(document).ready(function(){
     let movingStation = $(".movingStation")
     let movingStationHeight = movingStation.height()
 
-
     $(window).scroll(function(){
       let wstop = $(window).scrollTop()
       let scrollDistance = wstop-fixedDivTop

@@ -53,114 +53,65 @@
 
 .mo{ display: none;}
 .moMenuBtn{display: none;}
+
+.blackcover{
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.5s ease 0s;
+    pointer-events: none;
+   
+}
+.blackcover.on{
+    opacity: 0.5;
+    pointer-events: auto;
+    z-index: 1000;
+}
 header{
     position: fixed;
-    z-index: 1000;
-    top: 0;
-    background: #fff;
+    left: 0;top:0;
     width: 100%;
+    color:#fff;
+    z-index: 1000;
+    height: 50px;
+    transition: all 0.5s ease 0s;
+    /* overflow: hidden; */
+    background: #fff;
+}
+
+.innerheader{
+    border-bottom: 1px solid #eee;
+    width: 1440px;
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
 }
 .innerheader::before{
     content: "";
-    width: 30px;
+    width: 130px;
     height: 30px;
-    margin-right: 10px;  
+    margin-left: 15px;
 }
-.innerheader{
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    padding: 10px 0;
-    position: relative;
-}
-
-
 .mainLogo{
     font-size: 2rem;
     font-family:"stencil";
     color:#234249
 }
-.btnMenu{
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-    cursor: pointer;
-}
-.btnMenu>span{
-    width: 20px;
-    height: 1px;
-    background:black;
-    margin: 6.7px auto; 
-    display: block;
-}
-
-nav{
-    width: 280px;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: #fff;
-    transform: translateX(-100%);
-    transition: all 0.5s ease 0s;
-}
-
-.gnb{
-    margin-top: 150px;
-}
-
-.gnb>li{
-    font-size: 1.3rem;
-    height: 50px;
-    width: 280px;
-    font-weight: 500;
-    overflow: hidden;
-    border-bottom:1px solid #a9b9bf;
-    transition:all 0.5s ease 0s;
-}
-.gnb>li>a {
-    width: 100%;
-    height: 50px;
+.menuLeft{
     display: flex;
-    align-items: center;
-    justify-content: center;
 }
-.gnb>li:hover>a{
-    font-weight: bold;
-    color: #315C6D;
-}
-.gnb>li.down:hover{
-   height: 300px;
-}
-.gnb>li>ul>li{
-    height: 30px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    padding: 5px 0;
-    font-size: 1.1rem;
-}
-.gnb>li>ul>li:hover{
-    background: #315C6D;
-    color: #fff;
-}
-nav.on{
-    transform: translateX(0%);
-}
-
-
 .login{
     display: flex;
-    margin-top: 100px;
-    width: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-left:auto;
-    /* border: 1px solid red; */
-    padding-right:10px;
+    color: #315C6D;
+    width: 100px;
+    height: 30px;
+    margin-right: 5px;
 }
-
 .login>li>a {
     width: 50px;
     height: 40px;
@@ -175,6 +126,72 @@ nav.on{
     object-fit: contain;
     margin: 0 auto;
 }
+
+.btnMenu{
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.btnMenu>span{
+    width: 20px;
+    height: 1px;
+    background:black;
+    margin: 6.7px auto; 
+    display: block;
+}
+
+.gnb{
+    height: 250px;
+    background: #fff;
+    color: #000;
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+}
+.gnb.show{
+    opacity: 1;
+}
+.gnb>ul{
+    display: flex;
+    width: 1000px;
+    height: 100%;
+    margin:0 auto;
+    justify-content: space-between;
+    font-size: 1.1rem;
+}
+.gnb>ul>li{
+    border-right:1px solid #eee;
+    width: 160px;
+}
+.gnb>ul>li:last-of-type{
+    border-right:none ;
+}
+.gnb>ul>li>a{
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    display: flex;
+}
+.gnb>ul>li>a:hover{
+    font-weight: 500;
+    color: #315C6D;
+}
+.gnb>ul>li>ul{
+    margin-top: 5px;
+    font-size: 0.9rem;
+
+}
+.gnb>ul>li>ul>li{
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 0;
+}
+.gnb>ul>li>ul>li:hover{
+    color:#315C6D;
+}
+
 
 /* main */
 .bMenu_mo{
@@ -290,13 +307,11 @@ nav.on{
 /* ***********about*********** */
 
  .about{
-    /* border:1px solid red; */
     height: 970px;
     overflow: hidden;
  }
 
  .mainContents{
-    /* border: 1px solid lime; */
     display: flex;
     color: #2c4b5d;
     width: 1440px;
@@ -322,7 +337,6 @@ nav.on{
     margin-right: 100px;
  }
  .mainContents>p{
-    /* border: 1px solid lime; */
     font-size: 1.8rem;
     font-weight: 400;
     margin-right: 190px;
@@ -373,10 +387,8 @@ nav.on{
     display: block;
 }
 .mainImgslider>ul>li{
-    border:1px solid red;
     width: 400px;
     height: 550px;
-
 }
 .mainImgslider img{
     width: 100%;
@@ -396,7 +408,7 @@ nav.on{
     transform: scale(1.1);
     filter:brightness(1);
     z-index: 1;
-    border:1px solid lime;
+
 }
  .sideImg2{
     position: absolute;
@@ -1714,8 +1726,61 @@ section{
     border:1px solid lime;
 }
 /* *********************sub3***************** */
-.line{
-    border:1px solid red;
+
+.line>span{
+    width: 100%;
+    height: 1px;
+    display: block;
+    position: absolute;
+
+}
+@keyframes lineAni {
+    0%{opacity: 0}
+    100%{opacity: 1}
+}
+.line>span.lineOne{
+    background: #9fadb8;
+    top: 55%;
+    transition: all 0.5 ease 0s;
+    animation: lineAni 0.3s ease 0.75s forwards;
+    opacity: 0
+}
+
+.line>span.lineTwo{
+    background: #9fadb8;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    left: 210px;
+    animation: lineAni 0.3s ease 0.25s forwards;
+    opacity: 0
+}
+.line>span.lineThree{
+    background: #9fadb8;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    right:210px;
+    animation: lineAni 0.3s ease 0.5s forwards;
+    opacity: 0
+}
+.whiteBox>span {
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    display: block;
+    position: absolute;
+    top: 364px;
+}
+.whiteBox>span.whiteBox_1{
+    left: 161px;
+    animation: lineAni 0.3s ease 0.8s forwards;
+    opacity: 0;
+}
+.whiteBox>span.whiteBox_2{
+    right:210px;
+    animation: lineAni 0.3s ease 0.8s forwards;
+    opacity: 0;
 }
 .sub3wrap{
     width: 1440px;
@@ -1727,13 +1792,10 @@ section{
     width: 100%;
     height: 970px;
     text-align: center;
-    /* border:1px solid lime; */
     margin-bottom: 500px;
     position: relative;  
 }
-/* .aboutLab>ul>li{
-    border:1px solid red;
-} */
+
 .aboutLab::after {
     content: "";
     position: absolute;
@@ -1747,7 +1809,7 @@ section{
 .aboutLab>h2{
     font-family:"stencil"; 
     font-size: 6.2rem;
-    margin-top: 385px;
+    margin-top: 280px;
 }
 .aboutLab>p{
     font-size: 2rem;
