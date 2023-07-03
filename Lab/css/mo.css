@@ -143,12 +143,12 @@ nav.on{
 .mo_MainTrain{
     width:300%;
     height: 100%;
-    display: flex;
-    transform: translateX(0px);
-    transition: all 0.5s ease 0s;
+    display: flex; 
+    transform: translateX(0px); 
+    transition: all 0.5s ease 0s; 
 }
 .mo_MainTrain>li{
-    width: calc(100%/3);
+    width: 100%;
     height: 100%;
 }
 .mo_MainTrain>li>img{

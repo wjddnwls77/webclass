@@ -3,27 +3,27 @@ $(document).ready(function(){
 
     //****************** MAIN PAGE SLIDER_1******************
     
-    let count = 0;
-    let mainPerview;
-    let mainStationWidth;
-    let mainWidth = $(window).width();
-    if(mainWidth>=1204){
-        mainPerview = 1;
+    // let count = 0;
+    // let mainPerview;
+    // let mainStationWidth;
+    // let mainWidth = $(window).width();
+    // if(mainWidth>=1204){
+    //     mainPerview = 1;
 
-    }else{
-        mainPerview = 1;
-    }
+    // }else{
+    //     mainPerview = 1;
+    // }
 
-    $(window).resize(function(){
-        let mainWidth = $(window).width();
-        if(mainWidth>=1024){
-            mainPerview = 1;
-            mainStationWidth = $(".mainStation").width()
-        }else{
-            mainPerview = 1;
-            mainStationWidth = $(".mainStation").width()
-        }
-    })
+    // $(window).resize(function(){
+    //     let mainWidth = $(window).width();
+    //     if(mainWidth>=1024){
+    //         mainPerview = 1;
+    //         mainStationWidth = $(".mainStation").width()
+    //     }else{
+    //         mainPerview = 1;
+    //         mainStationWidth = $(".mainStation").width()
+    //     }
+    // })
 
     // $(".btnNext").click(function(){
     //     count++;
@@ -195,10 +195,7 @@ $(document).ready(function(){
         }
     })
 
-    //ABOUT SLIDER
-
-
-
+    //***************ABOUT SLIDER**************
     console.log()
     let mi_count = 0;
     $(".mi_next").click(function(){

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <title>Document</title>
+    <style>
+        #cir{
+            fill:none;
+            stroke-width: 2;
+            stroke:black;
+        }
+    </style>
+</head>
+<body>
+    <svg viewBox="0 0 1920 969">
+        <defs>
+            <filter id="f3" x="0" y="0" width="200%" height="200%">
+              <feOffset result="offOut" in="SourceAlpha" dx="20" dy="20" class="shadowOffset"/>
+              <feGaussianBlur result="blurOut" in="offOut" stdDeviation="20" />
+              <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+            </filter>
+          </defs>
+        <circle id ="cir" cx="960" cy="484.5" r=200 filter="url(#f3)"></circle>
+    </svg>
+    <script>
+        $(document).ready(function(){
+            $(document).mousemove(function(event){
+                let cx = event.clientX
+                let cy = event.clientY
+                $(".shadowOffset").attr("dx",cx)
+                $(".shadowOffset").attr("dy",cy)
+            })
+        })
+    </script>
+</body>
+</html>
