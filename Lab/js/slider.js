@@ -2,6 +2,25 @@ $(document).ready(function(){
 
 
     //****************** MAIN PAGE SLIDER_1******************
+    let mainSlider = new Swiper(".mo_MainStation,.mainStation",{
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+              slidesPerView: 1,
+            },
+            // when window width is >= 480px
+            768: {
+              slidesPerView: 1,
+            },
+            autoplay: {
+              delay: 500,
+            },
+            navigation: {
+                nextEl: ".btnNext",
+                prevEl: ".btnPrev",
+            },
+          }
+    })
     
     // let count = 0;
     // let mainPerview;
@@ -36,7 +55,7 @@ $(document).ready(function(){
     //    $(".pagination>li").eq(count).addClass("on")
  
     // })
-    //다음 버튼을 눌렀을 때
+    // 다음 버튼을 눌렀을 때
     $(".btnNext").click(function(e){
         count++;
         e.preventDefault()
@@ -242,6 +261,9 @@ $(document).ready(function(){
     //     })
     // }
     
+
+    
+  
 
 
     

@@ -206,6 +206,8 @@ header{
     height: 970px;
     overflow: hidden;
     margin-bottom: 280px;
+    /* z-index: -1;  */
+    pointer-events: auto; 
 }
 .mainTrain{
     width:300%;
@@ -228,6 +230,7 @@ header{
     height: 970px;
     object-fit: cover;
     margin-bottom: 280px;
+   
  }
  .mainBanner3 {
     position: absolute;
@@ -290,6 +293,7 @@ header{
     transform: translate(-50%,-50%);
     display: flex;
     justify-content: space-between;
+    z-index: 10;
 }
 .controlerMain>a{
     padding: 10px;
@@ -1631,7 +1635,6 @@ section{
     width: 100%;
     height: 450px;
     object-fit: contain;
-    border: 1px solid red;
     background: rgba(227, 227, 227, 0.5);
 }
 .sub2Pro>ol>li>ul>li>span{
@@ -1740,7 +1743,7 @@ section{
 }
 .line>span.lineOne{
     background: #9fadb8;
-    top: 55%;
+    top: 16%;
     transition: all 0.5 ease 0s;
     animation: lineAni 0.3s ease 0.75s forwards;
     opacity: 0
@@ -1753,6 +1756,7 @@ section{
     top: -230px;
     animation: lineAni 0.3s ease 0.25s forwards;
     opacity: 0;
+    left: 250px;
 }
 }
 .line>span.lineThree {
@@ -1760,30 +1764,30 @@ section{
     width: 1px;
     height: 100%;
     top: -230px;
-    right: 0px;
+    right: 250px;
     animation: lineAni 0.3s ease 0.5s forwards;
     opacity: 0;
 }
 .whiteBox>span {
     width: 50px;
     height: 50px;
-    background: #fff;
+    background:#fff;
     display: block;
     position: absolute;
-    top: 364px;
+    top: 11%;
 }
 .whiteBox>span.whiteBox_1{
-    left: 161px;
+    left: 201px;
     animation: lineAni 0.3s ease 0.8s forwards;
     opacity: 0;
 }
 .whiteBox>span.whiteBox_2{
-    right:210px;
+    right:250px;
     animation: lineAni 0.3s ease 0.8s forwards;
     opacity: 0;
 }
 .sub3wrap{
-    width: 1440px;
+    width: 100%;
     margin: 0 auto;
     margin-bottom: 100px;
 }
