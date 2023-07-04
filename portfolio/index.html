@@ -10,34 +10,56 @@
     <!-- js -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="./js/index.js"></script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- font2 -->
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css" rel="stylesheet">
+
 </head>
 <body>
     <div class="wrap">
+        <div class="line">
+            <span class="lineOne"></span>
+            <span class="lineTwo"></span>
+            <span class="lineThree"></span>
+        </div>
+        <div class="circle">
+            <span class="cir"></span>
+            <span class="circleShadow"></span>
+        </div>
     <header>
         <h1>portfolio</h1>
-        <div>
-            <img src="" alt="">
-            <p>start!</p>
+        <p class="artwork">design artwork</p>
+        <p class="name">jeong woo jin
+            2023.
+        </p>
+        <div class="start">
+            <a href="#">
+                <img src="./img/SVG/menu.svg" alt="start">
+                <p>start!</p>
+            </a>
         </div>
-          
     </header>
     <main>
-        <div class="porfile">
+        <div class="alongLine"></div>
+        <div class="porfilePg">
             <section>
                 <img src="" alt="증명사진">
                 <div>
                     <h1>infinite</h1>
-                    <h1>design</h1>
+                    <h1 class="textLINE">design</h1>
                     <p>도전적인 디자인을 하고싶습니다.</p>
                 </div> 
             </section>       
-            <p>지난 경험으로 향상시킨 커뮤니케이션과 트렌드 파악 능력과 함께 삶의 질 향상에 기여하는 웹디자이너 & 웹퍼블리셔가 되겠습니다</p>
+            <p class="intro">지난 경험으로 향상시킨 커뮤니케이션과 트렌드 파악 능력과 함께 삶의 질 향상에 기여하는 웹디자이너 & 웹퍼블리셔가 되겠습니다</p>
             <p>정우진 jeong woo jin</p>
             <p>1996.03.15</p>
             <p>경기도 성남시 분당구(서현역 15분 거리)</p>
         </div> 
-        <div class="experience">
-            <section>
+        <div class="profileBox">
+            <section class="experienceBox">
                 <h2>experience</h2>     
                 <ul>
                     <li><span>2018</span><p>입시미술 보조강사</p></li>
@@ -47,24 +69,24 @@
                     <li><span>2019-2022</span><p>아동미술 보조강사</p></li>
                 </ul>
             </section>
-            <section>
+            <section class="educationBox">
                 <h2>education</h2>
                 <ul>
                     <li><span>2017</span><p>수원대학교 서양화 전공</p></li>
                     <li><span>2018</span><p>수원 대학교 자퇴</p></li>
                     <li><span>2019</span><p>이화여자대학교 도자예술 전공</p></li>
                     <li><span>2022</span><p>이화여자대학교 졸업</p></li>
-                    <li><span>2023</span><p>그린컴퓨터 ux,ui 웹 퍼블리셔 양성 과정 이수 </p></li>
+                    <li><span>2023</span><p>그린컴퓨터 ux,ui 웹 퍼블리셔<br> 양성 과정 이수 </p></li>
                 </ul>
             </section>
-            <section>
+            <section class="licenseBox">
                 <h2>license</h2>       
                 <ul>
                     <li><span>2023</span><p>웹디자인기능사</p></li>
                 </ul>
             </section>
         </div>
-        <div>
+        <div class="skill">
             <div class="clickBtn">
                 <span class="circleBtn"></span>
                 <span></span>
@@ -73,13 +95,19 @@
                 <li>
                     <figure>
                         <svg></svg>
-                        <span>95% </span>
+                        <span>90% </span>
+                        <span class="percentCircle"></span>
+                        <span class="subCircle"></span>
                     </figure>
                     <h2>Ai/Ps</h2>
-                    <p>사진 이미지 편집, 수정이가능합니다.
+                    <p>사진 이미지 편집, 수정이 가능합니다.
                         팝업, 배너 ,로고 제작 등 디자인을 할 수 있습니다.</p>
                 </li>
                 <li>
+                    <figure>
+                        <svg></svg>
+                        <span>90% </span>
+                    </figure>
                     <h2>HTML</h2>
                     <p>
                         시멘틱 마크업이 가능하며 웹 표준 및 웹 접근성 고려
@@ -87,18 +115,30 @@
                     </p> 
                 </li>
                 <li>
+                    <figure>
+                        <svg></svg>
+                        <span>85% </span>
+                    </figure>
                     <h2>CSS</h2>
                     <p>
                         디자인 시안에 맞는 효과와 레이아웃 배치가 가능합니다.PC/Moblie 등 미디어쿼리를 이용한 반응형 작업이 가능합니다.
                     </p>
                 </li>
                 <li>
+                    <figure>
+                        <svg></svg>
+                        <span>75% </span>
+                    </figure>
                     <h2>JAVA</h2>
                     <p>
                         자바크스립트의 프로그래밍 언어와 문법이해가 갖춰져있습니다. 사용자와 상호작용이 가능하고 웹페이지 동작에 필요한 기능을 작성할 수 있습니다. 
                     </p>
                 </li>
                 <li>
+                    <figure>
+                        <svg></svg>
+                        <span>75% </span>
+                    </figure>
                     <h2>JQUERY</h2>
                     <p>
                         오픈 소스에 대한 활용및  수정이 가능 합니다. 웹페이지의 다양한 효 과와 연출이 가능합니다.     
@@ -107,13 +147,15 @@
             </ul>
         </div>
         <div class="design">
-            <h1>disign</h1>
-            <section>
+            <h1>design</h1>
+            <section class="popup">
                 <span>click!</span>
                 <h2>POPUP</h2>
                 <p>다양한 주제를 갖고 사이즈
                     내에  주제가 분명하게 전달 될 
                     수 있도록 디자인 하였습니다.</p>
+                <img class="popupPhone"src="./img/SVG/SVG/popup.svg" alt="">
+                <div>
                  <ul>
                     <li><img src="./img/Popup-image/1.popup_blackfriday.png" alt=""></li>
                     <li><img src="./img/Popup-image/2.popup_christmas.png" alt=""></li>
@@ -124,33 +166,37 @@
                     <li><img src="./img/Popup-image/7.popup_food-&-wine.png" alt=""></li>
                     <li><img src="./img/Popup-image/8.popup_travel.png" alt=""></li>
                  </ul>
+                </div>
             </section>
-            <section>
+            <section class="banner">
                 <span>click!</span>
                 <h2>BANNER</h2>
                 <p>다양한 브랜드, 상품을 갖고 
                     홍보 , 광고 목적으로 디자인
                     하였습니다.</p>
+                <div>
                  <ul>
                     <li><img src="./img/Banner-image/1.banner.png" alt=""></li>
                     <li><img src="./img/Banner-image/2.banner.png" alt=""></li>
                     <li><img src="./img/Banner-image/3.banner.png" alt=""></li>
-                    <li><img src="./img/Banner-image/4.banner.png" alt= ""></li>
-                    <li><img src="./img/Banner-image/5.banner.png" alt=""></li> 
+                    <li><img src="./img/Banner-image/4.banner.jpg" alt= ""></li>
+                    <li><img src="./img/Banner-image/5.banner.jpg" alt=""></li> 
                  </ul>
+                </div>
             </section>
-            <section>        
+            <section class="web">        
                 <h2>WEB</h2>
                 <p>다양한 브랜드, 상품을 갖고 
                     홍보 , 광고 목적으로 디자인
                     하였습니다.</p>
+                <div class="webIntro">
                 <div>
                     <span>MOUSE!</span>
                     <img src="" alt="목업">
                     <img src="" alt="리디자인">
                 </div>
                 <div>
-                   <dl>
+                   <dl class="webContent">
                     <dt>사이트명</dt>
                     <dd>LAB SERIES 
                         남성용 화장품 페이지(반응형웹)</dd>
@@ -163,18 +209,18 @@
                     <dt>제작 기여도</dt>
                     <dd>디자인 - 100%  퍼블리싱 100%</dd>   
                    </dl>
-                    <ul>
+                    <ul class="siteMenu">
                         <li><a href="#">리디자인 사이트</a></li>
                         <li><a href="#">기존사이트</a></li>
                         <li><a href="#">기획서</a></li>
                     </ul>
                 </div>
+                </div>
             </section>
         </div>
     </main>
     <footer>
-        <img src="" alt="">
-        <h1>contact</h1>
+        <h2>contact</h2>
         <dl>
             <dt>phone</dt>
             <dd>+82 10 7763-7394</dd>
@@ -183,6 +229,7 @@
             <dt>e-mail</dt>
             <dd>wjddnwls77@naver.com</dd>
         </dl>
+        <img src="./img/SVG/SVG/SVG/contact.svg" alt="">
     </footer>
     </div>
     <nav>
@@ -215,6 +262,7 @@
                 <dt>font</dt>
                 <dd>Source Serif Variable</dd>
             </dl>
+            <span class="exit"></span>
         </li>
         <li>
             <img src="./img/Popup-image/2.popup_christmas.png" alt="크리스마스">
@@ -236,6 +284,7 @@
                 <dd>
                     Vladimir Script</dd>
             </dl>
+            <span class="exit"></span>
         </li> 
         <li>
             <img src="./img/Popup-image/3.popup_halloween.png" alt="할로윈데이">
@@ -259,6 +308,7 @@
                     <p>코트라 볼드체</p>
                 </dd>
             </dl>
+            <span class="exit"></span>
         </li>
         <li>
             <img src="./img/Popup-image/4.popup_happynewyear.png" alt="happy new year">
@@ -279,6 +329,7 @@
                 <dt>font</dt>
                 <dd>Minion Variable Concept</dd>
             </dl>
+            <span class="exit"></span>
         </li>
         <li>
             <img src="./img/Popup-image/5.popup_valentines-day.png" alt="Valentines day">
@@ -301,6 +352,7 @@
                     <p>Acumin Variable Concept</p>
                 </dd>
             </dl>
+            <span class="exit"></span>
         </li>        
         <li>
             <img src="./img/Popup-image/6.popup_special-menu.png" alt="Special Menu">
@@ -323,6 +375,7 @@
                     <p>Source Sans Variable</p>
                 </dd>
             </dl>
+            <span class="exit"></span>
         </li>  
         <li>
             <img src="./img/Popup-image/7.popup_food-&-wine.png" alt="Food & Wine">
@@ -347,6 +400,7 @@
                     <p>Source Sans Variable</p>
                 </dd>
             </dl>
+            <span class="exit"></span>
         </li>        
         <li>
             <img src="./img/Popup-image/8.popup_travel.png" alt="TO TRAVEL">
@@ -356,7 +410,7 @@
                 <dt>text</dt>
                 <dd>여름날의 청량함을 나타내어 음료수를 광고하는 
                     팝업을 디자인하였습니다. 오렌지 음료의 시원함과
-                    톡쏘는 느낌을 강조하였습니다.     </dd>
+                    톡쏘는 느낌을 강조하였습니다.</dd>
                 <dt>color</dt>
                 <dd>
                    <span></span>   
@@ -369,6 +423,7 @@
                     <p>빙그레체 Bold</p>
                 </dd>
             </dl>
+            <span class="exit"></span>
         </li>            
     </ul>
    </div>
@@ -393,6 +448,7 @@
                         <dd>Source Serif Variable</dd>
                     </dl>
                 </div>
+                <span class="exit"></span>
             </li> 
             <li>
                 <img src="./img/Banner-image/2.banner.png" alt="이솝_Bgr">
@@ -412,6 +468,7 @@
                         <dt>font</dt>
                         <dd>Source Serif Variable</dd>
                     </dl>
+                    <span class="exit"></span>
                 </div>
             </li> 
             <li>
@@ -432,6 +489,7 @@
                         <dt>font</dt>
                         <dd>Source Serif Variable</dd>
                     </dl>
+                    <span class="exit"></span>
                 </div>
             </li>
             <li>
@@ -452,6 +510,7 @@
                         <dt>font</dt>
                         <dd>Source Serif Variable</dd>
                     </dl>
+                    <span class="exit"></span>
                 </div>
             </li>  
             <li>
@@ -472,6 +531,7 @@
                         <dt>font</dt>
                         <dd>Source Serif Variable</dd>
                     </dl>
+                    <span class="exit"></span>
                 </div>
             </li>
         </ul>
@@ -487,36 +547,54 @@
             </li>
             <li><h2>DESIGN<br>
                 KEYWORD</h2>
-                <ul>
-                    <li><h3>neat<br>깔끔한</h3>
-                        <p>고유색을 한눈에 알아보기 쉽게 디자인</p>
+                <ul class="keyword">
+                    <li>
+                        <div class="blueBtn">
+                            <h3>neat</h3>
+                            <h3>깔끔한</h3>
+                            <p>고유색을 한눈에 알아보기 쉽게 디자인</p>
+                        </div>
+                        
                     </li>
-                    <li><h3>refined<br>세련된</h3>
-                        <p>어색하고 튀는 부분이 없이 잘 
+                    <li>
+                        <div>
+                            <h3>refined</h3>
+                            <h3>세련된</h3>
+                            <p>어색하고 튀는 부분이 없이 잘 
                             다듬어진 디자인</p>
+                        </div>
                     </li>
-                    <li><h3>simple<br>간결한</h3>
-                        <p>화려함보다는 간결하고 직관적인 디자인</p>
+                    <li>
+                        <div>
+                            <h3>simple</h3>
+                            <h3>간결한</h3>
+                            <p>화려함보다는 간결하고 직관적인 디자인</p>
+                        </div>
                     </li>
                 </ul>
             </li>
+            <div class="fourfiveList">
             <li><h2>Typography</h2>
-                <div>
-                    <h4>stencillca</h4>
-                    <p>A</p>
-                    <p>Regular</p>
-                </div>
-                <div>
-                    <h4>Spoqa Han Sans Neo</h4>
-                    <div class="SansFont">
-                        <p>가</p>
-                        <p>Aa</p>
+                <div class="font">
+                    <div class="stencil">
+                        <h4>stencillca</h4>
+                        <p class="boxA">A</p>
+                        <p>Regular</p>
                     </div>
-                    <p>Thin</p>
-                    <p>Light</p>
-                    <p>Regular</p>
-                    <p>Medium</p>
-                    <p>Bold</p>
+                    <div class="SansFont">
+                        <h4>Spoqa Han Sans Neo</h4>
+                        <div class="SansText">
+                            <p>가</p>
+                            <p>Aa</p>
+                        </div>
+                            <ul class="fontWeight">
+                                <li>Thin</li>
+                                <li>Light</li>
+                                <li>Regular</li>
+                                <li>Medium</li>
+                                <li>Bold</li>
+                            </ul>
+                        </div>
                 </div>
             </li>
             <li><h2>Style Guide
@@ -526,6 +604,7 @@
                 <p>#6a8492</p>
                 <p>#a0aeb8</p>
             </li>
+            </div>
             <li>
                 <div>
                     <h2>problem</h2>

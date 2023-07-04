@@ -11,14 +11,20 @@ $(document).ready(function(){
             // when window width is >= 480px
             768: {
               slidesPerView: 1,
-            },
-            autoplay: {
-              delay: 500,
-            },
-            navigation: {
-                nextEl: ".btnNext",
-                prevEl: ".btnPrev",
-            },
+            }          
+          },
+          navigation: {
+              nextEl: ".btnNext",
+              prevEl: ".btnPrev",
+          },
+          on: {
+            slideChange: function () {
+              console.log(this.activeIndex)
+              $(".mainTrain>li").removeClass("on")
+              $(".mainTrain>li").eq(this.activeIndex).addClass("on")
+              $(".controlerMain>li").removeClass("on")
+              $(".controlerMain>li").eq(this.activeIndex).addClass("on")
+            }
           }
     })
     
@@ -56,29 +62,29 @@ $(document).ready(function(){
  
     // })
     // 다음 버튼을 눌렀을 때
-    $(".btnNext").click(function(e){
-        count++;
-        e.preventDefault()
-        if(count>2){count = 0}
-        slideMove(count)
-        $(".mainTrain>li").removeClass("on")
-        $(".mainTrain>li").eq(count).addClass("on")
-        $(".controlerMain>li").removeClass("on")
-        $(".controlerMain>li").eq(count).addClass("on")
+    // $(".btnNext").click(function(e){
+    //     count++;
+    //     e.preventDefault()
+    //     if(count>2){count = 0}
+    //     slideMove(count)
+    //     $(".mainTrain>li").removeClass("on")
+    //     $(".mainTrain>li").eq(count).addClass("on")
+    //     $(".controlerMain>li").removeClass("on")
+    //     $(".controlerMain>li").eq(count).addClass("on")
 
-    })
-    $(".btnPrev").click(function(e){
-        count--;
-        e.preventDefault()
-        if(count<0){count = 0}
-        slideMove(count)
-        $(".mainTrain>li").removeClass("on")
-        $(".mainTrain>li").eq(count).addClass("on")
-        $(".controlerMain>li").removeClass("on")
-        $(".controlerMain>li").eq(count).addClass("on")
+    // })
+    // $(".btnPrev").click(function(e){
+    //     count--;
+    //     e.preventDefault()
+    //     if(count<0){count = 0}
+    //     slideMove(count)
+    //     $(".mainTrain>li").removeClass("on")
+    //     $(".mainTrain>li").eq(count).addClass("on")
+    //     $(".controlerMain>li").removeClass("on")
+    //     $(".controlerMain>li").eq(count).addClass("on")
 
         
-    })
+    // })
 
     function slideMove(idx){
         $(".mainTrain,.mo_MainTrain").css("transform","translateX("+(-(100/3)*idx)+"%)")
@@ -118,21 +124,21 @@ $(document).ready(function(){
 
     })
    //다음 버튼을 눌렀을 때
-    $(".subOneNext").click(function(e){
-        subOneCount++;
-        e.preventDefault()
-        if(subOneCount>3){subOneCount = 0}
-        subOneslider(subOneCount)
+    // $(".subOneNext").click(function(e){
+    //     subOneCount++;
+    //     e.preventDefault()
+    //     if(subOneCount>3){subOneCount = 0}
+    //     subOneslider(subOneCount)
        
       
-    })
-    $(".subOnePrev").click(function(e){
-        subOneCount--;
-        e.preventDefault()
-        if(subOneCount<0){subOneCount = 0}
-        subOneslider(subOneCount)
+    // })
+    // $(".subOnePrev").click(function(e){
+    //     subOneCount--;
+    //     e.preventDefault()
+    //     if(subOneCount<0){subOneCount = 0}
+    //     subOneslider(subOneCount)
         
-    })
+    // })
     // let timer = setInterval(function(){
     //     subOneCount++;
     //     if(subOneCount>4){subOneCount = 0}
