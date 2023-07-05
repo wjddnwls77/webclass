@@ -36,13 +36,10 @@ $(document).ready(function(){
                 //skill클래스에 on클래스가 없다면
                 $(".skill").addClass("on")
                 $(".skill>li").each(function(){
-         
-         
                    let list = $(this)
                    let percent = $(this).find(".per").text()
                    let count = 0
                    let circle = $(this).find("circle")
-         
                    let timer = setInterval(function(){
                      count++
                      list.find(".per").text(count)

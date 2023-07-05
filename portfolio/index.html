@@ -16,6 +16,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- font2 -->
     <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
 </head>
 <body>
@@ -94,7 +101,9 @@
             <ul>               
                 <li>
                     <figure>
-                        <svg></svg>
+                        <svg viewBox="0 0 0 0">>
+                            <circle cx="60" cy="60" r="125"/>
+                        </svg>
                         <span>90% </span>
                         <span class="percentCircle"></span>
                         <span class="subCircle"></span>
@@ -174,13 +183,13 @@
                 <p>다양한 브랜드, 상품을 갖고 
                     홍보 , 광고 목적으로 디자인
                     하였습니다.</p>
-                <div>
-                 <ul>
-                    <li><img src="./img/Banner-image/1.banner.png" alt=""></li>
-                    <li><img src="./img/Banner-image/2.banner.png" alt=""></li>
-                    <li><img src="./img/Banner-image/3.banner.png" alt=""></li>
-                    <li><img src="./img/Banner-image/4.banner.jpg" alt= ""></li>
-                    <li><img src="./img/Banner-image/5.banner.jpg" alt=""></li> 
+                <div class="bannerSlider">
+                 <ul class="swiper-wrapper">
+                    <li class="swiper-slide"><img src="./img/Banner-image/1.banner.png" alt=""></li>
+                    <li class="swiper-slide"><img src="./img/Banner-image/2.banner.png" alt=""></li>
+                    <li class="swiper-slide"><img src="./img/Banner-image/3.banner.png" alt=""></li>
+                    <li class="swiper-slide"><img src="./img/Banner-image/4.banner.jpg" alt= ""></li>
+                    <li class="swiper-slide"><img src="./img/Banner-image/5.banner.jpg" alt=""></li> 
                  </ul>
                 </div>
             </section>
@@ -254,10 +263,10 @@
                     블랙프라이 의 주제에 집중하여 BLACK FRIDAY’를 크게 강조하였습니다.
                     강렬한 느낌을 주기 위해 검정색과 빨간색의 대비를 주었습니다.</dd>
                 <dt>color</dt>
-                <dd>
-                   <span></span>
-                   <span></span>
-                   <span></span>
+                <dd class="colorChip">
+                   <span class="color_1"></span>
+                   <span class="color_2"></span>
+                   <span class="color_3"></span>
                 </dd>
                 <dt>font</dt>
                 <dd>Source Serif Variable</dd>
@@ -275,10 +284,10 @@
                     사용하여 고급스러움을 강조하였습니다.
                     금색깔이 포인트가 될 수있도록 하였습니다. </dd>
                 <dt>color</dt>
-                <dd>
-                   <span></span>
-                   <span></span>
-                   <span></span>
+                <dd class="colorChip">
+                   <span class="color_4"></span>
+                   <span class="color_5"></span>
+                   <span class="color_6"></span>
                 </dd>
                 <dt>font</dt>
                 <dd>
@@ -297,10 +306,10 @@
                     할로윈을 나타내는 소재에 긴장감을 주기보다
                     화려한 할로윈날을 표현하고자 하였습니다.</dd>
                 <dt>color</dt>
-                <dd>
-                   <span></span>
-                   <span></span>
-                   <span></span>
+                <dd class="colorChip">
+                   <span class="color_7"></span>
+                   <span class="color_8"></span>
+                   <span class="color_9"></span>
                 </dd>
                 <dt>font</dt>
                 <dd>
@@ -321,10 +330,10 @@
                     할로윈을 나타내는 소재에 긴장감을 주기보다
                     화려한 할로윈날을 표현하고자 하였습니다.</dd>
                 <dt>color</dt>
-                <dd>
-                   <span></span>   
-                   <span></span>
-                   <span></span>
+                <dd class="colorChip">
+                   <span class="color_10"></span>   
+                   <span class="color_11"></span>
+                   <span class="color_12"></span>
                 </dd>
                 <dt>font</dt>
                 <dd>Minion Variable Concept</dd>
@@ -341,10 +350,10 @@
                     선정하여 디자인하였습니다. 좋아하는 친구,여인에게
                     사랑스러움을 전달할 수 있도록 디자인 하였습니다.</dd>
                 <dt>color</dt>
-                <dd>
-                   <span></span>   
-                   <span></span>
-                   <span></span>
+                <dd class="colorChip">
+                   <span class="color_13" ></span>   
+                   <span class="color_14" ></span>
+                   <span class="color_15" ></span>
                 </dd>
                 <dt>font</dt>
                 <dd>
@@ -364,10 +373,10 @@
                     팝업을 디자인하였습니다. 오렌지 음료의 시원함과
                     톡쏘는 느낌을 강조하였습니다.     </dd>
                 <dt>color</dt>
-                <dd>
-                   <span></span>   
-                   <span></span>
-                   <span></span>
+                <dd class="colorChip">
+                   <span class="color_16"></span>   
+                   <span class="color_17"></span>
+                   <span class="color_18"></span>
                 </dd>
                 <dt>font</dt>
                 <dd>
@@ -389,10 +398,10 @@
                     식재료와 포인트가 될 색상들을 이용하여
                     통통튀는 분위기를 보여주고자 하였습니다. </dd>
                 <dt>color</dt>
-                <dd>
-                   <span></span>   
-                   <span></span>
-                   <span></span>
+                <dd class="colorChip">
+                   <span class="color_19"></span>   
+                   <span class="color_20"></span>
+                   <span class="color_21"></span>
                 </dd>
                 <dt>font</dt>
                 <dd>
@@ -412,10 +421,10 @@
                     팝업을 디자인하였습니다. 오렌지 음료의 시원함과
                     톡쏘는 느낌을 강조하였습니다.</dd>
                 <dt>color</dt>
-                <dd>
-                   <span></span>   
-                   <span></span>
-                   <span></span>
+                <dd class="colorChip">
+                   <span class="color_22"></span>   
+                   <span class="color_23"></span>
+                   <span class="color_24"></span>
                 </dd>
                 <dt>font</dt>
                 <dd>
@@ -432,7 +441,7 @@
             <li>
                 <img src="./img/Banner-image/1.banner.png" alt="blackfriday_Bgr">
                 <div>
-                    <img src="" alt="">
+                    <img src="./img/Banner-image/SVG/banner_1.svg" alt="">
                     <dl>
                         <dt>title</dt>
                         <dd>blackfriday</dd>
@@ -441,9 +450,11 @@
                             블랙프라이 의 주제에 집중하여 BLACK FRIDAY’를 크게 강조하였습니다.
                             강렬한 느낌을 주기 위해 검정색과 빨간색의 대비를 주었습니다.</dd>
                         <dt>color</dt>
-                        <dd><span></span>
-                            <span></span>
-                            <span></span></dd>
+                        <dd class="colorChip">
+                            <span class="color_25"></span>
+                            <span class="color_26"></span>
+                            <span class="color_27"></span>
+                        </dd>
                         <dt>font</dt>
                         <dd>Source Serif Variable</dd>
                     </dl>
@@ -462,9 +473,11 @@
                             블랙프라이 의 주제에 집중하여 BLACK FRIDAY’를 크게 강조하였습니다.
                             강렬한 느낌을 주기 위해 검정색과 빨간색의 대비를 주었습니다.</dd>
                         <dt>color</dt>
-                        <dd><span></span>
-                            <span></span>
-                            <span></span></dd>
+                        <dd  class="colorChip">
+                            <span class="color_28"></span>
+                            <span class="color_29"></span>
+                            <span class="color_30"></span>
+                        </dd>
                         <dt>font</dt>
                         <dd>Source Serif Variable</dd>
                     </dl>
@@ -483,9 +496,11 @@
                             블랙프라이 의 주제에 집중하여 BLACK FRIDAY’를 크게 강조하였습니다.
                             강렬한 느낌을 주기 위해 검정색과 빨간색의 대비를 주었습니다.</dd>
                         <dt>color</dt>
-                        <dd><span></span>
-                            <span></span>
-                            <span></span></dd>
+                        <dd class="colorChip">
+                            <span class="color_31"></span>
+                            <span class="color_32"></span>
+                            <!-- <span class="color_33"></span> -->
+                        </dd>
                         <dt>font</dt>
                         <dd>Source Serif Variable</dd>
                     </dl>
@@ -504,9 +519,11 @@
                             블랙프라이 의 주제에 집중하여 BLACK FRIDAY’를 크게 강조하였습니다.
                             강렬한 느낌을 주기 위해 검정색과 빨간색의 대비를 주었습니다.</dd>
                         <dt>color</dt>
-                        <dd><span></span>
-                            <span></span>
-                            <span></span></dd>
+                        <dd class="colorChip">
+                            <span class="color_34"></span>
+                            <span class="color_35"></span>
+                            <!-- <span class="color_36"></span> -->
+                        </dd>
                         <dt>font</dt>
                         <dd>Source Serif Variable</dd>
                     </dl>
@@ -525,9 +542,11 @@
                             블랙프라이 의 주제에 집중하여 BLACK FRIDAY’를 크게 강조하였습니다.
                             강렬한 느낌을 주기 위해 검정색과 빨간색의 대비를 주었습니다.</dd>
                         <dt>color</dt>
-                        <dd><span></span>
-                            <span></span>
-                            <span></span></dd>
+                        <dd class="colorChip">
+                            <span class="color_37"></span>
+                            <span class="color_38"></span>
+                            <span class="color_39"></span>
+                        </dd>
                         <dt>font</dt>
                         <dd>Source Serif Variable</dd>
                     </dl>
@@ -581,9 +600,9 @@
                         <p class="boxA">A</p>
                         <p>Regular</p>
                     </div>
-                    <div class="SansFont">
-                        <h4>Spoqa Han Sans Neo</h4>
-                        <div class="SansText">
+                    <div class="NotoFont">
+                        <h4>Noto Sans Korean</h4>
+                        <div class="Nototext">
                             <p>가</p>
                             <p>Aa</p>
                         </div>
@@ -599,16 +618,18 @@
             </li>
             <li><h2>Style Guide
                 Colors</h2>
-                <p>#153654</p>
-                <p>#2e4c5e</p>
-                <p>#6a8492</p>
-                <p>#a0aeb8</p>
+                <ul class="styleGuide">
+                    <li><span></span> <p>#153654</p></li>
+                    <li><span></span> <p>#2e4c5e</p></li>
+                    <li><span></span> <p>#6a8492</p></li>
+                    <li><span></span> <p>#a0aeb8</p></li>
+                </ul>
             </li>
             </div>
-            <li>
+            <li class="content05">
                 <div>
                     <h2>problem</h2>
-                    <ul>
+                    <ul class="proSol problemBox">
                         <li>상품 사진과 글씨의 크기가 커서 상품 
                             전달력이 떨어진다.</li>
                         <li>이미지 사진과 글자가 겹친 부분이 많고
@@ -617,9 +638,16 @@
                             메뉴가 보이지 않는 오류가 있다.</li>
                     </ul>
                 </div>
+                <div >
+                    <ul class="point">
+                        <li><img src="./img/SVG/point.svg" alt=""></li>
+                        <li><img src="./img/SVG/point.svg" alt=""></li>
+                        <li><img src="./img/SVG/point.svg" alt=""></li>
+                    </ul>
+                </div>
                 <div>
-                    <h2>solution</h2>
-                    <ul>
+                    <h2 class="sol">solution</h2>
+                    <ul class="proSol solutionBox">
                         <li>화질이 좋은 이미지 사용과  적절한 글씨배치를
                             통해 상품전달력을 높혀준다.</li>
                         <li>이미지의 갯수를 줄여 답답함을 줄이고 행간 
