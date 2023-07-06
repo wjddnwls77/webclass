@@ -1,5 +1,6 @@
 $(document).ready(function(){
-
+    let cirlceLength = $(".c1").get(0).getTotalLength()
+    console.log(cirlceLength)
     $(".btn").click(function(){
 
         if($(".skill").hasClass("on")==false){

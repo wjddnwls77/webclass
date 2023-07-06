@@ -27,6 +27,12 @@
 </head>
 <body>
     <div class="wrap">
+        <aside class="menu">
+            <a href="#">
+                <img src="./img/SVG/menu.svg" alt="menu">
+                <p>menu</p>
+            </a>
+        </aside>
         <div class="line">
             <span class="lineOne"></span>
             <span class="lineTwo"></span>
@@ -37,7 +43,7 @@
             <span class="circleShadow"></span>
         </div>
     <header>
-        <h1>portfolio</h1>
+        <h1 data-text="portfolio">portfolio</h1>
         <p class="artwork">design artwork</p>
         <p class="name">jeong woo jin
             2023.
@@ -65,93 +71,123 @@
             <p>1996.03.15</p>
             <p>경기도 성남시 분당구(서현역 15분 거리)</p>
         </div> 
-        <div class="profileBox">
-            <section class="experienceBox">
-                <h2>experience</h2>     
-                <ul>
-                    <li><span>2018</span><p>입시미술 보조강사</p></li>
-                    <li><span>2018</span><p>수지고등학교 멘토링 강연 </p></li>
-                    <li><span>2018</span><p>숙명여자고등학교<br>한익환 박물관 강연</p></li>
-                    <li><span>2020-2021</span><p>아동미술 보조강사</p></li>
-                    <li><span>2019-2022</span><p>아동미술 보조강사</p></li>
-                </ul>
-            </section>
-            <section class="educationBox">
-                <h2>education</h2>
-                <ul>
-                    <li><span>2017</span><p>수원대학교 서양화 전공</p></li>
-                    <li><span>2018</span><p>수원 대학교 자퇴</p></li>
-                    <li><span>2019</span><p>이화여자대학교 도자예술 전공</p></li>
-                    <li><span>2022</span><p>이화여자대학교 졸업</p></li>
-                    <li><span>2023</span><p>그린컴퓨터 ux,ui 웹 퍼블리셔<br> 양성 과정 이수 </p></li>
-                </ul>
-            </section>
-            <section class="licenseBox">
-                <h2>license</h2>       
-                <ul>
-                    <li><span>2023</span><p>웹디자인기능사</p></li>
-                </ul>
-            </section>
+        <div class="profile">
+            <ul class="profileBox">
+                <li class="experienceBox">
+                    <h2>experience</h2>     
+                    <ul>
+                        <li><span>2018</span><p>입시미술 보조강사</p></li>
+                        <li><span>2018</span><p>수지고등학교 멘토링 강연 </p></li>
+                        <li><span>2018</span><p>숙명여자고등학교<br>한익환 박물관 강연</p></li>
+                        <li><span>2020-2021</span><p>아동미술 보조강사</p></li>
+                        <li><span>2019-2022</span><p>아동미술 보조강사</p></li>
+                    </ul>
+                </li>
+                <li class="educationBox">
+                    <h2>education</h2>
+                    <ul>
+                        <li><span>2017</span><p>수원대학교 서양화 전공</p></li>
+                        <li><span>2018</span><p>수원 대학교 자퇴</p></li>
+                        <li><span>2019</span><p>이화여자대학교 도자예술 전공</p></li>
+                        <li><span>2022</span><p>이화여자대학교 졸업</p></li>
+                        <li><span>2023</span><p>그린컴퓨터 ux,ui 웹 퍼블리셔<br> 양성 과정 이수 </p></li>
+                    </ul>
+                </li>
+                <li class="licenseBox">
+                    <h2>license</h2>       
+                    <ul>
+                        <li><span>2023</span><p>웹디자인기능사</p></li>
+                    </ul>
+                </li>
+        </ul>
         </div>
         <div class="skill">
+            <h1>skill</h1>
             <div class="clickBtn">
                 <span class="circleBtn"></span>
                 <span></span>
             </div>
-            <ul>               
+            <ul class="skillBox">               
                 <li>
                     <figure>
-                        <svg viewBox="0 0 0 0">>
-                            <circle cx="60" cy="60" r="125"/>
-                        </svg>
-                        <span>90% </span>
+                        <span class="per">90</span>
                         <span class="percentCircle"></span>
                         <span class="subCircle"></span>
+                        <svg  viewBox="0 0 260 180">
+                            <circle class="s1" cx="130" cy="90" r="75"/>
+                        </svg>
                     </figure>
-                    <h2>Ai/Ps</h2>
-                    <p>사진 이미지 편집, 수정이 가능합니다.
-                        팝업, 배너 ,로고 제작 등 디자인을 할 수 있습니다.</p>
+                    <div class="skilltxt">
+                        <h2>Ai/Ps</h2>
+                        <p>사진 이미지 편집, 수정이 가능합니다.
+                            팝업, 배너 ,로고 제작 등 디자인을 할 수 있습니다.</p>
+                    </div>
+                   
                 </li>
                 <li>
                     <figure>
-                        <svg></svg>
-                        <span>90% </span>
+                        <span class="per">85</span>
+                        <span class="percentCircle"></span>
+                        <span class="subCircle"></span>
+                        <svg  viewBox="0 0 260 180">
+                            <circle class="s1" cx="130" cy="90" r="75"/>
+                        </svg>
                     </figure>
+                    <div class="skilltxt">
                     <h2>HTML</h2>
                     <p>
                         시멘틱 마크업이 가능하며 웹 표준 및 웹 접근성 고려
                         도메인 및 서버에 대한 이해가갖추어져 있습니다.
                     </p> 
+                    </div>
                 </li>
                 <li>
                     <figure>
-                        <svg></svg>
-                        <span>85% </span>
+                        <span class="per">85</span>
+                        <span class="percentCircle"></span>
+                        <span class="subCircle"></span>
+                        <svg viewBox="0 0 260 180">
+                            <circle class="s1" cx="130" cy="90" r="75"/>
+                        </svg>
                     </figure>
+                    <div class="skilltxt">
                     <h2>CSS</h2>
                     <p>
                         디자인 시안에 맞는 효과와 레이아웃 배치가 가능합니다.PC/Moblie 등 미디어쿼리를 이용한 반응형 작업이 가능합니다.
                     </p>
+                    </div>
                 </li>
                 <li>
                     <figure>
-                        <svg></svg>
-                        <span>75% </span>
+                        <span class="per">75</span>
+                        <span class="percentCircle"></span>
+                        <span class="subCircle"></span>
+                        <svg viewBox="0 0 260 180">
+                            <circle class="s1" cx="130" cy="90" r="75"/>
+                        </svg>
                     </figure>
-                    <h2>JAVA</h2>
-                    <p>
+                    <div class="skilltxt">
+                        <h2>JAVA</h2>
+                        <p>
                         자바크스립트의 프로그래밍 언어와 문법이해가 갖춰져있습니다. 사용자와 상호작용이 가능하고 웹페이지 동작에 필요한 기능을 작성할 수 있습니다. 
-                    </p>
+                        </p>
+                    </div>
                 </li>
                 <li>
                     <figure>
-                        <svg></svg>
-                        <span>75% </span>
+                        <span class="per">75</span>
+                        <span class="percentCircle"></span>
+                        <span class="subCircle"></span>
+                        <svg viewBox="0 0 260 180">
+                            <circle class="s1" cx="130" cy="90" r="75"/>
+                        </svg>
                     </figure>
+                    <div class="skilltxt">
                     <h2>JQUERY</h2>
                     <p>
                         오픈 소스에 대한 활용및  수정이 가능 합니다. 웹페이지의 다양한 효 과와 연출이 가능합니다.     
                     </p>
+                    </div>
                 </li> 
             </ul>
         </div>
@@ -165,7 +201,7 @@
                     수 있도록 디자인 하였습니다.</p>
                 <img class="popupPhone"src="./img/SVG/SVG/popup.svg" alt="">
                 <div>
-                 <ul>
+                 <ul class="popupImg">
                     <li><img src="./img/Popup-image/1.popup_blackfriday.png" alt=""></li>
                     <li><img src="./img/Popup-image/2.popup_christmas.png" alt=""></li>
                     <li><img src="./img/Popup-image/3.popup_halloween.png" alt=""></li>
@@ -178,13 +214,13 @@
                 </div>
             </section>
             <section class="banner">
-                <span>click!</span>
+                <span class="clickBanner"><img src="./img/SVG/SVG/click.svg" alt=""></span>
                 <h2>BANNER</h2>
                 <p>다양한 브랜드, 상품을 갖고 
                     홍보 , 광고 목적으로 디자인
                     하였습니다.</p>
                 <div class="bannerSlider">
-                 <ul class="swiper-wrapper">
+                 <ul class="swiper-wrapper bannerTrain">
                     <li class="swiper-slide"><img src="./img/Banner-image/1.banner.png" alt=""></li>
                     <li class="swiper-slide"><img src="./img/Banner-image/2.banner.png" alt=""></li>
                     <li class="swiper-slide"><img src="./img/Banner-image/3.banner.png" alt=""></li>
@@ -199,10 +235,12 @@
                     홍보 , 광고 목적으로 디자인
                     하였습니다.</p>
                 <div class="webIntro">
-                <div>
-                    <span>MOUSE!</span>
-                    <img src="" alt="목업">
-                    <img src="" alt="리디자인">
+                <div class="computer">
+                    <span><img src="./img/SVG/mouse.svg"></span>
+                    <img src="./img/copu.png" alt="목업">
+                    <div class="redesign">
+                    <img class="webpage"src="./img/web/redesign-project.jpg" alt="리디자인">
+                    </div>
                 </div>
                 <div>
                    <dl class="webContent">
@@ -659,6 +697,7 @@
             </li>
         </ol>
         <img src="" alt="웹디자인 통이미지">
+
    </div>
 
 </body>
