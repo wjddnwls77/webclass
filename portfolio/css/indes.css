@@ -394,12 +394,12 @@ header>p {
     height: 180px;
     position: relative;
     transition: all 0.5s ease 0s;
-    transform: translateY(-70px);
+    transform: translateY(0px);
 }
 
 .skill>ul>li>figure.on{
     border:1px solid lime; 
-    transform: translateY(0px);
+    transform: translateY(-70px);
 }
 
 circle{
@@ -419,6 +419,12 @@ circle{
     color: #939393;
     font-size: 1.2rem;
     font-weight: bold;
+}
+.per2{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .percentCircle {
     border: 25px solid rgba(238, 238, 238, 0.658);
@@ -491,7 +497,7 @@ circle{
     padding: 10px;
     margin-bottom:50px ;
     transition: all 0.5s ease 0s;
-    transform: translateY(0px);
+    transform: translateY(140px);
     border:1px solid red;
 }
 .skilltxt>p {
@@ -500,17 +506,16 @@ circle{
     line-height: 1.7rem;
     padding: 0px 39px;
     transition: all 0.5s ease 0s;
-    opacity: 1;
-    transform: translateY(0px);
+    opacity: 0.1;
+    transform: translateY(50px);
 }
 .skilltxt.on>h2{
-    transform: translateY(140px);
+    transform: translateY(0px);
 }
 
 .skilltxt.on>p{
-    border:1px solid lime;
-    opacity: 0.1;
-    transform: translateY(50px);
+    opacity: 1;
+    transform: translateY(0px);
 }
 /* design */
 
@@ -693,8 +698,8 @@ circle{
     100%{transform: translateY(-100%);}
 }
 @keyframes clickMotion {
-	0% {margin-top: 0px;}
-	100% {margin-top: 10px;}
+    0% {margin-top: 0px;}
+    100% {margin-top: 10px;}
 }
 
 .computer>img{
@@ -783,6 +788,18 @@ footer>img{
 }
 
 /* Popup */
+.Popup{
+    width: 100%;
+    height: 100%;
+}
+.Popup>ul{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid red;
+}
 .Popup>ul>li{
     width: 1440px;
     height: 700px;
@@ -792,6 +809,17 @@ footer>img{
     border-radius: 5px;
     box-shadow: 10px 8px 14px -3px #bababa;
     border: 1px solid #eee;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 101;
+    background: #fff;
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+}
+.Popup>ul>li.on{
+    opacity: 1;
 }
 .Popup>ul>li>img{
     width: 550px;
@@ -810,10 +838,7 @@ footer>img{
     align-items: center;
     position: relative;
 }
-.Popup>ul>li{
-    position: relative;
-}
-.Popup>ul>li>span {
+.Popup>ul>li>span{
     display: block;
     width: 50px;
     height: 50px;
