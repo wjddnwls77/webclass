@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
     <!-- css -->
-    <link rel="stylesheet" href="./css/indes.css">
+    <link rel="stylesheet" href="./css/index.css">
     <!-- js -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="./js/index.js"></script>
@@ -27,6 +26,7 @@
 
 </head>
 <body>
+    <div class="blackcover"></div>
     <div class="wrap">
         <aside class="menu">
             <a href="#">
@@ -36,7 +36,9 @@
         </aside>
         <div class="line">
             <span class="lineOne"></span>
-            <span class="lineTwo"></span>
+            <span class="lineTwo">
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1929.17 0.63"><defs><style>.cls-1,.cls-2{fill:none;stroke:#c42c2e;stroke-miterlimit:10;stroke-width:0.63px;}.cls-2{stroke-dasharray:28.38 28.38;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><line class="cls-1" y1="0.31" x2="14.02" y2="0.31"/><line class="cls-2" x1="42.39" y1="0.31" x2="1900.96" y2="0.31"/><line class="cls-1" x1="1915.15" y1="0.31" x2="1929.17" y2="0.31"/></g></g></svg> -->
+            </span>
             <span class="lineThree"></span>
         </div>
         <div class="circle">
@@ -58,21 +60,32 @@
     </header>
     <main>
         <div class="alongLine"></div>
-        <div class="porfilePg">
+        <div class="porfilePg" id="s1">
             <section>
-                <img src="" alt="증명사진">
-                <div>
-                    <h1>infinite</h1>
-                    <h1 class="textLINE">design</h1>
-                    <p>도전적인 디자인을 하고싶습니다.</p>
+                <div class="introPro">
+                    <ul class="proD">
+                        <li>#valuer
+                            <p>가치</p></li>
+                        <li>#nature
+                            <p>본질</p></li>
+                        <li>#infinte
+                            <p>무한함</p></li>
+                    </ul>
+                    <p class="intro mTtB">편리하고 긍정적인 경험을 제공하는 디자이너,트렌드를 받아들이고 새로운 기술과 방식을 적용할 수 있는 디자이너가 되겠습니다. 
+                    </p>
                 </div> 
-            </section>       
-            <p class="intro">지난 경험으로 향상시킨 커뮤니케이션과 트렌드 파악 능력과 함께 삶의 질 향상에 기여하는 웹디자이너 & 웹퍼블리셔가 되겠습니다</p>
-            <p>정우진 jeong woo jin</p>
-            <p>1996.03.15</p>
-            <p>경기도 성남시 분당구(서현역 15분 거리)</p>
+            </section>
+            <section class="proImg">
+                <img src="./img/SVG/SVG/SVG/profile.svg" alt="증명사진">
+                <div>
+                    <p>정우진 JEONG WOO JIN</p>
+                    <p>1996.03.15</p>
+                    <p>경기도 성남시 분당구 거주(서현역 15분 거리)</p>
+                </div>
+            </section>
+            <p class="aside_1">pofile</p>
         </div> 
-        <div class="profile">
+        <div class="profile" id="s2">
             <ul class="profileBox">
                 <li class="experienceBox">
                     <h2>experience</h2>     
@@ -100,14 +113,16 @@
                         <li><span>2023</span><p>웹디자인기능사</p></li>
                     </ul>
                 </li>
+                <p class="aside_1">pofile</p>
         </ul>
         </div>
-        <div class="skill">
-            <h1>skill</h1>
+        <div class="skill" id="s3">
+            <h1 class="mLtR">skill</h1>
             <div class="clickBtn">
                 <span class="circleBtn"></span>
                 <span></span>
             </div>
+            <p class="aside_1">skill</p>
             <ul class="skillBox">               
                 <li>
                     <figure>
@@ -197,30 +212,34 @@
                 </li> 
             </ul>
         </div>
-        <div class="design">
-            <h1>design</h1>
+        <div class="design" id="s4">
+            <h1 class="mLtR">design</h1>
             <section class="popup">
-                <span>click!</span>
-                <h2>POPUP</h2>
-                <p>다양한 주제를 갖고 사이즈
-                    내에  주제가 분명하게 전달 될 
-                    수 있도록 디자인 하였습니다.</p>
-                <img class="popupPhone"src="./img/SVG/SVG/popup.svg" alt="">
-                <div>
-                 <ul class="popupImg">
-                    <li><img src="./img/Popup-image/1.popup_blackfriday.png" alt=""></li>
-                    <li><img src="./img/Popup-image/2.popup_christmas.png" alt=""></li>
-                    <li><img src="./img/Popup-image/3.popup_halloween.png" alt=""></li>
-                    <li><img src="./img/Popup-image/4.popup_happynewyear.png" alt=""></li>
-                    <li><img src="./img/Popup-image/5.popup_valentines-day.png" alt=""></li>
-                    <li><img src="./img/Popup-image/6.popup_special-menu.png" alt=""></li>
-                    <li><img src="./img/Popup-image/7.popup_food-&-wine.png" alt=""></li>
-                    <li><img src="./img/Popup-image/8.popup_travel.png" alt=""></li>
+                <span><img src="./img/SVG/SVG/click.svg"></span>
+                <div class="phoneTxt">
+                    <h2>POPUP</h2>
+                    <p>다양한 주제를 갖고 사이즈
+                        내에  주제가 분명하게 전달 될 
+                        수 있도록 디자인 하였습니다.</p>
+                </div>
+                <div class="phone">
+                    <img class="popupPhone" src="./img/SVG/SVG/SVG/phone.svg" alt="popupPhone">
+                </div>
+                <div class="popupStaion">
+                 <ul class="popupImg swiper-wrapper">
+                    <li class="swiper-slide"><img src="./img/Popup-image/1.popup_blackfriday.png" alt=""></li>
+                    <li class="swiper-slide"><img src="./img/Popup-image/2.popup_christmas.png" alt=""></li>
+                    <li class="swiper-slide"><img src="./img/Popup-image/3.popup_halloween.png" alt=""></li>
+                    <li class="swiper-slide"><img src="./img/Popup-image/4.popup_happynewyear.png" alt=""></li>
+                    <li class="swiper-slide"><img src="./img/Popup-image/5.popup_valentines-day.png" alt=""></li>
+                    <li class="swiper-slide"><img src="./img/Popup-image/6.popup_special-menu.png" alt=""></li>
+                    <li class="swiper-slide"><img src="./img/Popup-image/7.popup_food-&-wine.png" alt=""></li>
+                    <li class="swiper-slide"><img src="./img/Popup-image/8.popup_travel.png" alt=""></li>
                  </ul>
                 </div>
                 <div class="Popup">
-                    <ul>
-                        <li>
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
                             <img src="./img/Popup-image/1.popup_blackfriday.png" alt="블랙프라이데이">
                             <dl>
                                 <dt>title</dt>
@@ -240,7 +259,7 @@
                             </dl>
                             <span class="exit"></span>
                         </li>
-                        <li>
+                        <li class="swiper-slide">
                             <img src="./img/Popup-image/2.popup_christmas.png" alt="크리스마스">
                             <dl>
                                 <dt>title</dt>
@@ -262,7 +281,7 @@
                             </dl>
                             <span class="exit"></span>
                         </li> 
-                        <li>
+                        <li class="swiper-slide">
                             <img src="./img/Popup-image/3.popup_halloween.png" alt="할로윈데이">
                             <dl>
                                 <dt>title</dt>
@@ -286,7 +305,7 @@
                             </dl>
                             <span class="exit"></span>
                         </li>
-                        <li>
+                        <li class="swiper-slide">
                             <img src="./img/Popup-image/4.popup_happynewyear.png" alt="happy new year">
                             <dl>
                                 <dt>title</dt>
@@ -307,7 +326,7 @@
                             </dl>
                             <span class="exit"></span>
                         </li>
-                        <li>
+                        <li class="swiper-slide">
                             <img src="./img/Popup-image/5.popup_valentines-day.png" alt="Valentines day">
                             <dl>
                                 <dt>title</dt>
@@ -330,7 +349,7 @@
                             </dl>
                             <span class="exit"></span>
                         </li>        
-                        <li>
+                        <li class="swiper-slide">
                             <img src="./img/Popup-image/6.popup_special-menu.png" alt="Special Menu">
                             <dl>
                                 <dt>title</dt>
@@ -353,7 +372,7 @@
                             </dl>
                             <span class="exit"></span>
                         </li>  
-                        <li>
+                        <li class="swiper-slide">
                             <img src="./img/Popup-image/7.popup_food-&-wine.png" alt="Food & Wine">
                             <dl>
                                 <dt>title</dt>
@@ -378,7 +397,7 @@
                             </dl>
                             <span class="exit"></span>
                         </li>        
-                        <li>
+                        <li class="swiper-slide">
                             <img src="./img/Popup-image/8.popup_travel.png" alt="TO TRAVEL">
                             <dl>
                                 <dt>title</dt>
@@ -406,12 +425,15 @@
             </section>
             <section class="banner">
                 <span class="clickBanner"><img src="./img/SVG/SVG/click.svg" alt=""></span>
+            <div class="bannerCon">
+                <div class="bannerTxt mLtR">
                 <h2>BANNER</h2>
                 <p>다양한 브랜드, 상품을 갖고 
                     홍보 , 광고 목적으로 디자인
                     하였습니다.</p>
+                </div>
                 <div class="bannerSlider">
-                 <ul class="swiper-wrapper bannerTrain">
+                 <ul class="bannerTrain swiper-wrapper">
                     <li class="swiper-slide"><img src="./img/Banner-image/1.banner.png" alt=""></li>
                     <li class="swiper-slide"><img src="./img/Banner-image/2.banner.png" alt=""></li>
                     <li class="swiper-slide"><img src="./img/Banner-image/3.banner.png" alt=""></li>
@@ -419,12 +441,133 @@
                     <li class="swiper-slide"><img src="./img/Banner-image/5.banner.jpg" alt=""></li> 
                  </ul>
                 </div>
+                <div class="Banner">
+                    <ul class="Bannertrain swiper-wrapper">
+                        <li class="swiper-slide">
+                            <img src="./img/Banner-image/1.banner.png" alt="blackfriday_Bgr">
+                            <div>
+                                <img src="./img/Banner-image/SVG/banner_1.svg" alt="">
+                                <dl>
+                                    <dt>title</dt>
+                                    <dd class="title_B">blackfriday</dd>
+                                    <dt>text</dt>
+                                    <dd>블랙프라이데이를 주제로 팝업을 디자인하였습니다.’
+                                        블랙프라이 의 주제에 집중하여 BLACK FRIDAY’를 크게 강조하였습니다.
+                                        강렬한 느낌을 주기 위해 검정색과 빨간색의 대비를 주었습니다.</dd>
+                                    <dt>color</dt>
+                                    <dd class="colorChip">
+                                        <span class="color_25"></span>
+                                        <span class="color_26"></span>
+                                        <span class="color_27"></span>
+                                    </dd>
+                                    <dt>font</dt>
+                                    <dd>Source Serif Variable</dd>
+                                </dl>
+                            </div>
+                            <span class="bannerexit"></span>
+                        </li> 
+                        <li class="swiper-slide">
+                            <img src="./img/Banner-image/2.banner.png" alt="이솝_Bgr">
+                            <div>
+                                <img src="./img/Banner-image/SVG/banner_2.svg" alt="이솝">
+                                <dl>
+                                    <dt>title</dt>
+                                    <dd class="title_B">새벽배송</dd>
+                                    <dt>text</dt>
+                                    <dd>블랙프라이데이를 주제로 팝업을 디자인하였습니다.’
+                                        블랙프라이 의 주제에 집중하여 BLACK FRIDAY’를 크게 강조하였습니다.
+                                        강렬한 느낌을 주기 위해 검정색과 빨간색의 대비를 주었습니다.</dd>
+                                    <dt>color</dt>
+                                    <dd  class="colorChip">
+                                        <span class="color_28"></span>
+                                        <span class="color_29"></span>
+                                        <span class="color_30"></span>
+                                    </dd>
+                                    <dt>font</dt>
+                                    <dd>Source Serif Variable</dd>
+                                </dl>
+                            </div>
+                            <span class="bannerexit"></span>
+                        </li> 
+                        <li class="swiper-slide">
+                            <img src="./img/Banner-image/3.banner.png" alt="cnp laboratory_Bgr">
+                            <div>
+                                <img src="./img/Banner-image/SVG/banner_3.svg" alt="">
+                                <dl>
+                                    <dt>title</dt>
+                                    <dd class="title_B">cnp laboratory</dd>
+                                    <dt>text</dt>
+                                    <dd>블랙프라이데이를 주제로 팝업을 디자인하였습니다.’
+                                        블랙프라이 의 주제에 집중하여 BLACK FRIDAY’를 크게 강조하였습니다.
+                                        강렬한 느낌을 주기 위해 검정색과 빨간색의 대비를 주었습니다.</dd>
+                                    <dt>color</dt>
+                                    <dd class="colorChip">
+                                        <span class="color_31"></span>
+                                        <span class="color_32"></span>
+                                        <!-- <span class="color_33"></span> -->
+                                    </dd>
+                                    <dt>font</dt>
+                                    <dd>Source Serif Variable</dd>
+                                </dl>
+                            </div>
+                            <span class="bannerexit"></span>
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="./img/Banner-image/4.banner.jpg" alt="추석배송_Bgr">
+                            <div>
+                                <img src="./img/Banner-image/SVG/banner_4.svg" alt="추석배송">
+                                <dl>
+                                    <dt>title</dt>
+                                    <dd class="title_B">추석배송</dd>
+                                    <dt>text</dt>
+                                    <dd>블랙프라이데이를 주제로 팝업을 디자인하였습니다.’
+                                        블랙프라이 의 주제에 집중하여 BLACK FRIDAY’를 크게 강조하였습니다.
+                                        강렬한 느낌을 주기 위해 검정색과 빨간색의 대비를 주었습니다.</dd>
+                                    <dt>color</dt>
+                                    <dd class="colorChip">
+                                        <span class="color_34"></span>
+                                        <span class="color_35"></span>
+                                        <!-- <span class="color_36"></span> -->
+                                    </dd>
+                                    <dt>font</dt>
+                                    <dd>Source Serif Variable</dd>
+                                </dl>
+                            </div>
+                            <span class="bannerexit"></span>
+                        </li>  
+                        <li class="swiper-slide">
+                            <img src="./img/Banner-image/5.banner.jpg" alt="새벽배송_Bgr">
+                            <div>
+                                <img src="./img/Banner-image/SVG/SVG/banner_5.svg" alt="새벽배송">
+                                <dl>
+                                    <dt>title</dt>
+                                    <dd class="title_B">새벽배송</dd>
+                                    <dt>text</dt>
+                                    <dd>블랙프라이데이를 주제로 팝업을 디자인하였습니다.’
+                                        블랙프라이 의 주제에 집중하여 BLACK FRIDAY’를 크게 강조하였습니다.
+                                        강렬한 느낌을 주기 위해 검정색과 빨간색의 대비를 주었습니다.</dd>
+                                    <dt>color</dt>
+                                    <dd class="colorChip">
+                                        <span class="color_37"></span>
+                                        <span class="color_38"></span>
+                                        <span class="color_39"></span>
+                                    </dd>
+                                    <dt>font</dt>
+                                    <dd>Source Serif Variable</dd>
+                                </dl>
+                            </div>
+                            <span class="bannerexit"></span>
+                        </li>
+                    </ul>
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </div>
             </section>
-            <section class="web">        
-                <h2>WEB</h2>
-                <p>다양한 브랜드, 상품을 갖고 
-                    홍보 , 광고 목적으로 디자인
-                    하였습니다.</p>
+            <section class="web">    
+                <div class="webTxt">
+                <h2>redesign project</h2>
+                <p>기존에 있던 웹사이트의 문제점을 분석하고 재해석해서 웹페이지를 새롭게 제작하였습니다.</p>
+                </div>    
                 <div class="webIntro">
                 <div class="computer">
                     <span><img src="./img/SVG/mouse.svg"></span>
@@ -449,21 +592,130 @@
                    </dl>
                     <ul class="siteMenu">
                         <li><a href="#">리디자인 사이트</a></li>
-                        <li><a href="#">기존사이트</a></li>
-                        <li><a href="#">기획서</a></li>
+                        <li><a href="https://www.labseries.co.kr/new-start-old?utm_medium=paid_search_brand&utm_source=google&utm=campaign=brandname_site-traffic&utm_content=labseries_always-on_prospects_broad_pc&utm_term=%EB%9E%A9%EC%8B%9C%EB%A6%AC%EC%A6%88&gclid=EAIaIQobChMIqeWv2Pv8_wIV-cVMAh1WKg4oEAAYASAAEgLuNPD_BwE">기존사이트</a></li>
+                        <li class="webplanning"><a href="#">기획서</a></li>
+                        <li><a href="#">디자인 시안</a></li>
                     </ul>
                 </div>
                 </div>
+                <div class="webPlan">
+                    <div class="webStart">
+                         <h1>기획서</h1>
+                         <span class="webexit"></span>
+                    </div>  
+                    <ol>
+                        <li><h2>concept</h2>
+                            <p>
+                                남성용 화장품이미지가 잘 드러 날 수 있도록 화렴함보다는 심플함에 집중하여 디자인하였습니다.
+                                브랜드와 어울리는 깊이 있는 계열의 색을 선택하여 전체적인 분위기를 무게를 실었습니다.
+                             </p>
+                        </li>
+                        <li><h2 class="second">DESIGN<br>
+                            KEYWORD</h2>
+                            <ul class="keyword">
+                                <li>
+                                    <div class="on">
+                                        <h3>neat</h3>
+                                        <h3>깔끔한</h3>
+                                    </div>
+                                    <p class="on">고유색을 한눈에 알아보기 쉽게 디자인</p>
+                                </li>
+                                <li>
+                                    <div>
+                                        <h3>refined</h3>
+                                        <h3>세련된</h3>
+                                    </div>
+                                    <p>어색하고 튀는 부분이 없이 잘 
+                                        다듬어진 디자인</p>
+                                </li>
+                                <li>
+                                    <div>
+                                        <h3>simple</h3>
+                                        <h3>간결한</h3>
+                                    </div>
+                                    <p>화려함보다는 간결하고 직관적인 디자인</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <div class="fourfiveList">
+                        <li><h2>Typography</h2>
+                            <div class="font">
+                                <div class="stencil">
+                                    <h4>stencillca</h4>
+                                    <p class="boxA">A</p>
+                                    <p>Regular</p>
+                                </div>
+                                <div class="NotoFont">
+                                    <h4>Noto Sans Korean</h4>
+                                    <div class="Nototext">
+                                        <p>가</p>
+                                        <p>Aa</p>
+                                    </div>
+                                        <ul class="fontWeight">
+                                            <li>Thin</li>
+                                            <li>Light</li>
+                                            <li>Regular</li>
+                                            <li>Medium</li>
+                                            <li>Bold</li>
+                                        </ul>
+                                    </div>
+                            </div>
+                        </li>
+                        <li><h2>Style Guide
+                            Colors</h2>
+                            <ul class="styleGuide">
+                                <li><span></span> <p>#153654</p></li>
+                                <li><span></span> <p>#2e4c5e</p></li>
+                                <li><span></span> <p>#6a8492</p></li>
+                                <li><span></span> <p>#a0aeb8</p></li>
+                            </ul>
+                        </li>
+                        </div>
+                        <li class="content05">
+                            <div>
+                                <h2 class="third">problem</h2>
+                                <ul class="proSol problemBox">
+                                    <li>상품 사진과 글씨의 크기가 커서 상품 
+                                        전달력이 떨어진다.</li>
+                                    <li>이미지 사진과 글자가 겹친 부분이 많고
+                                        행간이 좁아 가독성이 떨어진다.</li>
+                                    <li>가장 중요한 메뉴단에 마우스를 올리면 
+                                        메뉴가 보이지 않는 오류가 있다.</li>
+                                </ul>
+                            </div>
+                            <div >
+                                <ul class="point">
+                                    <li><img src="./img/SVG/point.svg" alt=""></li>
+                                    <li><img src="./img/SVG/point.svg" alt=""></li>
+                                    <li><img src="./img/SVG/point.svg" alt=""></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2 class="sol">solution</h2>
+                                <ul class="proSol solutionBox">
+                                    <li>화질이 좋은 이미지 사용과  적절한 글씨배치를
+                                        통해 상품전달력을 높혀준다.</li>
+                                    <li>이미지의 갯수를 줄여 답답함을 줄이고 행간 
+                                        조절을 통해 가독성을 높혀준다.</li>
+                                    <li>사용자들이 편리하게 사용할 수 있는
+                                        탭메뉴를 디자인 하였다.</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ol>
+                    <img src="./img/webplan.jpg" alt="">
+                </div>
+
             </section>
         </div>
     </main>
-    <footer>
-        <h2>contact</h2>
-        <dl>
+    <footer  id="s5">
+        <h1 class="mLtR">contact</h1>
+        <dl> 
             <dt>phone</dt>
             <dd>+82 10 7763-7394</dd>
             <dt>instagram</dt>
-            <dd>_dindeeda</dd>
+            <dd>_dineeda</dd>
             <dt>e-mail</dt>
             <dd>wjddnwls77@naver.com</dd>
         </dl>
@@ -471,241 +723,17 @@
     </footer>
     </div>
     <nav>
-        <svg></svg>
+        <svg id="navbg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1711.07 950.14"><defs><style>.cls-1{fill:url(#linear-gradient);}.cls-2{fill:url(#linear-gradient-2);}.cls-3,.cls-4,.cls-5,.cls-6,.cls-7{fill:none;stroke-miterlimit:10;}.cls-3{stroke:#231f20;stroke-width:0.25px;}.cls-4,.cls-5,.cls-6,.cls-7{stroke-width:0.75px;}.cls-4{stroke:url(#linear-gradient-3);}.cls-5,.cls-6{stroke:#a7a9ac;}.cls-6,.cls-7{stroke-dasharray:21;}.cls-7{stroke:#3c3b3c;}</style><linearGradient id="linear-gradient" x1="516.28" y1="604.51" x2="1496.18" y2="604.51" gradientUnits="userSpaceOnUse"><stop offset="0.1" stop-color="#fff"/><stop offset="0.5" stop-color="#e6ebf1"/></linearGradient><linearGradient id="linear-gradient-2" x1="1032.06" y1="604.51" x2="1497.55" y2="604.51" gradientUnits="userSpaceOnUse"><stop offset="0.07" stop-color="#fff"/><stop offset="0.93" stop-color="#e6ebf1"/></linearGradient><linearGradient id="linear-gradient-3" x1="6.59" y1="256.23" x2="1018.1" y2="256.23" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#231f20"/><stop offset="1" stop-color="#fff"/></linearGradient></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><polygon class="cls-1" points="1496.18 447.43 1054.76 907.37 516.28 645.94 1032.06 301.65 1496.18 447.43"/><polygon class="cls-2" points="1032.06 301.65 1056.13 907.37 1497.55 446.48 1032.06 301.65"/><line class="cls-3" x1="119.72" y1="908.67" x2="1472.51" y2="7.95"/><line class="cls-4" x1="6.75" y1="504.52" x2="1017.94" y2="7.95"/><line class="cls-5" x1="1699.59" y1="235.78" x2="1015.4" y2="949.88"/><line class="cls-6" x1="581.66" y1="0.35" x2="0.16" y2="226.97"/><line class="cls-7" x1="0.16" y1="390.33" x2="1142.61" y2="949.71"/><line class="cls-5" x1="108.8" y1="7.95" x2="1710.95" y2="516.87"/></g></g></svg>
+        <img class="place"src="./img/SVG/place.svg" alt="place">
         <ul class="gnb">
-            <li>profile</li> 
-            <li>experience</li>
-            <li>skill</li>
-            <li>design</li> 
-            <li>contact</li>  
+            <li><a href="#s1">profile</a></li> 
+            <li><a href="#s2"> experience</a></li>
+            <li><a href="#s3"> skill</a></li>
+            <li><a href="#s4"> design</a></li> 
+            <li><a href="#s5"> contact</a></li>  
         </ul>
     </nav>
 
-   <div class="Banner">
-        <ul>
-            <li>
-                <img src="./img/Banner-image/1.banner.png" alt="blackfriday_Bgr">
-                <div>
-                    <img src="./img/Banner-image/SVG/banner_1.svg" alt="">
-                    <dl>
-                        <dt>title</dt>
-                        <dd>blackfriday</dd>
-                        <dt>text</dt>
-                        <dd>블랙프라이데이를 주제로 팝업을 디자인하였습니다.’
-                            블랙프라이 의 주제에 집중하여 BLACK FRIDAY’를 크게 강조하였습니다.
-                            강렬한 느낌을 주기 위해 검정색과 빨간색의 대비를 주었습니다.</dd>
-                        <dt>color</dt>
-                        <dd class="colorChip">
-                            <span class="color_25"></span>
-                            <span class="color_26"></span>
-                            <span class="color_27"></span>
-                        </dd>
-                        <dt>font</dt>
-                        <dd>Source Serif Variable</dd>
-                    </dl>
-                </div>
-                <span class="exit"></span>
-            </li> 
-            <li>
-                <img src="./img/Banner-image/2.banner.png" alt="이솝_Bgr">
-                <div>
-                    <img src="" alt="이솝">
-                    <dl>
-                        <dt>title</dt>
-                        <dd>새벽배송</dd>
-                        <dt>text</dt>
-                        <dd>블랙프라이데이를 주제로 팝업을 디자인하였습니다.’
-                            블랙프라이 의 주제에 집중하여 BLACK FRIDAY’를 크게 강조하였습니다.
-                            강렬한 느낌을 주기 위해 검정색과 빨간색의 대비를 주었습니다.</dd>
-                        <dt>color</dt>
-                        <dd  class="colorChip">
-                            <span class="color_28"></span>
-                            <span class="color_29"></span>
-                            <span class="color_30"></span>
-                        </dd>
-                        <dt>font</dt>
-                        <dd>Source Serif Variable</dd>
-                    </dl>
-                    <span class="exit"></span>
-                </div>
-            </li> 
-            <li>
-                <img src="./img/Banner-image/3.banner.png" alt="cnp laboratory_Bgr">
-                <div>
-                    <img src="" alt="">
-                    <dl>
-                        <dt>title</dt>
-                        <dd>cnp laboratory</dd>
-                        <dt>text</dt>
-                        <dd>블랙프라이데이를 주제로 팝업을 디자인하였습니다.’
-                            블랙프라이 의 주제에 집중하여 BLACK FRIDAY’를 크게 강조하였습니다.
-                            강렬한 느낌을 주기 위해 검정색과 빨간색의 대비를 주었습니다.</dd>
-                        <dt>color</dt>
-                        <dd class="colorChip">
-                            <span class="color_31"></span>
-                            <span class="color_32"></span>
-                            <!-- <span class="color_33"></span> -->
-                        </dd>
-                        <dt>font</dt>
-                        <dd>Source Serif Variable</dd>
-                    </dl>
-                    <span class="exit"></span>
-                </div>
-            </li>
-            <li>
-                <img src="./img/Banner-image/4.banner.jpg" alt="추석배송_Bgr">
-                <div>
-                    <img src="" alt="추석배송">
-                    <dl>
-                        <dt>title</dt>
-                        <dd>새벽배송</dd>
-                        <dt>text</dt>
-                        <dd>블랙프라이데이를 주제로 팝업을 디자인하였습니다.’
-                            블랙프라이 의 주제에 집중하여 BLACK FRIDAY’를 크게 강조하였습니다.
-                            강렬한 느낌을 주기 위해 검정색과 빨간색의 대비를 주었습니다.</dd>
-                        <dt>color</dt>
-                        <dd class="colorChip">
-                            <span class="color_34"></span>
-                            <span class="color_35"></span>
-                            <!-- <span class="color_36"></span> -->
-                        </dd>
-                        <dt>font</dt>
-                        <dd>Source Serif Variable</dd>
-                    </dl>
-                    <span class="exit"></span>
-                </div>
-            </li>  
-            <li>
-                <img src="./img/Banner-image/5.banner.jpg" alt="새벽배송_Bgr">
-                <div>
-                    <img src="" alt="새벽배송">
-                    <dl>
-                        <dt>title</dt>
-                        <dd>새벽배송</dd>
-                        <dt>text</dt>
-                        <dd>블랙프라이데이를 주제로 팝업을 디자인하였습니다.’
-                            블랙프라이 의 주제에 집중하여 BLACK FRIDAY’를 크게 강조하였습니다.
-                            강렬한 느낌을 주기 위해 검정색과 빨간색의 대비를 주었습니다.</dd>
-                        <dt>color</dt>
-                        <dd class="colorChip">
-                            <span class="color_37"></span>
-                            <span class="color_38"></span>
-                            <span class="color_39"></span>
-                        </dd>
-                        <dt>font</dt>
-                        <dd>Source Serif Variable</dd>
-                    </dl>
-                    <span class="exit"></span>
-                </div>
-            </li>
-        </ul>
-   </div>
-   <div class="webPlan">
-        <h1>기획서</h1>
-        <ol>
-            <li><h2>concept</h2>
-                <p>
-                    남성용 화장품이미지가 잘 드러 날 수 있도록 화렴함보다는 심플함에 집중하여 디자인하였습니다.
-                    브랜드와 어울리는 깊이 있는 계열의 색을 선택하여 전체적인 분위기를 무게를 실었습니다.
-                 </p>
-            </li>
-            <li><h2>DESIGN<br>
-                KEYWORD</h2>
-                <ul class="keyword">
-                    <li>
-                        <div class="blueBtn">
-                            <h3>neat</h3>
-                            <h3>깔끔한</h3>
-                            <p>고유색을 한눈에 알아보기 쉽게 디자인</p>
-                        </div>
-                        
-                    </li>
-                    <li>
-                        <div>
-                            <h3>refined</h3>
-                            <h3>세련된</h3>
-                            <p>어색하고 튀는 부분이 없이 잘 
-                            다듬어진 디자인</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <h3>simple</h3>
-                            <h3>간결한</h3>
-                            <p>화려함보다는 간결하고 직관적인 디자인</p>
-                        </div>
-                    </li>
-                </ul>
-            </li>
-            <div class="fourfiveList">
-            <li><h2>Typography</h2>
-                <div class="font">
-                    <div class="stencil">
-                        <h4>stencillca</h4>
-                        <p class="boxA">A</p>
-                        <p>Regular</p>
-                    </div>
-                    <div class="NotoFont">
-                        <h4>Noto Sans Korean</h4>
-                        <div class="Nototext">
-                            <p>가</p>
-                            <p>Aa</p>
-                        </div>
-                            <ul class="fontWeight">
-                                <li>Thin</li>
-                                <li>Light</li>
-                                <li>Regular</li>
-                                <li>Medium</li>
-                                <li>Bold</li>
-                            </ul>
-                        </div>
-                </div>
-            </li>
-            <li><h2>Style Guide
-                Colors</h2>
-                <ul class="styleGuide">
-                    <li><span></span> <p>#153654</p></li>
-                    <li><span></span> <p>#2e4c5e</p></li>
-                    <li><span></span> <p>#6a8492</p></li>
-                    <li><span></span> <p>#a0aeb8</p></li>
-                </ul>
-            </li>
-            </div>
-            <li class="content05">
-                <div>
-                    <h2>problem</h2>
-                    <ul class="proSol problemBox">
-                        <li>상품 사진과 글씨의 크기가 커서 상품 
-                            전달력이 떨어진다.</li>
-                        <li>이미지 사진과 글자가 겹친 부분이 많고
-                            행간이 좁아 가독성이 떨어진다.</li>
-                        <li>가장 중요한 메뉴단에 마우스를 올리면 
-                            메뉴가 보이지 않는 오류가 있다.</li>
-                    </ul>
-                </div>
-                <div >
-                    <ul class="point">
-                        <li><img src="./img/SVG/point.svg" alt=""></li>
-                        <li><img src="./img/SVG/point.svg" alt=""></li>
-                        <li><img src="./img/SVG/point.svg" alt=""></li>
-                    </ul>
-                </div>
-                <div>
-                    <h2 class="sol">solution</h2>
-                    <ul class="proSol solutionBox">
-                        <li>화질이 좋은 이미지 사용과  적절한 글씨배치를
-                            통해 상품전달력을 높혀준다.</li>
-                        <li>이미지의 갯수를 줄여 답답함을 줄이고 행간 
-                            조절을 통해 가독성을 높혀준다.</li>
-                        <li>사용자들이 편리하게 사용할 수 있는
-                            탭메뉴를 디자인 하였다.</li>
-                    </ul>
-                </div>
-            </li>
-        </ol>
-        <img src="" alt="웹디자인 통이미지">
-
-   </div>
-
+   
 </body>
 </html>
