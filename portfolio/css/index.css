@@ -7,13 +7,10 @@ ul,ol {list-style: none;}
 
 
 html{
-    font-family: 'NanumSquare';
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
-@font-face {
-    font-family: "stencil";
-    src: url("../font/stencilla.ttf");
-}
+
 .blackcover{
     width: 100%;
     height: 100%;
@@ -325,7 +322,7 @@ header .nav>li{
     border-radius: 50%;
     content: "";
     position: absolute;
-    top: 56px;
+    top: 62px;
     right: 0;
     background:#003453;
 }
@@ -335,6 +332,7 @@ header .nav>li{
     align-items: center;
     padding: 15px;
     margin: 0 8px;
+    font-weight: 300;
 }
 
 .profileBox h2 {
@@ -372,7 +370,7 @@ header .nav>li{
     align-items: center;
     display: flex;
     margin-bottom: 10px;
-
+    font-weight: 300;
 }
 .proflie{
     margin-bottom: 50px;
@@ -555,7 +553,7 @@ circle{
 }
 .skilltxt>p {
     padding: 0 10px;
-    font-size: 1.2rem;
+    font-weight: 300;
     line-height: 1.7rem;
     padding: 0px 39px;
     transition: all 0.5s ease 0s;
@@ -1103,6 +1101,7 @@ circle{
     box-shadow: 10px 8px 14px -3px #bababa;
     margin-bottom: 80px;
     margin-right: 100px;
+    font-weight: 300;
 }
 .computer{
     position: relative;
@@ -1174,6 +1173,7 @@ circle{
     font-weight: 500;
     margin-left: 50px;
     transition: all 0.5s ease 0s;
+    font-weight: 300;
 }
 .siteMenu>li:hover{
     transform: scale(1.1);
