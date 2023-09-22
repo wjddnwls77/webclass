@@ -29,17 +29,17 @@ $(document).ready(function(){
     let movingStationHeight = movingStation.height()
 
     $(window).scroll(function(){
-      let wstop = $(window).scrollTop()
-      let scrollDistance = wstop-fixedDivTop
+        let wstop = $(window).scrollTop()
+        let scrollDistance = wstop-fixedDivTop
 
-      if(scrollDistance<0){
+        if(scrollDistance<0){
         movingStation.css("position","relative")
         movingStation.css("top","0")
-      }
+        }
 
-      if(scrollDistance>=0 && scrollDistance<=7200){
+        if(scrollDistance>=0 && scrollDistance<=7200){
         // 애니메이션 진행 구간
-       
+            
         let count = Math.floor(scrollDistance/1800)
         let percent = (scrollDistance/1800)-count
         console.log(count,percent)
@@ -49,12 +49,12 @@ $(document).ready(function(){
         moveTextSlider(count,percent*200)
         opacitySlider(count,percent)
         scaleImg(count,percent) //grayscale도넣을수잇음.
-      }
-      if(scrollDistance > 7200){
+        }
+        if(scrollDistance > 7200){
         movingStation.css("position","relative")
         movingStation.css("top","7200px")
-      }
-  })
+        }
+    })
     function moveSlieder(idx){
         $(".train").css("transform","translateX("+(-25*idx)+"%)")
     }

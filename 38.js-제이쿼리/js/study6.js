@@ -11,7 +11,8 @@ $(document).ready(function(){
         }
     })
 
-    //console 창에서 origibakEvent->wheelDelta:(-)120 값을 확인할 수 있음 위로 올렸는지 아래로 내렸는지.firefox에서는 detail (-)3 크롬이랑 다르게 나와서 맞춰야함 firefox는 DOMMMouseScroll사용.
+    //console 창에서 origibakEvent->wheelDelta:(-)120 값을 확인할 수 있음 위로 올렸는지 아래로 내렸는지.
+    // firefox에서는 detail (-)3 크롬이랑 다르게 나와서 맞춰야함 firefox는 DOMMMouseScroll사용.
     // .on 이라는 함수는 여러 이벤트를 묶어줄수 있음 "wheel click.."
 
     // $(".wrap>div").click(function(){}) 
@@ -26,7 +27,7 @@ $(document).ready(function(){
         }else{
             delta = E.wheelDelta
         }
-       
+    
     
 
         if(delta<0){

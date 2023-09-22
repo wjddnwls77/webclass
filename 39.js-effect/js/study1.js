@@ -17,11 +17,11 @@ $(document).ready(function(){
         } else{
             //메뉴가 열려있는 상태 -> 메뉴를 닫는 기능
             $("nav").removeClass("on")
-           
+        
         }
-       
+    
     })
-       
+    
     $(".gnb>li").click(function(){
         //리스트 클릭했을 때 내가 클릭한 리스트한테 on클래스가 있다 / 없다 라는 기준이 필요!
         
