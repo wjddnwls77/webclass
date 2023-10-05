@@ -10,7 +10,14 @@ html{
     font-family: 'Noto Sans KR', sans-serif;
 }
 
-
+@font-face {
+    font-family: "maker";
+    src: url(../font/Marker\ Felt\ 2.ttf);
+}
+@font-face {
+    font-family: "stencilla";
+    src: url(../font/stencilla.ttf);
+}
 .blackcover{
     width: 100%;
     height: 100%;
@@ -42,6 +49,7 @@ html{
     color: #fff;
     z-index: 10;
     cursor :pointer;
+    font-family: "maker";
 }
 /* 효과 */
 .mTtB{
@@ -77,46 +85,70 @@ header{
     width: 100%;
     height: 970px;
     position: relative;
+    margin-bottom: 200px;
+    
+}
+header>p{
+    position: absolute;
+    top: 50%;
+    right: 30%;
+    text-transform: uppercase;
+    opacity:0;
+    transition:all 1s ease 0.5s;
+}
+header>p.on{
+    opacity:1;
+    
+}
+#introtxt{
+    width: 800px;
+}
+#introtxt path{
+    fill: transparent;
+    stroke:#193556;
+}
+#introtxt.on path{
+    stroke-dasharray: 0 !important;
+    fill: #193556;
+}
+.intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+main{
+    width: 100%;
+    /* height: 970px; */
+    position: relative;
     text-transform: uppercase;
     margin-bottom: 100px;
     font-family: 'Poppins', sans-serif;
 }
-header::after{
-    width: 100%;
-    height: 700px;
-    position: absolute;
-    bottom:0;
-    left: 0;
-    background:#003453;
-    content:"";
-    z-index: -1;
 
-}
-header>img{
-    width: 735px;
-    height: 95px;
-    object-fit: contain;
-    position: absolute;
-    top: 23.9%;
-    left: 15%;
-}
-header>p{
+main>p{
     position: absolute;
     top: 35%;
     left: 37.7%;
     color: #fff;
 }
-header .nav{
-    bottom:0;
+main .nav{
+    top:0;
     left: 0;
-    position: absolute;
+    position: fixed;
     display: flex;
     align-items: center;
-    margin-left: 20px;
-    margin-bottom: 30px;
-    justify-content: space-between;
+    font-family: "maker";
+    letter-spacing:2px;
+    height: 50px;
+    width: 100%;
+    color: #fff;
+    background: #193556;
+    z-index: 10;
+    border-bottom:0.5px solid #fff ;
+    
 }
-header .nav::after{
+/* header .nav::after{
     content: "";
     width: 1845px;
     height: 1px;
@@ -124,21 +156,15 @@ header .nav::after{
     position: absolute;
     top: -15px;
     left: 5px;
-}
-header .nav>li{
-    border:1px solid #fff;
+} */
+main .nav > li {
     height: 35px;
-    width: 150px;
+    width: 135px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 20px;
-    color: #fff;
-    margin-left: 25px;
 }
-
-
-
 
 /* @keyframes startMotion {
     0%{opacity:0;}
@@ -297,6 +323,8 @@ header .nav>li{
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
+    margin-bottom: 200px;
+    
 }
 .porfilePg>img {
     border-radius: 4px;
@@ -322,7 +350,7 @@ header .nav>li{
     border-radius: 50%;
     content: "";
     position: absolute;
-    top: 62px;
+    top: 46px;
     right: 0;
     background:#003453;
 }
@@ -335,11 +363,11 @@ header .nav>li{
     font-weight: 300;
 }
 
-.profileBox h2 {
+.profileBox>li>h2 {
     border-bottom: 1px solid #003453;
     font-size: 1.5rem;
     font-weight: 600;
-    padding: 17px;
+    padding: 12px;
     text-transform: uppercase;
     color:#003453;
 }
@@ -371,6 +399,7 @@ header .nav>li{
     display: flex;
     margin-bottom: 10px;
     font-weight: 300;
+    text-transform: lowercase;
 }
 .proflie{
     margin-bottom: 50px;
@@ -410,10 +439,8 @@ header .nav>li{
 /* skill */
 .skill{
     width: 100%;
-    margin-bottom: 150px;
     position: relative;
     height: 970px;
-
 }
 .skillBox>ul{
     display: flex;
@@ -506,19 +533,19 @@ circle{
     height: 50px;
     border-radius: 25px;
     margin-left: 78%;
-    margin-bottom: 104px;
+    margin-top: 104px;
     box-shadow: 10px 8px 14px -3px #bababa;
     /* margin-top: 15px; */
 }
 .clickBtn.on{
-    background: #0034536b;
+    background: #193556;
 }
 .clickBtn>.circleBtn{
     display: inline-block;
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background:  #0034536b;
+    background:  #193556;
     box-shadow: 10px 8px 14px -3px #bababa;
     transition: all 0.5s ease 0s;
 }
@@ -533,6 +560,8 @@ circle{
     align-items: center;
     margin-right: 300px;
     margin-left: 110px;
+    margin-top: 150px;
+
 }
 .skill>ul>li{
     border-radius: 20px;
@@ -801,16 +830,14 @@ circle{
 .popup>.Popup>.popupPage{
     height: 6px;
 }
-.webTxt{
+/* .webTxt{
     height: 250px;
-}
+} */
 .webTxt h2 {
-    color: #003453;
-    font-size:3rem;
-    font-weight: 600;
+    font-size: 3rem;
+    color:#003453;
+    margin-bottom: 40px;
     text-transform: uppercase;
-    padding: 10px;
-    margin-bottom: 50px;
 }
 .webTxt p{
     /* width: 1200px;
@@ -1095,13 +1122,13 @@ circle{
     border-radius: 25px;
     display: flex;
     flex-wrap: wrap;
-    font-size: 1.1rem;
     align-items: center;
     justify-content: center;
     box-shadow: 10px 8px 14px -3px #bababa;
-    margin-bottom: 80px;
     margin-right: 100px;
-    font-weight: 300;
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+    text-transform: uppercase;
 }
 .computer{
     position: relative;
@@ -1161,7 +1188,7 @@ circle{
 .webContent>dd{
     width: 400px;
 }
-.siteMenu>li{
+.siteMenu>li {
     width: 250px;
     height: 60px;
     border-radius: 25px;
@@ -1171,7 +1198,7 @@ circle{
     box-shadow: 10px 8px 14px -3px #bababa;
     margin-bottom: 20px;
     font-weight: 500;
-    margin-left: 50px;
+    margin-left: 80px;
     transition: all 0.5s ease 0s;
     font-weight: 300;
 }
@@ -1180,52 +1207,39 @@ circle{
 }
 /* footer */
 footer{
-    /* border:1px solid lime; */
-    width: 100%;
+    width:100%;
     height: 970px;
+    background: #113553;
+    color: #fff;
     position: relative;
-}
-footer::after{
-    width: 100%;
-    height: 700px;
-    background: #003453;
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: "";
-    z-index: -1;
-}
-footer>img {
-    position: absolute;
-    bottom: 156px;
-    left: 175px;
-    width: 775px;
-    height: 210px;
-    object-fit: cover;
-}
-footer dl {
     display: flex;
-    flex-wrap: wrap;
-    width: 395px;
-    color: #003453;
-    position: absolute;
-    right: 95px;
-    bottom: 133px;
-}
-footer dl>dt {
-    font-size: 1.2rem;
-    font-weight: bold;
-    width: 150px;
-    height: 30px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-}
-footer dl>dd {
-    font-size: 1.2rem;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+}
+footer>dl{
+    font-size: 1.5rem;
+    width: 550px;
+    height:300px;
     display: flex;
-    margin-bottom: 10px;
+    align-items: center;
+    flex-wrap: wrap; 
+    border: 1px solid #fff;
+}
+footer>dl>dt {
+    width: 200px;
+    padding: 18px;
+    text-transform: uppercase;
+}
+footer>dl>dd{
+    font-weight: 300;
+}
+footer>p {
+    position: absolute;
+    bottom: 18px;
+    left: 2%;
+    font-family: "maker";
+    font-size: 1.7rem;
+    text-transform: uppercase;
 }
 /* nav */
 nav{
@@ -1933,4 +1947,33 @@ nav.on{
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+
+.webmain{
+    width: 100%;
+    height: 970px;
+    display:flex;
+    align-items: center;
+    position:relative;
+
+}
+.webmain>img{
+    height: 970px;
+    width: 1440px;
+    object-fit: contain;
+}
+.webmain>div>h1>span{
+    text-transform: uppercase;
+    font-family: "stencilla";
+    font-size: 3.3rem ;
+    color: #113553;
+   
+}
+.webmain>div>h1{
+    text-transform: uppercase;
+    font-family: "noto";
+    font-size: 2.5rem ;
+    color: #113553;
+    margin-bottom: 50px;
+    margin-left: 33px;
 }

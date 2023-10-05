@@ -25,7 +25,7 @@ $(document).ready(function(){
     setTimeout(function(){
         $("#introtxt").addClass("on")
     },1000)
-   
+
 
 
 

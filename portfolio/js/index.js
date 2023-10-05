@@ -20,7 +20,7 @@ $(document).ready(function(){
  //프로필 페이지 효과
     $(window).scroll(function(){
         let winst = $(window).scrollTop()
-        let introPro = $(".introPro").offset().top
+        let introPro = $(".introPro").offset()
         let proHeight = $(window).height()*0.7
         if(winst+proHeight>=introPro){
             $(".proD>li").addClass("on")
@@ -312,7 +312,31 @@ $(this).addClass(`on`)
     // })
 
     
-    
+    $("#introtxt path").each(function(){
+        let path =$(this)
+        let idx = path.index()
+        let secondTerm = 0.2
+        let delay = idx*secondTerm
+        console.log(idx)
+        let pathLength = $(this).get(0).getTotalLength()
+        $(this).css("stroke-dasharray",pathLength)
+        $(this).css("stroke-dashoffset",pathLength)
+
+        setTimeout(function(){
+            path.css("transition",`stroke-dashoffset 0.3s ease ${delay}s, fill 0.5s ease ${delay+1}s`)
+        },500)
+
+        
+    })
+
+    setTimeout(function(){
+        $("#introtxt").addClass("on")
+    },800)
+    setTimeout(function(){
+        $("header>p").addClass("on")
+    },5000)
+
+
 
 
 
