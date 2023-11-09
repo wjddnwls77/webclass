@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>변수는 코드의 재활용성을 높여준다.</p>
+    <script>
+        for(var i =0; i <10; i ++){
+            if(i === 5) {
+                break
+            // break는 반복문을 중단시킨다.
+                continue
+            // continue 는 그 순간에만 중단 -> 반복문은 계속됨.
+            }
+            document.write('coding everydody'+i+'<br />')
+        }
+
+        for(var i =0; i <10; i ++){
+            for(var j =0; j <10; j ++){
+                document.write('coding everydody'+i+j+'<br />')
+            }
+        }
+        
+    </script>
+        <p>코드가 직접 실행되는 것을 볼 수 있는 '디버거'이용하기</p>
+</body>
+</html>

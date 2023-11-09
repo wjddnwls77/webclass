@@ -13,7 +13,7 @@
     /* 
     box-shadow:(x좌표) (y좌표) (확산정도) (색상)
     */
-    text-shadow: 2px 2px 0 lime;
+    text-shadow: 2px 2px 0px lime;
     transition: all 0.5s ease 0s;
 }
 

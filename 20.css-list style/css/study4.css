@@ -8,11 +8,11 @@
     transition-timing-function: linear;
     transition-delay(얼마 뒤에 그리겠다): 0s; */
     transition:
-     width 1s cubic-bezier(0.92, 0.13, 0, 0.98) 0s,
-     height 1s linear 1s,
-     background 1s cubic-bezier(0.92, 0.13, 0, 0.98) 2s,
-     border-radius 0.5s ease 3s;
-     
+    width 1s cubic-bezier(0.92, 0.13, 0, 0.98) 0s,
+    height 1s linear 1s,
+    background 1s cubic-bezier(0.92, 0.13, 0, 0.98) 2s,
+    border-radius 0.5s ease 3s;
+    
     }
 
     /* height 도 마찬가지 */

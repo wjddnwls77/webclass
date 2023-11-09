@@ -31,11 +31,11 @@ nav{
     padding: 10px;
     box-sizing: border-box;
     background: lightcoral;
-    transform: translateX(-100%);
+    transform: translateY(-100%);
     transition: all 0.7s ease 0s;
 }
 nav.on{
-    transform: translateX(0%);
+    transform: translateY(0%);
 }
 
 .gnb{}

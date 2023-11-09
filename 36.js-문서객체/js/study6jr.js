@@ -11,12 +11,12 @@ $(document).ready(function(){
         if(menuState == false){
             //메뉴가 현재 닫현 있는 상태 ->여는기능
             $(".btnMenu").addClass("close")
-            $("nav").addClass("show")
+            $("nav").addClass("on")
             menuState = true
         }else{
             //메뉴가 현재 열려있는 상태 -> 닫는기능
             $(".btnMenu").removeClass("close")
-            $("nav").removeClass("show")
+            $("nav").removeClass("on")
             menuState = false
         }
        

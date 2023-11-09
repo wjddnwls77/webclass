@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+<body>
+    <script>
+        var grades = {'egoing':10, 'k88':6, 'solla':80};
+        for(key in grades){
+            document.write("<li>key: "+key+" value : "+grades[key]+"</li>")
+        }
+
+        // 배열에서도 사용가능
+
+        var arr =['a','b','c']
+        for(var name in arr){
+            concole.log(name);
+        }
+
+
+        var grades = {
+            'list' :{'egoing' :10 ,'k77': 8 ,'solla':80},
+            'show' : function(){
+                alert
+                ('hello world')
+                alert(this.list)
+                // this.list 는 list 안에 저장되어있는 값들을 출력.
+            }
+        }
+        alert(grades['list']['egoing'])
+        // grades 라는 변수안에 list 객체안의 egoing의 value값을 불러옴.
+        //this 는 변수를 가르킴 .
+        grades['show']()
+        // == grades.show()
+        // grades 라는 변수안에 있는 기능을 불러옴.
+        // 1. 객체안에 또다른 객체가 들어갈 수있다.
+        // 2. 객체안에 함수가 들어갈 수 있다.
+    </script>
+</body>
+</html>

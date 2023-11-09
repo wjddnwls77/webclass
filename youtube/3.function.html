@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+<body>
+    <p>함수란 하나의 로직을 재실행 할 수 있도록 하는 것으로 코드의 재사용성을 높여준다.</p>
+    <script>
+        function numbering(){
+            document.write(1);
+        }
+        numbering()
+        // 넘버링 호출하겠다.
+
+        function get_members(){
+            return['egoing', 'key','hello','leezche']
+        }
+// 어떠한 기능을 할 동작을 만들고.
+        let members = get_members();
+// 그 동작을 변수에 저장하고.
+        for(var i= 0 ; i < members.length; i++){
+            document.write(members[i].toUpperCase()+'<br \>')
+        }
+        // length 는 원소의 갯수에 따라 탄력적으로 바뀜.
+
+        var li = ['a','b','c','d']
+        li.push('f')
+        // push는 배열에 어떠한 정보르 밀어넣음. 하나의 값을 추가함.
+        li.concat('e','g')
+        // concat은 여러개의 값을 추가할 수 있음.
+        li.unshift('z')
+        // 값을 "맨 앞"으로 추가하게됨.
+        li.splice(1)
+        // 배열의 특정구간을 추출, 특정구간에 특정 배열을 
+        // index :배열에 추가할 특정 배열의 위치를 가르킴. 
+        // li.splice(1,0,d)
+        // 1,0 배열 사이에 d 추가 
+    </script>
+</body>
+</html> 

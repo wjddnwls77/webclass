@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
     <!-- css -->
-    <link rel="stylesheet" href="./css/index.css?ver=12">
+    <link rel="stylesheet" href="./css/index.css?ver=17">
     <!-- js -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="./js/index.js"></script>
+    <!-- <script src="./js/smooth.js"></script> -->
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,12 +45,12 @@
         <div class="porfilePg">
             <img src="./img/pro.png" alt="증명사진">
             <section class="proImg"> 
-                <div class="proflie">
+                <div class="proflie mTtB">
                     <h2>JEONG WOO JIN</h2>
                     <h2>정우진</h2>
                     <p>1996.03.15</p>
                 </div>
-                <div>
+                <div class="mTtB">
                     <dl>
                         <dt>phone</dt>
                         <dd>010.7763.7394</dd>
@@ -61,16 +62,15 @@
                 </div>
             </section>
             <section>
-                <ul class="profileBox" id="s1">
+                <ul class="profileBox mLtR" id="s1">
                     <li class="educationBox">
                         <h2>education</h2>
                         <ul>
-                            <li><span>2017</span><p>수원대학교 서양화 전공</p></li>
-                            <li><span>2018</span><p>수원 대학교 자퇴</p></li>
                             <li><span>2019</span><p>이화여자대학교 도자예술 전공</p></li>
                             <li><span>2019</span><p>이화여자대학교 미술사학 복수 전공</p></li>
                             <li><span>2022</span><p>이화여자대학교 졸업</p></li>
                             <li><span>2023</span><p>그린컴퓨터 ux,ui 웹 퍼블리셔<br> 양성 과정 이수 </p></li>
+                            <li><span>2023</span><p>웹 표준, 웹 접근성 직무체험</p></li>
                         </ul>
                     </li>
                     <li class="licenseBox">
@@ -109,14 +109,13 @@
                     </figure>
                     <div class="skilltxt">
                         <h2>Ai/Ps</h2>
-                        <p>사진 이미지 편집, 수정이 가능합니다.
-                            팝업, 배너 ,로고 제작 등 디자인을 할 수 있습니다.</p>
+                        <p>사진 이미지 편집, 수정이 가능합니다. 팝업, 배너, 로고, 상세페이지 등을 디자인 할 수 있습니다.</p>
                     </div>
                 </li>
-                <li data-per="95">
+                <li data-per="90">
                     <figure>
-                        <span class="per">95</span>
-                        <span class="per2">95</span>
+                        <span class="per">90</span>
+                        <span class="per2">90</span>
                         <span class="percentCircle"></span>
                         <span class="subCircle"></span>
                         <svg  viewBox="0 0 260 180">
@@ -126,8 +125,7 @@
                     <div class="skilltxt">
                     <h2>HTML</h2>
                     <p>
-                        시멘틱 마크업이 가능하며 웹 표준 및 웹 접근성 고려
-                        도메인 및 서버에 대한 이해가갖추어져 있습니다.
+                        시멘틱 마크업이 가능하며 웹 표준 및 웹 접근성을 고려하여 구조적 문서를 만들어 낼 수 있습니다.
                     </p> 
                     </div>
                 </li>
@@ -161,7 +159,7 @@
                     <div class="skilltxt">
                         <h2>JAVA</h2>
                         <p>
-                        자바크스립트의 프로그래밍 언어와 문법이해가 갖춰져있습니다. 사용자와 상호작용이 가능하고 웹페이지 동작에 필요한 기능을 작성할 수 있습니다. 
+                            자바스크립트의 프로그래밍 언어와 문법 이해가 갖춰져 있습니다. 웹 페이지 동작에 필요한 애니메이션 기능을 구현할 수 있습니다.
                         </p>
                     </div>
                 </li>
@@ -176,16 +174,16 @@
                         </svg>
                     </figure>
                     <div class="skilltxt">
-                    <h2>JQUERY</h2>
+                    <h2>GITHUB</h2>
                     <p>
-                        오픈 소스에 대한 활용및  수정이 가능 합니다. 웹페이지의 다양한 효과와 연출이 가능합니다.     
+                        깃 저장소를 원격에서 데이터의 이동 및 업데이트가 가능합니다.    
                     </p>
                     </div>
                 </li> 
             </ul>
         </div>
         <div class="popup" id="s3">
-            <img src="./img/popup.svg" alt="">
+            <img class="mTtB"src="./img/popup.jpg" alt="">
             <div class="popupContent">
                 <h1>popup</h1>
                 <p>정해진 사이즈 내에 다양한<br> 
@@ -197,14 +195,14 @@
                     <ul class="swiper-wrapper">
                         <li class="swiper-slide">
                             <!-- <h2>scroll</h2> -->
-                            <img src="./img/Popup-image/1.popup_blackfriday.png" alt="블랙프라이데이">
+                            <img src="./img/Popup-image/1.popup_blackfriday.jpg" alt="블랙프라이데이">
                             <dl>
                                 <dt>title</dt>
                                 <dd>blackfriday</dd>
                                 <dt>text</dt>
                                 <dd>블랙프라이데이를 주제로 팝업을 디자인하였습니다.
                                     'BLACK FRIDAY’를 크게 강조하고 
-                                    강렬한 느낌을 주기 위해 검정색과 빨간색의 대비를 주었습니다.</dd>
+                                    강렬한 느낌을 주기 위해 검정색과 노란색의 대비를 주었습니다.</dd>
                                 <dt>color</dt>
                                 <dd class="colorChip">
                                 <span class="color_1"></span>
@@ -220,15 +218,14 @@
                             </div>
                         </li>
                         <li class="swiper-slide">
-                            <img src="./img/Popup-image/2.popup_christmas.png" alt="크리스마스">
+                            <img src="./img/Popup-image/2.popup_christmas.jpg" alt="크리스마스">
                             <dl>
                                 <dt>title</dt>
                                 <dd>Christmas</dd>
                                 <dt>text</dt>
-                                <dd>크리스마스의 따듯한 분위기를 담아냈습니다.
-                                    전체적으로 밝은 톤보다는 낮은 채도와 그라데이션을
-                                    사용하여 고급스러움을 강조하였습니다.
-                                    금색깔이 포인트가 될 수있도록 하였습니다. </dd>
+                                <dd>크리스마스의 빈티지한 분위기를 담아냈습니다.
+                                    전체적으로 밝은 톤보다는 낮은 채도를 사용하였습니다.
+                                    </dd>
                                 <dt>color</dt>
                                 <dd class="colorChip">
                                 <span class="color_4"></span>
@@ -414,13 +411,13 @@
                 <p>SIZE : 1920 X 600</p>
                 <a href="#">more</a>
             </div>
-            <img src="./img/banner.svg" alt="banner">
+            <img  class="mTtB" src="./img/banner.svg" alt="banner">
                 <div class="Banner">
                     <ul class="Bannertrain swiper-wrapper">
                         <li class="swiper-slide">
                             <img src="./img/Banner-image/1.banner.png" alt="blackfriday_Bgr">
                             <div>
-                                <img src="./img/Banner-image/SVG/banner_1.svg" alt="">
+                                <img src="./img/Banner-image/SVG/banner_1.jpg" alt="">
                                 <dl>
                                     <dt>title</dt>
                                     <dd class="title_B">blackfriday</dd>
@@ -445,7 +442,7 @@
                         <li class="swiper-slide">
                             <img src="./img/Banner-image/2.banner.png" alt="이솝_Bgr">
                             <div>
-                                <img src="./img/Banner-image/SVG/banner_3.svg" alt="이솝">
+                                <img src="./img/Banner-image/SVG/banner_3.jpg" alt="이솝">
                                 <dl>
                                     <dt>title</dt>
                                     <dd class="title_B">이솝</dd>
@@ -469,7 +466,7 @@
                         <li class="swiper-slide">
                             <img src="./img/Banner-image/3.banner.png" alt="cnp laboratory_Bgr">
                             <div>
-                                <img src="./img/Banner-image/SVG/banner_2.svg" alt="cnp laboratory">
+                                <img src="./img/Banner-image/SVG/banner_2.jpg" alt="cnp laboratory">
                                 <dl>
                                     <dt>title</dt>
                                     <dd class="title_B">cnp laboratory</dd>
@@ -497,7 +494,7 @@
                         <li class="swiper-slide">
                             <img src="./img/Banner-image/4.banner.jpg" alt="추석배송_Bgr">
                             <div>
-                                <img src="./img/Banner-image/SVG/banner_4.svg" alt="추석배송">
+                                <img src="./img/Banner-image/SVG/banner_4.jpg" alt="추석배송">
                                 <dl>
                                     <dt>title</dt>
                                     <dd class="title_B">추석배송</dd>
@@ -524,7 +521,7 @@
                         <li class="swiper-slide">
                             <img src="./img/Banner-image/5.banner.jpg" alt="새벽배송_Bgr">
                             <div>
-                                <img src="./img/Banner-image/SVG/banner_5.svg" alt="새벽배송">
+                                <img src="./img/Banner-image/SVG/banner_5.jpg" alt="새벽배송">
                                 <dl>
                                     <dt>title</dt>
                                     <dd class="title_B">새벽배송</dd>
@@ -608,7 +605,7 @@
             </div>
     </main>
     <footer id="s5">
-        <dl>
+        <dl class="mTtB">
             <dt>phone</dt>
             <dd>010.7763.7394</dd>
             <dt>e-mail</dt>

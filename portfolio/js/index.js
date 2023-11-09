@@ -214,18 +214,12 @@ $(this).addClass(`on`)
             $(".artTebmenu").removeClass("on") 
             $(".blackcover").removeClass("on")
         })
-        $(".folder_4").click(function(e){
-            e.preventDefault()
-            $(".artTebmenu").addClass("on")
-            $(".artworkfolder").addClass("on") 
-            $(".blackcover").addClass("on")
-        })
-        $(".artexit").click(function(){
-            $(".artworkfolder").removeClass("on")
-            $(".artTebmenu").removeClass("on") 
-            $(".blackcover").removeClass("on")
-        })
 
+        $(".blackcover").click(function(e){
+            e.preventDefault()
+            $(".Banner").removeClass("on")
+            $(".Popup").removeClass("on")
+    })
 
 // weball Slider
         $('.artTebmenu>dt').click(function(e){
@@ -336,9 +330,13 @@ $(this).addClass(`on`)
         $("header>p").addClass("on")
     },5000)
 
+    // 스크롤시 부드럽게이동
+    let body = new Scrooth({
+        acceleration:2.0,
+        strength:18,
+        deceleration:0.94
 
-
-
+    })
 
 
 
