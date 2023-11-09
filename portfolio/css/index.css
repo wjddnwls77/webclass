@@ -799,12 +799,12 @@ circle{
     display: block;
     margin-left: 20px;
 }
-.colorChip>span.color_1{background: #ffff;border: 1px solid #999;}
-.colorChip>span.color_2{background: #f9e050;}
-.colorChip>span.color_3{background: #0C1B25;}
-.colorChip>span.color_4{background: #325e46;}
-.colorChip>span.color_5{background: #d16242;}
-.colorChip>span.color_6{background: #d3cbc2;}
+.colorChip>span.color_1{background: #cf4543;}
+.colorChip>span.color_2{background: #0d1b24;}
+.colorChip>span.color_3{background: #2f4350;}
+.colorChip>span.color_4{background: #1c351c;}
+.colorChip>span.color_5{background: #f4ee66;}
+.colorChip>span.color_6{background: #3d5e50}
 .colorChip>span.color_7{background: #E25D28;}
 .colorChip>span.color_8{background: #FDEE99;}
 .colorChip>span.color_9{background: #2F0F10;}
